@@ -1,0 +1,23 @@
+#882 - Jugjur
+
+owner = YKU
+controller = YKU
+add_core = YKU
+culture = yakut
+religion = tengri_pagan_reformed
+capital = "Jugjur"
+trade_goods = naval_supplies
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = nomad_group
+discovered_by = ANU
+discovered_by = BRT
+discovered_by = YKU
+discovered_by = HOD
+discovered_by = CHV
+discovered_by = KMC
+discovered_by = CHU

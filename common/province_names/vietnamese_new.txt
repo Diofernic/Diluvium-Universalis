@@ -1,0 +1,12 @@
+497 = "Phang Rang"
+498 = "Qui Nhon"
+501 = "Thanh Hoa"
+506 = "Cao Bang"
+855 = "Ha Tinh"
+860 = "Da Nang"
+2091 = "Hue"
+2092 = "Nha Trang"
+2090 = { "Quang Ninh" "Son Nam" }
+4408 = { "Hung Hoa" "Minh Quang" }
+4409 = "Nghe An"
+4410 = "Quang Ngai"

@@ -1,0 +1,7 @@
+801 = "Tyotaheshtahkwake"
+802 = "Tyotéoke"
+804 = "Tkanotayekowa"
+812 = "Wastoke"
+827 = "Honguedo"
+831 = "Maisouna"
+1786 = "Scahentowanen"

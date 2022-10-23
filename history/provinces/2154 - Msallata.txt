@@ -1,0 +1,21 @@
+#2154 - Msallata
+
+owner = TUN
+controller = TUN
+culture = tunisian
+religion = sunni
+capital = "Msallata"
+trade_goods = cloth
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = TUN
+add_core = TRP
+center_of_trade = 1
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

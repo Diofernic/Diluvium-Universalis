@@ -1,0 +1,2 @@
+48 = "Tréier"
+57 = "Lëtzebuerg"

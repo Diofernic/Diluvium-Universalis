@@ -1,0 +1,26 @@
+#255 - Cumaovasi
+
+owner = TUR
+controller = TUR
+culture = turkish
+religion = sunni
+capital = "Cumaovasi"
+trade_goods = cotton #Major producer and exporter of Cotton
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 1
+is_city = yes
+fort_15th = yes
+add_core = TUR
+add_core = KNI
+add_core = AYD
+add_core = RML
+extra_cost = 16
+center_of_trade = 1
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group

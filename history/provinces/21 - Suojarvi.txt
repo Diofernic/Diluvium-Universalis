@@ -1,0 +1,18 @@
+#Suojarvi
+
+owner = SWE
+controller = SWE
+add_core = SWE
+add_core = NOV
+culture = karelian
+religion = orthodox
+hre = no
+base_tax = 1
+base_production = 2
+trade_goods = fur
+base_manpower = 1
+capital = "Suojarvi"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = nomad_group

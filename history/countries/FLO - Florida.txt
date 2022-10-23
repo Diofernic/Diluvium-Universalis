@@ -1,0 +1,13 @@
+government = republic
+technology_group = western
+primary_culture = castillian
+religion = catholic
+capital = 929 #St. Helena, entire country was flooded
+1810.3.10 = {
+	monarch = {
+		name = "Skipwith"
+		adm = 2
+		dip = 5
+		mil = 6
+	}
+}

@@ -1,0 +1,3 @@
+24 = "Kartuzy"
+25 = "Drawsko"
+2639 = "Szczecinek"

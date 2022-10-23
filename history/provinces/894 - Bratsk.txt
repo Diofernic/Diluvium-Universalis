@@ -1,0 +1,20 @@
+#894 - East Tunguska
+
+owner = TUG
+controller = TUG
+add_core = TUG
+culture = tungus
+religion = tengri_pagan_reformed
+capital = "Kezemskoe"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+is_city = yes
+
+discovered_by = OST
+discovered_by = SMY
+discovered_by = TUG
+discovered_by = BRT

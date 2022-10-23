@@ -1,0 +1,2 @@
+2042 = "Ushmunayn"
+2044 = "Akhmin"

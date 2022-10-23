@@ -1,0 +1,104 @@
+country_decisions = {
+
+	scandinavian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_scandinavia_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = SCA }
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			culture_group = scandinavian
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+					adm_tech = 20
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3		#Falun
+				province_id = 5		#Skara
+				province_id = 10	#Oslo
+				province_id = 16	#Bergen
+				AND = {
+					culture_group = scandinavian
+					continent = europe
+					ROOT = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 15
+								culture_group = scandinavian
+								is_core = ROOT
+								continent = europe
+							}
+						}
+						owns_core_province = 3
+						owns_core_province = 5
+						owns_core_province = 10
+						owns_core_province = 16
+					}
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			adm_tech = 20
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 3		#Falun
+			owns_core_province = 5		#Skara
+			owns_core_province = 10		#Oslo
+			owns_core_province = 16		#Bergen
+			num_of_owned_provinces_with = {
+				value = 15
+				culture_group = scandinavian
+				continent = europe
+				is_core = ROOT
+			}
+		}
+		effect = {
+			change_tag = SCA
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			scandinavia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SCA
+			}	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			set_country_flag = formed_scandinavia_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,7 @@
+#1782 - Central Siberia
+
+discovered_by = TUG
+discovered_by = YKU
+discovered_by = HOD
+discovered_by = BRT
+discovered_by = CHV

@@ -1,0 +1,662 @@
+country_decisions = {
+
+	bharat_nation_dravidian = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BHA }
+			NOT = { tag = MUG }
+			culture_group = dravidian
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
+			NOT = { has_reform = steppe_horde }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 415	#Multan
+				province_id = 425	#Baroda, temp Replacement for Surat
+				province_id = 432	#Mathura
+				province_id = 441	#Madurai
+				province_id = 4030	#Kondavidu, temp Replacement for Tondainadu
+				province_id = 444	#Vijayanagar
+				province_id = 447	#Daulatabad
+				province_id = 4045	#Ganjam, temp Replacement for Cuttack
+				province_id = 1844	#Varanasi, temp Replacement for Pataliputra
+				province_id = 1731	#Bidar
+				province_id = 424	#Girnar, temp Replacement for Halar
+				province_id = 1848	#Kandy
+				province_id = 4020	#Kumari
+				province_id = 4026	#Seringapatam
+				province_id = 4062	#Ujjain
+				#province_id = 4503	#Mansura
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			culture_group = dravidian
+			is_at_war = no
+			stability = 3
+			has_institution = feudalism
+			owns_core_province = 415	#Multan
+			owns_core_province = 425	#Baroda, temp Replacement for Surat
+			owns_core_province = 432	#Mathura
+			owns_core_province = 441	#Madurai
+			owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+			owns_core_province = 444	#Vijayanagar
+			owns_core_province = 447	#Daulatabad
+			owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+			owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+			owns_core_province = 1731	#Bidar
+			owns_core_province = 424	#Girnar, temp Replacement for Halar
+			owns_core_province = 1848	#Kandy
+			owns_core_province = 4020	#Kumari
+			owns_core_province = 4026	#Seringapatam
+			owns_core_province = 4062	#Ujjain
+			#owns_core_province = 4503 #Mansura
+		}
+		effect = {
+			change_tag = BHA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			bengal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			add_prestige = 10
+			set_country_flag = formed_india_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+	bharat_nation_western_aryan = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BHA }
+			NOT = { tag = MUG }
+			culture_group = western_aryan
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
+			NOT = { has_reform = steppe_horde }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 415	#Multan
+				province_id = 425	#Baroda, temp Replacement for Surat
+				province_id = 426	#Chittor
+				province_id = 432	#Mathura
+				province_id = 441	#Madurai
+				province_id = 4030	#Kondavidu, temp Replacement for Tondainadu
+				province_id = 447	#Daulatabad
+				province_id = 452	#Mahakoshal
+				province_id = 4045	#Ganjam, temp Replacement for Cuttack
+				province_id = 1844	#Varanasi, temp Replacement for Pataliputra
+				province_id = 1731	#Bidar
+				province_id = 424	#Girnar, temp Replacement for Halar
+				province_id = 1848	#Kandy
+				province_id = 4020	#Kumari
+				province_id = 4062	#Ujjain
+				#province_id = 4503	#Mansura
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			culture_group = western_aryan
+			is_at_war = no
+			stability = 3
+			has_institution = feudalism
+			owns_core_province = 415	#Multan
+			owns_core_province = 425	#Baroda, temp Replacement for Surat
+			owns_core_province = 426	#Chittor
+			owns_core_province = 432	#Mathura
+			owns_core_province = 441	#Madurai
+			owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+			owns_core_province = 447	#Daulatabad
+			owns_core_province = 452	#Mahakoshal
+			owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+			owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+			owns_core_province = 1731	#Bidar
+			owns_core_province = 424	#Girnar, temp Replacement for Halar
+			owns_core_province = 1848	#Kandy
+			owns_core_province = 4020	#Kumari
+			owns_core_province = 4062	#Ujjain
+			#owns_core_province = 4503	#Mansura
+		}
+		effect = {
+			change_tag = BHA
+			remove_non_electors_emperors_from_empire_effect = yes
+			swap_non_generic_missions = yes
+			set_government_rank = 3
+			bengal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			set_country_flag = formed_india_flag
+			add_prestige = 10
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+	bharat_nation_hindusthani = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BHA }
+			NOT = { tag = MUG }
+			culture_group = hindusthani
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
+			NOT = { has_reform = steppe_horde }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 415	#Multan
+				province_id = 416	#Lahore
+				province_id = 425	#Baroda, temp Replacement for Surat
+				province_id = 430	#Delhi
+				province_id = 432	#Mathura
+				province_id = 441	#Madurai
+				province_id = 4030	#Kondavidu, temp Replacement for Tondainadu
+				province_id = 447	#Daulatabad
+				province_id = 4045	#Ganjam, temp Replacement for Cuttack
+				province_id = 1844	#Varanasi, temp Replacement for Pataliputra
+				province_id = 1731	#Bidar
+				province_id = 424	#Girnar, temp Replacement for Halar
+				province_id = 1848	#Kandy
+				province_id = 4020	#Kumari
+				province_id = 4062	#Ujjain
+				#province_id = 4503	#Mansura
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			culture_group = hindusthani
+			is_at_war = no
+			stability = 3
+			has_institution = feudalism
+			owns_core_province = 415	#Multan
+			owns_core_province = 416	#Lahore
+			owns_core_province = 425	#Baroda, temp Replacement for Surat
+			owns_core_province = 430	#Delhi
+			owns_core_province = 432	#Mathura
+			owns_core_province = 441	#Madurai
+			owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+			owns_core_province = 447	#Daulatabad
+			owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+			owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+			owns_core_province = 1731	#Bidar
+			owns_core_province = 424	#Girnar, temp Replacement for Halar
+			owns_core_province = 1848	#Kandy
+			owns_core_province = 4020	#Kumari
+			owns_core_province = 4062	#Ujjain
+			#owns_core_province = 4503	#Mansura
+		}
+		effect = {
+			change_tag = BHA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			bengal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			set_country_flag = formed_india_flag
+			add_prestige = 10
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+
+	bharat_nation_eastern_aryan = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BHA }
+			NOT = { tag = MUG }
+			culture_group = eastern_aryan
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
+			NOT = { has_reform = steppe_horde }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}		
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 415	#Multan
+				province_id = 416	#Lahore
+				province_id = 425	#Baroda, temp Replacement for Surat
+				province_id = 430	#Delhi
+				province_id = 432	#Mathura
+				province_id = 441	#Madurai
+				province_id = 4030	#Kondavidu, temp Replacement for Tondainadu
+				province_id = 447	#Daulatabad
+				province_id = 4045	#Ganjam, temp Replacement for Cuttack
+				province_id = 1844	#Varanasi, temp Replacement for Pataliputra
+				province_id = 1848	#Kandy, temp Replacement for Gauda
+				province_id = 457	#Kathmandu, temp Replacement for Assam
+				province_id = 1731	#Bidar
+				province_id = 424	#Girnar, temp Replacement for Halar
+				province_id = 4020	#Kumari
+				#province_id = 4503	#Mansura
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			culture_group = eastern_aryan
+			is_at_war = no
+			stability = 3
+			has_institution = feudalism
+			owns_core_province = 415	#Multan
+			owns_core_province = 416	#Lahore
+			owns_core_province = 425	#Baroda, temp Replacement for Surat
+			owns_core_province = 430	#Delhi
+			owns_core_province = 432	#Mathura
+			owns_core_province = 441	#Madurai
+			owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+			owns_core_province = 447	#Daulatabad
+			owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+			owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+			owns_core_province = 1848	#Kandy, temp Replacement for Gauda
+			owns_core_province = 457	#Kathmandu, temp Replacement for Assam
+			owns_core_province = 1731	#Bidar
+			owns_core_province = 424	#Girnar, temp Replacement for Halar
+			owns_core_province = 4020	#Kumari
+			#owns_core_province = 4503	#Mansura
+		}
+		effect = {
+			change_tag = BHA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			bengal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			set_country_flag = formed_india_flag
+			add_prestige = 10
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+	
+	bharat_nation_central_indic = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = BHA }
+			NOT = { tag = MUG }
+			culture_group = central_indic
+			OR = {
+				religion_group = dharmic
+				religion = buddhism #Theravada
+				religion = vajrayana
+				religion = mahayana
+			}
+			NOT = { has_reform = steppe_horde }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 15
+				}
+			}		
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 415	#Multan
+				province_id = 425	#Baroda, temp Replacement for Surat
+				province_id = 430	#Delhi
+				province_id = 432	#Mathura
+				province_id = 435	#Burhanpur
+				province_id = 441	#Madurai
+				province_id = 447	#Daulatabad
+				province_id = 4045	#Ganjam, temp Replacement for Cuttack
+				province_id = 454	#Sambalpur
+				province_id = 1844	#Varanasi, temp Replacement for Pataliputra
+				province_id = 4030	#Kondavidu, temp Replacement for Gauda
+				province_id = 457	#Kathmandu, temp Replacement for Assam
+				province_id = 1731	#Bidar
+				province_id = 424	#Girnar, temp Replacement for Halar
+				province_id = 4020	#Kumari
+				#province_id = 4503	#Mansura
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			culture_group = central_indic
+			is_at_war = no
+			stability = 3
+			has_institution = feudalism
+			owns_core_province = 415	#Multan
+			owns_core_province = 425	#Baroda, temp Replacement for Surat
+			owns_core_province = 430	#Delhi
+			owns_core_province = 432	#Mathura
+			owns_core_province = 435	#Burhanpur
+			owns_core_province = 441	#Madurai
+			owns_core_province = 447	#Daulatabad
+			owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+			owns_core_province = 454	#Sambalpur
+			owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+			owns_core_province = 4030	#Kondavidu, temp Replacement for Gauda
+			owns_core_province = 457	#Kathmandu, temp Replacement for Assam
+			owns_core_province = 1731	#Bidar
+			owns_core_province = 424	#Girnar, temp Replacement for Halar
+			owns_core_province = 4020	#Kumari
+			#owns_core_province = 4503	#Mansura
+		}
+		effect = {
+			change_tag = BHA
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			bengal_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			coromandel_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			set_country_flag = formed_india_flag
+			add_prestige = 10
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 50
+	}
+}

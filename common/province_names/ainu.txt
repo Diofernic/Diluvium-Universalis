@@ -1,0 +1,4 @@
+866 = "Peni'un'kur"
+1645 = "Sum'un'kur"
+1650 = "Menas'un'kur"
+2810 = "Ho'rep'asi'un'kur"

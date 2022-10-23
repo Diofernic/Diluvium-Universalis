@@ -1,0 +1,156 @@
+# New World names
+1784 = "Kinyama" # "Gold Mountain"
+
+#Sakhalin and Pacific islands
+867 = {"Chishima Retto" "Shana" }
+868 = {"Minami Karafuto" "Toyohara" }
+869 = "Kamusasuka"
+1056 = "Omiyajima"
+4232 = "Kita Karafuto"
+1764 = {"Truk" "Natsushima"}#Micronesia
+
+#Korea
+607 = {"Kanko" "Kanko"}
+608 = {"Kokai Koshu" "Koshu"}
+609 = {"Genshu" "Genshu"}
+610 = {"Keijo" "Keijo"}
+611 = {"Shoshu" "Shoshu"}
+612 = {"Zenshu" "Zenshu"}
+1643 = {"Heijo" "Heijo"}
+2363 = {"Koryo" "Koryo"}
+2408 = {"Saishu" "Saishu"}
+2409 = {"Funei" "Funei"}
+2410 = {"Kyojo" "Kyojo"}
+2411 = {"Neihen" "Neihen"}
+2412 = {"Keisho Keishu" "Keishu"}
+2842 = {"Shinshu" "Shinshu"}
+2843 = {"Rashu" "Rashu"}
+2844 = {"Chushu" "Chushu"}
+2845 = {"Suigen" "Suigen"}
+2846 = {"Kokai" "Kokai"}
+
+
+#Taiwan
+613 = {"Tainan" "Tainan"}
+1895 = {"Taihoku" "Taihoku"}
+1896 = {"Taichu" "Taichu"}
+
+
+#Northern China
+564 = {"Nanyo" "Nanyo"}
+565 = {"Kanchu" "Kanchu"}
+566 = {"Santo Seishu" "Seishu"}
+567 = {"Sainan" "Sainan"}
+568 = {"Kaikei" "Kaikei"}
+569 = {"Taigen" "Taigen"}
+570 = {"Heiyo" "Heiyo"}
+571 = {"Hotei" "Hotei"}
+572 = {"Daido" "Daido"}
+573 = {"Neika" "Neika"}
+574 = {"Ranshu" "Ranshu"}
+575 = {"Seian" "Seian"}
+578 = {"Shotoku" "Shotoku"}
+582 = {"Gyokumon" "Gyokumon"}
+583 = {"Choeki" "Choeki"}
+1618 = {"Hokuhei" "Hokuhei"}
+1635 = {"Rakuyo" "Rakuyo"}
+1637 = {"Gohi" "Gohi"}
+1884 = {"Senka" "Senka"}
+1885 = {"Raihu" "Raishu"}
+1886 = {"Enshu" "Enshu"}
+1913 = {"Neibu" "Neibu"}
+1914 = {"Roan" "Roan"}
+1915 = {"Enan" "Enan"}
+1916 = {"Tensui" "Tensui"}
+1917 = {"Heiryo" "Heiryo"}
+1918 = {"Ryoshu" "Ryoshu"}
+1919 = {"Toshu" "Toshu"}
+1920 = {"Seinei" "Seinei"}
+2811 = {"Eihei" "Eihei"}
+2812 = {"Shintei" "Shintei"}
+2814 = {"Hosho" "Hosho"}
+
+
+#Southern China
+546 = {"Ryoun" "Ryoun"}
+547 = {"Chokei" "Chokei"}
+548 = {"Fukushu" "Fukushu"}
+549 = {"Kanshu" "Kanshu"}
+550 = {"Chosa" "Chosa"}
+551 = {"Buryo" "Buryo"}
+560 = {"Gisho" "Gisho"}
+561 = {"Busho" "Busho"}
+562 = {"Nansho" "Nansho"}
+563 = {"Sekko Koshu" "Koshu"}
+1624 = {"Onshu" "Onshu"}
+1629 = {"Senshu" "Senshu"}
+1633 = {"Kitsuan" "Kitsuan"}
+1639 = {"Keirin" "Keirin"}
+1887 = {"Neikoku" "Neikoku"}
+1888 = {"Kishu" "Kishu"}
+1889 = {"Shoko" "Shoko"}
+1890 = {"Neiha" "Neiha"}
+1891 = {"Kinka" "Kinka"}
+1892 = {"Hayo" "Hayo"}
+1893 = {"Kennei" "Kennei"}
+1894 = {"Teishu" "Teishu"}
+1897 = {"Choshu" "Choshu"}
+1898 = {"Koto Keishu" "Keishu"}
+1899 = {"Shokan" "Shokan"}
+1900 = {"Gaishu" "Gaishu"}
+1901 = {"Goshu" "Goshu"}
+1902 = {"Ryushu" "Ryushu"}
+1903 = {"Nannei" "Nannei"}
+1910 = {"Joyo" "Joyo"}
+1911 = {"Ganryo" "Ganryo"}
+1912 = {"Koyo" "Koyo"}
+2813 = {"Koko Koshu" "Koshu"}
+
+
+
+#Southwestern China
+543 = {"Dairi" "Dairi"}
+544 = {"Unnan" "Unnan"}
+545 = {"Konan" "Konan"}
+552 = {"Chinen" "Chinen"}
+553 = {"Kiyo" "Kiyo"}
+554 = {"Umo" "Umo"}
+558 = {"Seito" "Seito"}
+559 = {"Jukei" "Jukei"}
+1904 = {"Fuji" "Fuji"}
+1905 = {"Tokuko" "Tokuko"}
+1906 = {"Reiko" "Reiko"}
+1907 = {"Hanshu" "Hanshu"}
+1908 = {"Rochu" "Rochu"}
+1909 = {"Sokyoku" "Sokyoku"}
+2415 = {"Kensho" "Kensho"}
+2815 = {"Dojin" "Dojin"}
+2827 = {"Tasshu" "Tasshu"}
+2828 = {"Kashu" "Kashu"}
+2829 = {"Roshu" "Roshu"}
+
+
+#Vietnam
+501 = {"Seika" "Seika"}
+855 = {"Kasei" "Kasei"}
+2091 = {"Junka" "Junka"}
+4409 = {"Gaian" "Gaian"}
+497 = {"Hanro" "Hanro"}
+498 = {"Kijin" "Kijin"}
+860 = {"Dano" "Dano"}
+2092 = {"Gaso" "Gaso"}
+4410 = {"Kogi" "Kogi"}
+506 = {"Kohei" "Kohei"}
+2090 = {"Konei" "Konei"}
+4408 = {"Koka" "Koka"}
+496 = {"Seigen" "Seigen"}
+
+
+#Manchuria
+579 = {"Neien" "Neien"}
+601 = {"Hoten" "Hoten"}
+1856 = {"Konshun" "Konshun"}
+1860 = {"Anto" "Anto"}
+1861 = {"Dairen" "Dairen"}
+2817 = {"Kenshu" "Kenshu"}
+4227 = {"Morin" "Morin"}

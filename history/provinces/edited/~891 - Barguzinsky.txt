@@ -1,0 +1,16 @@
+#891 - Barguzinsky
+
+owner = BRT
+controller = BRT
+core = BRT
+culture = buryat
+religion = tengri_pagan_reformed
+capital = "Barguzin"
+trade_goods = unknown
+hre = no
+base_tax = 3 
+base_production = 3
+base_manpower = 3
+is_city = yes
+
+discovered_by = nomad_group

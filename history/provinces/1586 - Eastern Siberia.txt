@@ -1,0 +1,7 @@
+#1783 - Eastern Siberia
+
+discovered_by = KMC
+discovered_by = CHU
+discovered_by = YKU
+discovered_by = HOD
+discovered_by = CHV

@@ -1,0 +1,770 @@
+##################################################
+#
+# ADVISORS FOR THE REGION 'CHINAKOREAJAPAN'
+#
+##################################################
+#Provinces:
+##################################################
+#China:
+##################################################
+#498 - Vijaya
+#501 - BinhTriThien
+#542 - XishuanBanna
+#543 - Dali
+#544 - Yunnan
+#545 - Wenshan
+#546 - Guangxi (546 - Guangxi.txt) 
+#547 - Jiangmen (547 - Jiangmen.txt) 
+# - Hainan ( - Hainan.txt) 
+# - Guangzhou ( - Guangzhou.txt) 
+# - Macau ( - Macau.txt) 
+#548 - Fujian (548 - Fujian.txt) 
+#549 - Ganzhou (549 - Ganzhou.txt) 
+#550 - Changsha (550 - Changsha.txt) 
+#551 - Chenzhou (551 - Chenzhou.txt) 
+#552 - Bozhou (552 - Bozhou.txt) 
+#553 - Guiyang (553 - Guiyang.txt) 
+#554 - Liangshan (554 - Liangshan.txt) 
+#558 - SichuanPendi (558 - Sichuan Pendi.txt) 
+#559 - Shenquing (559 - Shenquing.txt) 
+#560 - Yichuan (560 - Yichuan.txt) 
+#561 - Hanyang (561 - Hanyang.txt) 
+#562 - Nanchang (562 - Nanchang.txt) 
+#563 - Zhejiang (563 - Zhejiang.txt) 
+# - Jiangsu ( - Jiangsu.txt) 
+# - Anhui ( - Anhui.txt) 
+#564 - Running (564 - Running.txt) 
+# - Henan ( - Henan.txt) 
+#565 - Fengyuan (565 - Fengyuan.txt) 
+#566 - ShandongBandao (566 - Shandong Bandao.txt) 
+#567 - Jinan (567 - Jinan.txt) 
+#568 - Handan (568 - Handan.txt) 
+#569 - Sanguan (569 - Sanguan.txt) 
+#570 - Changzhi (570 - Changzhi.txt) 
+# - Jizhou ( - Jizhou.txt) 
+#571 - XuanFu (571 - Xuan Fu.txt) 
+#572 - Datong (572 - Datong.txt) 
+#573 - Guyuan (573 - Guyuan.txt) 
+#574 - Lanzhou (574 - Lanzhou.txt) 
+#575 - Shaanxi (575 - Shaanxi.txt) 
+#576 - Ordos (576 - Ordos.txt) 
+#577 - Ulaanchab (577 - Ulaanchab.txt) 
+#578 - Chengde (578 - Chengde.txt) 
+#579 - Liaoxi (579 - Liaoxi.txt) 
+#582 - Yumen (582 - Yumen.txt) 
+#583 - Gansu (583 - Gansu.txt) 
+#584 - Ningxia (584 - Ningxia.txt) 
+#585 - Hotan (585 - Hotan.txt) 
+#594 - SayinNoyan (594 - Sayin Noyan.txt) 
+#597 - Chahar (597 - Chahar.txt) 
+#598 - XilinGol (598 - Xilin Gol.txt) 
+#601 - Liaodong (601 - Liaodong.txt) 
+#613 - Taiwan (613 - Taiwan.txt) Control  
+##################################################  
+#Mandchuria only:
+##################################################  
+#599 - Yakesa (599 - Yakesa.txt) 
+#600 - Hinggan (600 - Hinggan.txt) 
+#602 - Heilongjiang (602 - Heilongjiang.txt) 
+#603 - Sanxing (603 - Sanxing.txt) 
+#604 - Wusuli (604 - Wusuli.txt) 
+#605 - Haixi (605 - Haixi.txt) 
+#606 - Ninguta (606 - Ninguta.txt) 
+##################################################  
+#Korea:
+##################################################  
+#607 - Hamgyeong (607 - Hamgyeong.txt) 
+#608 - Pyeongan (608 - Pyeongan.txt) 
+#609 - Gangwon (609 - Gangwon.txt) 
+#610 - Chungcheong (610 - Chungcheong.txt) 
+#611 - Gyeongsang (611 - Gyeongsang.txt) 
+#612 - Jeolla (612 - Jeolla.txt) 
+##################################################  
+##################################################  
+#Japan:
+##################################################  
+#852 - Satsuma (852 - Satsuma.txt) 
+# - Hizen ( - Hizen.txt) 
+#853 - Bungo (853 - Bungo.txt) 
+#854 - Okinawa (854 - Okinawa.txt) Control Core  
+#855 - Shikoku (855 - Shikoku.txt) 
+#856 - Nagato (856 - Nagato.txt) 
+#857 - Izumo (857 - Izumo.txt) 
+#858 - Harima (858 - Harima.txt) 
+#859 - Kyoto (859 - Kyoto.txt) 
+# - Settsu ( - Settsu.txt) 
+#860 - Kii (860 - Kii.txt) 
+#861 - Echizen (861 - Echizen.txt) 
+#862 - Echigo (862 - Echigo.txt) 
+#863 - Dewa (863 - Dewa.txt) 
+#864 - Mutsu (864 - Mutsu.txt) 
+# - Hitachi ( - Hitachi.txt) 
+# - Musachi ( - Musachi.txt) 
+#865 - Shinano (865 - Shinano.txt) 
+# - Owari ( - Owari.txt) 
+#866 - Hokkaido (866 - Hokkaido.txt) 
+#867 - Kurils (867 - Kurils.txt) Core  
+#868 - Sakhalin (868 - Sakhalin.txt) Core  
+##################################################  
+##################################################  
+#Tibet:
+##################################################  
+#555 - U-Tsang (555 - U-Tsang.txt) 
+#556 - Qamdo (556 - Qamdo.txt) 
+#557 - Kham (557 - Kham.txt) 
+#580 - Dangla (580 - Dangla.txt) 
+#581 - Amdo (581 - Amdo.txt) 
+##################################################  
+#Advisor types:
+##################################################  
+#philosopher
+#natural_scientist
+#artist
+#statesman
+#treasurer 
+#naval_reformer
+#army_reformer 
+#trader
+#theologian 
+#spymaster 
+#colonial_governor 
+#diplomat
+##################################################  
+# Era #1  1450 - 1540  (17/25)
+##################################################  
+
+advisor = {
+	advisor_id = 333
+	name = "Je Tsongkhapa" #tibetan monk (born in Amdo, NE tibet) founded the gelugpa (vertuous) branch of the tibetan bouddhism
+	location = 581 #Amdo Province, Tibet
+	discount = yes
+	skill = 2
+	type = theologian
+	date = 1389.1.1 #32 years old, wrote first studies
+	death_date = 1419.12.31 #death in 1419
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 335
+#	name = "Shen Zhou" # One of the best Chinese painters of the Ming dynasty
+#	location = -FLODDED- #Jizhou? 
+#	discount = yes
+#	skill = 2 
+#	type = artist
+#	date = 1453.1.1 #26 years old 
+#	death_date = 1509.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 336
+	name = "Tensho Shubun" # Uncoventional painter who excelled at the Three Perfections (poetry, calligraphy, and painting). 
+	location = 859 #Kyoto
+	discount = yes
+	skill = 2
+	type = artist 
+	date = 1424.1.1 #10 years old
+	death_date = 1463.12.31 #dies
+}
+
+advisor = {
+	advisor_id = 337
+	name = "Sesshu Toyo" # One of the most prominent masters of suiboku (ink painting)
+	location = 859 #Kyoto
+	discount = yes
+	skill = 2
+	type = artist
+	date = 1453.1.1 #33 years old 
+	death_date = 1506.12.31 #dies
+}
+
+advisor = {
+    advisor_id = 332
+    name = "Rennyo" # Religious reformer of Jodo Shinshu, a.k.a. Ikko-Shu after him
+    location = 861 #Echizen
+    discount = yes
+	skill = 3 #during this time period
+    type = theologian
+    date = 1457.6.17 #became leader of his sect
+    death_date = 1499.5.5 #dies
+}
+
+advisor = {
+	advisor_id = 338
+	name = "Kano Masanobu" # Chief painter of the Ashikaga & considered the greatest artist of the Morimachi period
+	location = 859 #Kyoto
+	discount = yes
+	skill = 2
+	type = artist
+	date = 1464.1.1 #30? years old
+	death_date = 1530.12.31 #dies?
+}
+
+advisor = {
+	advisor_id = 340
+	name = "Heki Masatsugu" # Standardized Kyujutsu training
+	location = 859 #Kyoto
+	discount = yes
+	skill = 1
+	type = commandant
+	date = 1483.1.1 #founding of the Heki Ryu school
+	death_date = 1502.12.31 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 341
+#	name = "Tang Yin" # Uncoventional painter who excelled at the Three Perfections (poetry, calligraphy, and painting). 
+#	location = -FLODDED- #Jizhou? 
+#	discount = yes
+#	skill = 1
+#	type = artist 
+#	date = 1499.1.1 #34 years old
+#	death_date = 1523.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 342
+	name = "Wen Zhenming" # Member of the painting of the scholars school. Also known as T`ing-yun-sheng and Heng-shan
+	location = 551 #Chenzhou 
+	discount = yes
+	skill = 1
+	type = artist 
+	date = 1500.1.1 #30 years old
+	death_date = 1559.1.1 #dies
+}
+
+advisor = {
+	advisor_id = 343
+	name = "Wang Yangming" # Known as 'Brilliant master'. Commonly considered the most important Neo-Confucian thinker 
+	location = 562 #Nanchang
+	discount = yes
+	skill = 3
+	type = philosopher
+	date = 1502.1.1 #30 years old
+	death_date = 1529.1.1 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 344
+#	name = "Liu Jin" # Eunuch and effective ruler of China
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 1
+#	type = statesman
+#	date = 1505.1.1 #30 years old
+#	death_date = 1535.1.1 #death date unknown, 30 years after start
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 345
+#	name = "Qiu Ying" # Master landscape artist, specialized in the gongbi brush technique.
+#	location = -FLODDED- #Jiangsu (Suzhou)
+#	discount = yes
+#	skill = 1
+#	type = artist
+#	date = 1519.1.1 #25 years old
+#	death_date = 1552.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 346
+#	name = "Wu Cheng'en" # Reputed author of 'Journey to the west'
+#	location = -FLODDED- #Jizhou? 
+#	discount = yes
+#	skill = 2 
+#	type = artist
+#	date = 1530.1.1 #30 years old
+#	death_date = 1582.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 347
+	name = "Kano Motonobu" # Chief painter of the Ashikaga & refined the Kan
+	location = 859 #Yamashiro
+	discount = yes
+	skill = 1
+	type = artist
+	date = 1531.1.1 #25 years old
+	death_date = 1559.11.5 #dies
+}
+
+advisor = {
+	advisor_id = 348
+	name = "Yi Hwang" # Prominent cofuscian scholor in Korea
+	location = 608 #Pyeongan
+	discount = yes
+	skill = 2
+	type = master_of_mint
+	date = 1535.1.1 #upon graduation at 33
+	death_date = 1549.12.31 #retires
+}
+
+##################################################  
+# Era #2  1540 - 1630  (16/25)
+##################################################  
+
+advisor = {
+	advisor_id = 349
+	name = "Li Shízhen" # Author of Ben Cao Gang Mu, Compendium of Materia Medica, among others
+	location = 575 #Shaanxi
+	discount = yes
+	skill = 3 
+	type = natural_scientist
+	date = 1545.1.1 #27 years old 
+	death_date = 1550.12.31 #retires from public life (exact date unknown); death 1593
+}
+
+advisor = {
+	advisor_id = 350
+	name = "Yi I" # Prominent cofuscian scholor in Korea also versed in history of buddhism and taoism
+	location = 609 #Gangwon
+	discount = yes
+	skill = 3
+	type = statesman
+	date = 1566.1.1 #upon graduation at 29
+	death_date = 1584.12.31 #retires
+}
+
+advisor = {
+	advisor_id = 351
+	name = "Jeong Cheol" #Korean Poet
+	location = 610 #Chungcheong
+	discount = yes
+	skill = 1
+	type = artist
+	date = 1566.1.1 #age 30
+	death_date = 1593.12.31 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 352
+#	name = "Kano Eitoku" # Founder of the Kano school of Japanese painting during the Azuchi-Momoyama period
+#	location = -FLODDED- #Musachi
+#	discount = yes
+#	skill = 1
+#	type = artist
+#	date = 1573.2.16 #30 years old
+#	death_date = 1590.10.12 #dies
+#}
+
+advisor = {
+    advisor_id = 334
+    name = "Hattori Hanzo" # One of the most famous Ninja in Japanese History
+    location = 1638 #Suruga
+    discount = yes
+	skill = 3 #during this time period
+    type = spymaster
+    date = 1575.7.9
+    death_date = 1597.1.2 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 353
+#	name = "Matteo Ricci" # Italian Jesuit priest, introduced Western science and started modern Chinese Christianity
+#	location = -FLODDED- #Jizhou (Beijing/Nanjing)
+#	discount = yes
+#	skill = 1
+#	culture = umbrian
+#	religion = catholic
+#	type = theologian #could also be natural_scientist
+#	date = 1582.1.1 #Arrived in China
+#	death_date = 1610.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 354
+	name = "João Rodrigues" # Jesuit missionary in Japan. Was court translator for Tokugawa Ieyasu
+	location = 859 #Yamashiro
+	discount = yes
+	skill = 1 
+	culture = portugese
+	religion = catholic
+	type = diplomat #could also be artist
+	date = 1584.1.1 #26 years old
+	death_date = 1633.1.1 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 339
+#    name = "Sen no Rikyu" # the Greatest Tea Master
+#    location = -FLODDED- #Settsu
+#    discount = yes
+#	skill = 3 #during this time period
+#    type = artist #could also be a diplomat, since he had a strong influence between daimyos
+#    date = 1585.10.1 #became tea master of Hideyoshi
+#    death_date = 1591.4.21 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 355
+#	name = "Dong Qichang" # Expert of the calligraphy of Chinese scripts
+#	location = -FLODDED- #Jizhou? 
+#	discount = yes
+#	skill = 1 
+#	type = artist 
+#	date = 1588.1.1 #33 years old 
+#	death_date = 1636.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 357
+	name = "William Adams" # Believed to be the first Briton ever to reach Japan. Court translator.
+	location = 853 #Bungo
+	discount = yes
+	skill = 2
+	culture = english
+	religion = protestant
+	type = diplomat #Could also be naval_reformer. Build Japan's first western-style sailing ships.
+	date = 1600.4.1 #Reached Japan. 36 years old.
+	death_date = 1620.1.1 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 358
+#	name = "Miyamoto Musashi" # The greatest samurai of all ages, author of the Book of the Five Rings
+#	location = -FLODDED- #? Kumamoto Castle
+#	discount = yes
+#	skill = 2 #book of five rings is a major work on strategy
+#	type = grand_captain
+#	date = 1605.1.1 #Date of his first important duels and travelling. 
+#	death_date = 1645.6.13 #dies
+#}
+
+advisor = {
+	advisor_id = 359
+	name = "Iwasa Matabei" # Specialist in genre scenes of historical events & ill. of classical Chinese/Japanese lit.
+	location = 859 #Yamashiro
+	discount = yes
+	skill = 1
+	type = artist
+	date = 1608.1.1 #30 years old 
+	death_date = 1650.12.31 #dies
+}
+
+advisor = {
+	advisor_id = 360
+	name = "Takuan Soho" # Major figure in the Rinzai school of Zen Buddhism
+	location = 859 #Yamashiro
+	discount = yes
+	skill = 1 
+	type = theologian
+	date = 1608.1.1 #36 years old 
+	death_date = 1645.12.31 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 361
+#	name = "Wei Zhongxian" # Considered the most powerful Eunuch in Chinese history
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 2 
+#	type = statesman
+#	date = 1610.1.1 #42 years old
+#	death_date = 1627.10.19 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 356
+#    name = "Honinbo Sansa" # the First Go-Maister in the Edo Period
+#    location = -FLODDED- #Musashi
+#    discount = yes
+#	skill = 1 #during this time period
+#    type = commandant # Since playing Go helped strategical thought...
+#    date = 1612.1.1 #traveled to Europe
+#    death_date = 1622.8.7 #dies
+#}
+
+advisor = {
+	advisor_id = 362
+	name = "Hasekura Tsunenaga" # First ever Japanese envoy to the Americas, who also made official visits to Spain, France and Rome.
+	location = 864 #Mutsu
+	discount = yes
+	skill = 1
+	type = diplomat 
+	date = 1613.10.28 #Hasekura's expedition leaves for New Spain. Age 42.
+	death_date = 1622.1.1 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 363
+#	name = "Wang Shimin" # Accomplished landscape artist
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 1 
+#	type = artist
+#	date = 1617.1.1 #25 years old
+#	death_date = 1680.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 364
+	name = "Xú Xiákè" # Traveling writer/geographer during the Ming; a pioneer in Karst topography for the world
+	location = 562 #Nanchang
+	discount = yes
+	skill = 2
+	type = natural_scientist
+	date = 1617.1.5 #30 years old
+	death_date = 1641.3.8 #death
+}
+
+##################################################  
+# Era #3  1630 - 1720  (12/25)
+##################################################  
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 365
+#	name = "Johann Adam Schall" # Johann Adam Schall von Bell. Jesuit who taught the Chinese how to forge cannons
+#	location = -FLODDED- #Jizhou
+#	discount = yes
+#	skill = 1
+#	culture = hessian
+#	religion = catholic
+#	type = army_reformer
+#	date = 1630.1.1 #41 years old
+#	death_date = 1666.8.15 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 366
+#	name = "Huang Zongxi" # Chinese political philosopher  
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 1
+#	type = philosopher
+#	date = 1640.1.1 #30 years old 
+#	death_date = 1695.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 367
+#	name = "Gu Yanwu" # Important scholar of Ming Confucianism 
+#	location = -FLODDED- #Jizhou? 
+#	discount = yes
+#	skill = 2 
+#	type = philosopher 
+#	date = 1643.7.15 #30 years old 
+#	death_date = 1682.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 1270
+#    name = "Hishikawa Moronobu" # the First Painter of Ukiyo-e
+#    location = -FLODDED- #Musashi
+#    discount = yes
+#	skill = 2 #during this time period
+#    type = artist
+#    date = 1658.1.1 #Active as Painer in Edo
+#    death_date = 1694.7.25 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 368
+#	name = "Wang Fuzhi" # Political thinker opposed to the Manchu government
+#	location = -FLODDED- #Jizhou? 
+#	discount = yes
+#	skill = 1
+#	type = philosopher 
+#	date = 1659.1.1 #40 years old
+#	death_date = 1692.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 369
+#	name = "Ferdinand Verbiest" # Belgian Jesuit missionary in China
+#	location = -FLODDED- #Jizhou (Beijing)
+#	discount = yes
+#	skill = 1
+#	culture = wallonian
+#	religion = catholic
+#	type = natural_scientist
+#	date = 1660.1.1 #Arrived in Beijing
+#	death_date = 1688.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 370
+#	name = "Yan Yuan" # An iconoclastic critic of neo-confucianism 
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 1  
+#	type = philosopher
+#	date = 1670.1.1 #35 years old
+#	death_date = 1704.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 371
+	name = "Seki Takakazu" # Japan's greatest mathemetician and arguably one of the world's greatest ever. Discovered ideas that would not be learned in the west simultainously until shortly thereafter and did things like duplicicating results dirived by Calculus.
+	location = 865 #Shinano
+	discount = yes
+	skill = 3
+	type = natural_scientist
+	date = 1672.1.1 #30 years old
+	death_date = 1708.10.24 #death
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 372
+#	name = "Shi Lang" # Chinese Admiral
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 2
+#	type = naval_reformer
+#	date = 1683.1.1 #granted title "General Who Maintains Peace on the Seas"
+#	death_date = 1696.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 1271
+#    name = "Matsuo Basho" # the Greatest Haiku Poet
+#    location = -FLODDED- #Musashi
+#    discount = yes
+#	skill = 2 #during this time period
+#    type = artist #could also be a inquisitor, since his travels were to search local daimyos.
+#    date = 1684.8.1 #His first travel around Japan
+#    death_date = 1694.11.28 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 373
+#	name = "Yamamoto Tsunetomo" # Author of the 'Hagakure', the Book of the Samurai
+#	location = -FLODDED- #Hizen
+#	discount = yes
+#	skill = 1
+#	type = commandant
+#	date = 1689.6.12 #30 years old
+#	death_date = 1719.1.1 #dies
+#}
+
+advisor = {
+	advisor_id = 374
+	name = "Arai Hakuseki" # Japanese confucianist known for his economic reforms
+	location = 862 #Echigo
+	discount = yes
+	skill = 2
+	type = treasurer
+	date = 1693.1.1 #36 years old 
+	death_date = 1757.6.29 #dies
+}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 375
+#	name = "Nian Gengyao" # Famous Chinese General
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 2
+#	type = army_organiser
+#	date = 1709.1.1 #comes to note
+#	death_date = 1725.1.13 #goes out of favor & demoted
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 376
+#	name = "Giuseppe Castiglione" # aka Láng Shìníng, Italian painter, court artist and Jesuit missionary
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 1
+#	culture = lombard
+#	religion = catholic
+#	type = artist
+#	date = 1715.1.1 #27 years old
+#	death_date = 1766.1.1 #dies
+#}
+
+##################################################  
+# Era #4  1720 - 1810  (5/25)
+##################################################  
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 377
+#	name = "Cao Zhan" # Author of the famous Chinese work 'Dream of the Red Chamber'
+#	location = -FLODDED- #Jizhou
+#	discount = yes
+#	skill = 2
+#	type = artist
+#	date = 1745.1.1 #30 years old
+#	death_date = 1763.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 378
+#	name = "Dai Zhen" # Ablest philosopher of the Ch'ing era 
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 2
+#	type = philosopher
+#	date = 1750.1.19 #26 years old
+#	death_date = 1777.1.1 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 379
+#	name = "Xu Yang" # Court painter 
+#	location = -FLODDED- #Jiangsu (born near Nanking ?)
+#	discount = yes
+#	skill = 1
+#	type = artist
+#	date = 1750.1.1 #active ca. 1750–76
+#	death_date = 1776.1.1 #no longer active
+#}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 1272
+#    name = "Tanuma Okitsugu" # Marcantile Reformer under two Shoguns
+#    location = -FLODDED- #Musashi
+#    discount = yes
+#	skill = 2 #during this time period
+#    type = treasurer
+#    date = 1751.7.12 #became adviser of Shogun Tokugawa Ienobu
+#    death_date = 1788.7.27 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 380
+#	name = "Heshen" # Courtier to Ch'ien Lung who became a grand councilor  
+#	location = -FLODDED- #Jizhou?
+#	discount = yes
+#	skill = 1 
+#	type = statesman
+#	date = 1770.1.1 #20 years old
+#	death_date = 1799.2.22 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 1273
+#    name = "Matsudaira Sadanobu" # Morale Reformer of the Shogunate
+#    location = -FLODDED- #Musashi
+#    discount = yes
+#	skill = 2 #during this time period
+#    type = inquisitor # Due to his policy of restriction
+#    date = 1786.9.17 #became adviser of Shogun Tokugawa Ienobu
+#    death_date = 1829.6.24 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#	advisor_id = 381
+#	name = "Katsushika Hokusai" # Artist, painter, wood engraver and ukiyo-e maker
+#	location = -FLODDED- #Musachi
+#	discount = yes
+#	skill = 3 #during this time period
+#	type = artist 
+#	date = 1795.1.1 #started traveling
+#	death_date = 1849.5.10 #dies
+#}
+
+#advisor = { #Removed because province was flodded
+#    advisor_id = 1274
+#    name = "Ino Tadataka" # The most important Surveyor and Cartographer in this period, completed the first map of Japan
+#    location = -FLODDED- #Musashi
+#    discount = yes
+#	skill = 2 #during this time period
+#    type = navigator # Due to his policy of restriction
+#    date = 1800.1.1 #started his travel around Japan to survey
+#    death_date = 1818.5.17 #dies
+#}
+
+# CURRENT TOTAL IS = 54
+
+####################################################
+# End of file
+####################################################
+

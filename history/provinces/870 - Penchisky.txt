@@ -1,0 +1,21 @@
+#870 - Penchisky
+
+owner = CHV
+controller = CHV
+add_core = CHV
+culture = kamchatkan
+religion = tengri_pagan_reformed
+capital = "Penzhinsky"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = KMC
+discovered_by = CHU
+discovered_by = YKU
+discovered_by = HOD
+discovered_by = CHV
+discovered_by = ANU

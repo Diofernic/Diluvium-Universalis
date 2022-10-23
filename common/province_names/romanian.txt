@@ -1,0 +1,7 @@
+109 = "Timis"
+110 = "Bihor"
+111 = "Mures"
+212 = "Suceava"
+1563 = "Dobrogea"
+1734 = "Hunedoara"
+1735 = "Maramures"

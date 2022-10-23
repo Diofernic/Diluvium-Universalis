@@ -1,0 +1,226 @@
+namespace = flavor_ter
+normal_or_historical_nations = yes
+
+province_event = {
+	id = flavor_ter.1
+	title = flavor_ter.1.t
+	desc = flavor_ter.1.desc
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					1064 = {
+						is_empty = no
+					}
+					529 = {
+						is_empty = no
+					}
+					2386 = {
+						is_empty = no
+					}
+					531 = {
+						is_empty = no
+					}
+					528 = {
+						is_empty = no
+					}
+					532 = {
+						is_empty = no
+					}
+					any_province = {
+						OR = {
+							area = molluca_area
+							area = timor_area
+							area = spice_islands_area
+							area = sulawesi_area
+						}
+						is_empty = yes
+					}
+				}
+				random_province = {
+					limit = {
+						OR = {
+							area = molluca_area
+							area = timor_area
+							area = spice_islands_area
+							area = sulawesi_area
+						}
+						is_empty = yes
+					}
+					set_global_flag = spice_islands_mostly_full
+					save_event_target_as = ter_colony_province
+				}
+			}
+			else_if = {
+				limit = {
+					1064 = {
+						is_empty = no
+					}
+					529 = {
+						is_empty = no
+					}
+					2386 = {
+						is_empty = no
+					}
+					531 = {
+						is_empty = no
+					}
+					528 = {
+						is_empty = no
+					}
+					532 = {
+						is_empty = no
+					}
+					molluca_area = {
+						type = all
+						is_empty = no
+					}
+					timor_area = {
+						type = all
+						is_empty = no
+					}
+					spice_islands_area = {
+						type = all
+						is_empty = no
+					}
+					sulawesi_area = {
+						type = all
+						is_empty = no
+					}
+				}
+				set_global_flag = spice_islands_full
+			}
+		}
+	}
+	
+	option = { # halmahera
+		name = flavor_ter.1.a
+		goto = 532
+		trigger = {
+			532 = {
+				is_empty = yes
+			}
+		}
+		532 = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # manado
+		name = flavor_ter.1.b
+		goto = 528
+		trigger = {
+			528 = {
+				is_empty = yes
+			}
+		}
+		528 = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # ceram
+		name = flavor_ter.1.c
+		goto = 531
+		trigger = {
+			531 = {
+				is_empty = yes
+			}
+		}
+		531 = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # sula
+		name = flavor_ter.1.d
+		goto = 2386
+		trigger = {
+			2386 = {
+				is_empty = yes
+			}
+		}
+		2386 = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # sula
+		name = flavor_ter.1.e
+		goto = 529
+		trigger = {
+			529 = {
+				is_empty = yes
+			}
+		}
+		529 = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # manokwari
+		name = flavor_ter.1.f
+		goto = 1064
+		trigger = {
+			1064 = {
+				is_empty = yes
+			}
+		}
+		1064 = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # event target
+		name = flavor_ter.1.g
+		goto = ter_colony_province
+		trigger = {
+			NOT = { has_global_flag = spice_islands_full }
+			has_global_flag = spice_islands_mostly_full
+		}
+		event_target:ter_colony_province = {
+			create_colony = 200
+			set_permanent_province_flag = spice_island_colony_flag
+			add_permanent_province_modifier = {
+				name = spice_colony_province_modifier
+				duration = -1
+			}
+		}
+	}
+	option = { # no options
+		name = flavor_ter.1.h
+		trigger = {
+			has_global_flag = spice_islands_full
+		}
+		owner = {
+			add_prestige = 5
+		}
+	}
+}

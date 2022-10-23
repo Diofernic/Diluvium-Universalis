@@ -1,0 +1,20 @@
+#880 - Yakutsk
+
+owner = YKU
+controller = YKU
+add_core = YKU
+culture = yakut
+religion = tengri_pagan_reformed
+capital = "Yakutsk"
+trade_goods = gems
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = TUG
+discovered_by = BRT
+discovered_by = YKU
+discovered_by = HOD
+discovered_by = CHV

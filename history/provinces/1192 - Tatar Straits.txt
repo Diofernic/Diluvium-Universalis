@@ -1,0 +1,8 @@
+discovered_by = chinese
+discovered_by = nomad_group
+discovered_by = BRT
+discovered_by = YKU
+discovered_by = HOD
+discovered_by = CHV
+discovered_by = KMC
+discovered_by = CHU

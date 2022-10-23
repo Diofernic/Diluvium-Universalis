@@ -1,0 +1,23 @@
+8 = "Jämtland"
+
+804 = "Nya Götheborg"
+
+2745 = "Birkaland"
+2771 = "Kajanaland"
+
+1119 = "Sankt Tomas"
+1760 = "Nya Kaledonien"
+1762 = "Påskön"
+929 = "Sankta Helena"
+1768 = "Galápagosöarna"
+
+1761 = "Sällskapsöarna"
+1535 = "Tuamotuöarna"
+1059 = "Salomonöarna"
+927 = "Kap Verde"
+1788 = "Sydgeorgien"
+926 = "Falklandsöarna"
+653 = "Eldslandet"
+299 = "Azorerna"
+1764 = "Mikronesien"
+1000 = { "Godahoppsudden" "Kapstaden" }

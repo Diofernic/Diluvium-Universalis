@@ -1,0 +1,156 @@
+country_decisions = {
+
+	tatar_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_golden_horde_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = MUG }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+			NOT = { tag = TUR }
+			NOT = { tag = BYZ }
+			NOT = { exists = GLH }
+			culture_group = tartar
+			has_reform = steppe_horde
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 20
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					OR = {
+						province_id = 242	#Tambov
+						province_id = 243	#Saratov
+						province_id = 392	#Kypchak
+						province_id = 913	#Kazan
+						province_id = 1581	#Qasim
+						province_id = 2122	#Mansur
+					}
+				}
+				AND = {
+					OR = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					OR = {
+						province_id = 234	#Tver
+						province_id = 235	#Moscow
+						province_id = 241	#Ryazan
+						province_id = 247	#Vladimir
+						province_id = 248	#Yaroslavl
+						province_id = 1739	#Suzdal
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = GLH }
+			has_reform = steppe_horde
+			owns_core_province = 242	#Tambov
+			owns_core_province = 243	#Saratov
+			owns_core_province = 392	#Kypchak
+			owns_core_province = 913	#Kazan
+			owns_core_province = 1581	#Qasim
+			owns_core_province = 2122	#Mansur
+			234 = { #Tver
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			235 = { #Moscow
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			241 = { #Ryazan
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			247 = { #Vladimir
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			248 = { #Yaroslavl
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1739 = { #Suzdal
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_cities = 30
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			change_tag = GLH
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				set_country_flag = formed_golden_horde_flag
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			crimea_region = {
+				add_permanent_claim = GLH
+			}
+			kazan_area = {
+				add_permanent_claim = GLH
+			}
+			volga_area = {
+				add_permanent_claim = GLH
+			}
+			bashkiria_area = {
+				add_permanent_claim = GLH
+			}
+			ural_area = {
+				add_permanent_claim = GLH
+			}
+			ishim_area = {
+				add_permanent_claim = GLH
+			}
+			aqmola_area = {
+				add_permanent_claim = GLH
+			}
+			yrtesh_area = {
+				add_permanent_claim = GLH
+			}
+			ob_area = {
+				add_permanent_claim = GLH
+			}
+			nogai_area = {
+				add_permanent_claim = GLH
+			}
+			kazakhstan_area = {
+				add_permanent_claim = GLH
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

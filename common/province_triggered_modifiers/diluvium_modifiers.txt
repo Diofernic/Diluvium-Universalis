@@ -1,0 +1,106 @@
+religious_center = {
+	potential = {
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		if = {
+			limit = {
+				province_id = 72 #Rome
+			}
+			religion = catholic
+		}
+		else_if = {
+			limit = {
+				province_id = 315 #Mecca
+			}
+			religion_group = muslim
+		}
+		else_if = {
+			limit = {
+				province_id = 556 #Lhasa
+			}
+			religion = vajrayana
+		}
+		else_if = {
+			limit = {
+				province_id = 1825 #Doaba
+			}
+			religion = sikhism
+		}
+		else_if = {
+			limit = {
+				province_id = 1848 #Kandy
+			}
+	
+			religion = buddhism
+		}
+		else_if = {
+			limit = {
+				province_id = 1955 #Mashad
+			}
+			religion = shiite
+		}
+		else_if = {
+			limit = {
+				province_id = 2968 #Ise
+			}
+			religion = shinto
+		}
+		else_if = {
+			limit = {
+				province_id = 4381 #Geneva
+			}
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 210 #Prague
+			}
+			religion = hussite
+		}
+	}
+
+	local_missionary_strength = -0.05
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+}
+
+empty_siberian_province = {
+	potential = {
+		#always = yes
+		is_city = no
+	}
+
+	trigger = {
+		OR = {
+			NOT = { is_in_capital_area = yes }
+			owner = {
+				is_tribal = yes
+			}
+		}
+		is_city = no
+	}
+
+	local_colonial_growth = -1000
+	
+	#Province scope
+	on_activation = {
+	}
+	
+	on_deactivation = {
+	
+	}
+}

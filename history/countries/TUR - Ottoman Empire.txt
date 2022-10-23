@@ -1,0 +1,51 @@
+government = monarchy
+add_government_reform = ottoman_government
+primary_culture = turkish
+religion = sunni
+technology_group = ottoman
+historical_rival = RML
+historical_rival = BYZ
+historical_rival = HAB
+capital = 254 #Bursa
+national_focus = MIL
+add_army_professionalism = 0.1
+religious_school = hanafi_school
+
+1439.1.1 = {
+	leader = {
+		name = "Hadim Sehabeddin"
+		type = general
+		fire = 3
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1453.9.9
+		personality = inspirational_leader_general_personality
+	}
+}
+	
+1444.1.1 = {
+	monarch = {
+		name = "Mehmed I"
+		dynasty = Osmanoglu
+		birth_date = 1389.1.1
+		death_date = 1450.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Murad"
+		monarch_name = "Murad II"
+		dynasty = "Osmanoglu"
+		birth_date = 1404.6.16
+		death_date = 1470.1.1
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+}

@@ -1,0 +1,17 @@
+#2147 - Ust-Kut
+
+owner = BRT
+controller = BRT
+core = BRT
+culture = buryat
+religion = tengri_pagan_reformed
+capital = "Ust-Kut"
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = nomad_group
+discovered_by = BRT

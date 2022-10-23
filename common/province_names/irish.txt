@@ -1,0 +1,21 @@
+303 = "Tir Eoghain"
+304 = "Laighin"
+305 = "Tuadhmhumhain"
+2742 = "Sligeach"
+2743 = "Ulaidh"
+2983 = "Deas-Mhumhain"
+2984 = "Uí Failghe"
+
+2979 = "Diabhal" #Devon
+181 = "Corn na Breataine" #Cornwall
+192 = "Kembrea" #Cumbria
+2973 = "Oileán Mhanann" #Mann
+193 = "Dún Éideann" #Lothian
+198 = "Inse Gall" #Outer Hebridies
+2972 = "Na hInse Gall" #Inner Hebridies
+2974 = "An Baile Nua" #Montgomery
+2752 = "Mianach" #Somerset
+2980 = "Tiomnaíonn" #Dorset
+182 = "Contae an Deiscirt" #Hampshire
+2977 = "Geal" #Sussex
+2978 = "Foireann" #Coventry

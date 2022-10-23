@@ -1,0 +1,47 @@
+#2133 - Nenets
+
+culture = samoyed
+religion = tengri_pagan_reformed #Sami Shamanism
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur 
+base_manpower = 1
+capital = "Pustozyorsk"
+native_size = 10
+native_ferocity = 1
+native_hostileness = 3
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = SWE
+discovered_by = NOR
+discovered_by = DAN
+discovered_by = FIN
+discovered_by = GOT
+discovered_by = SHL
+discovered_by = SCA
+discovered_by = NOV
+discovered_by = MOS
+discovered_by = PSK
+discovered_by = RUS
+discovered_by = RYA
+discovered_by = TVE
+discovered_by = YAR
+discovered_by = PLT
+discovered_by = SMO
+discovered_by = NZH
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+
+1500.1.1 = {
+	owner = RUS
+	controller = RUS
+	add_core = RUS
+	religion = orthodox
+	culture = russian
+	is_city = yes
+}

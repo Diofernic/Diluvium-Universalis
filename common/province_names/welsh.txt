@@ -1,0 +1,39 @@
+#England
+181 = "Cernyw" #Cornwall
+2979 = "Dyfnaint" #Devon
+2752 = "Gwlad yr Haf" #Somerset
+2980 = "Caersallog" #Dorset
+182 = "Caerwynt" #Hampshire
+190 = "Efrog" #York
+189 = "Gwersyllbom" #Lancashire
+190 = "Cwm y Don" #Sheffield
+192 = "Manceinion" #Cumbria
+191 = "Castellnewydd" #Northumberland
+2978 = "Caerlwytgoed" #Coventry
+2977 = "Caerfuddal" #Sussex
+#Scotland
+2973 = "Ynys Manaw" #Man
+194 = "Aeron" #Ayrshire
+193 = "Lleuddiniawn" #Lothain
+198 = "Ynysoedd Heledd" #Outer Hebrides
+2972 = "Yr Ynys Hir" #Inner Hebrides
+2971 = "Llyn Llumonwy" #Argyll
+195 = "Moryd Gweryd" #Perth
+1755 = "Ynys Fharo" #Faroe Islands
+197 = "Llynness" #Inverness
+2734 = "Gogledd yr Alban" #Sutherland
+2970 = "Otadyni" #Roxburghshire
+#Ireland
+2743 = "Wlster" #Ulster
+303 = "Gogledd Iwerddon" #Tyrone
+#Patagonia
+656 = "Lle Cul"
+2530 = "Nant y Pysgod"
+2526 = "Cwm Hyfryd"
+2525 = "Rhyd yr Indiaid"
+2523 = "Porth Antur"
+#Misc
+121 = "Norddmandi" #Caen
+120 = "Abersyn" #Caux
+309 = "Caersalem" #Jerusalem
+1761 = { "New Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch" "New Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch" } #Society Islands

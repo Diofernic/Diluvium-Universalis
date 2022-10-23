@@ -1,0 +1,38 @@
+government = monarchy
+add_government_reform = ottoman_government
+primary_culture = turkish
+add_accepted_culture = bulgarian
+add_accepted_culture = greek
+religion = sunni
+historical_rival = TUR
+technology_group = ottoman
+capital = 2417 #Filibe
+national_focus = MIL
+add_army_professionalism = 0.1
+religious_school = hanafi_school
+	
+1444.1.1 = {
+	monarch = {
+		name = "Süleyman I"
+		dynasty = Osmanoglu
+		birth_date = 1377.1.1
+		death_date = 1450.1.1
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Bayezid"
+		monarch_name = "Bayezid I"
+		dynasty = "Osmanoglu"
+		birth_date = 1423.1.1
+		death_date = 1470.1.1
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 3
+	}
+}

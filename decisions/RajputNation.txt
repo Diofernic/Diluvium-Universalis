@@ -1,0 +1,114 @@
+country_decisions = {
+
+	rajput_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_rajputana_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				NOT = { exists = RJP }
+				ai = no
+			}
+			primary_culture = rajput
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 10
+				}
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 415	#Multan
+				province_id = 423	#Marwar
+				province_id = 424	#Girnar
+				province_id = 426	#Chittor
+				province_id = 427	#Dhundar
+				province_id = 433	#Gird
+				province_id = 1806	#Patan
+				province_id = 1817	#Nagaur
+				province_id = 1818	#Gorwar
+				province_id = 1825	#Doaba
+				province_id = 1844	#Varanasi
+				province_id = 4062	#Ujjain
+				province_id = 4066	#Ranthambore
+				province_id = 4088	#Kannauj
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = RJP }
+			adm_tech = 10
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			owns_core_province = 415	#Multan
+			owns_core_province = 423	#Marwar
+			owns_core_province = 424	#Girnar
+			owns_core_province = 426	#Chittor
+			owns_core_province = 427	#Dhundar
+			owns_core_province = 433	#Gird
+			owns_core_province = 1806	#Patan
+			owns_core_province = 1817	#Nagaur
+			owns_core_province = 1818	#Gorwar
+			owns_core_province = 1825	#Doaba
+			owns_core_province = 1844	#Varanasi
+			owns_core_province = 4062	#Ujjain
+			owns_core_province = 4066	#Ranthambore
+			owns_core_province = 4088	#Kannauj
+		}
+		effect = {
+			4088 = {
+				move_capital_effect = yes
+			}
+			change_tag = RJP
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			4088 = {
+			 	add_base_tax = 1
+				add_base_production = 1
+			 	add_base_manpower = 1
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = RJP
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					NOT = { technology_group = indian }
+				}
+				change_technology_group = indian
+				change_unit_type = indian
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			set_country_flag = formed_rajputana_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

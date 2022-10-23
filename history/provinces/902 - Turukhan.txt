@@ -1,0 +1,25 @@
+#902 - Turukhan
+
+owner = SMY
+controller = SMY
+add_core = SMY
+culture = samoyed
+religion = tengri_pagan_reformed #Sami Shamanism
+capital = "Turukhan"
+trade_goods = fur
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+
+is_city = yes
+
+discovered_by = OST
+discovered_by = SMY
+discovered_by = TUG
+discovered_by = BRT
+
+add_permanent_province_modifier = {
+	name = yenisei_estuary_modifier
+	duration = -1
+}

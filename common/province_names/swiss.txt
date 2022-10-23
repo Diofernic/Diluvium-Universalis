@@ -1,0 +1,4 @@
+4382 = "Fribourg"
+1663 = "Valais"
+1659 = "Vaud"
+4381 = "Genève"

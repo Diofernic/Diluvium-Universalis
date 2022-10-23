@@ -1,0 +1,5 @@
+54 = "Picårdeye"
+56 = "Serè"
+57 = "Lussimbork"
+1669 = "Åxhe"
+4394 = "Djulé"

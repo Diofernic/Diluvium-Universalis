@@ -1,0 +1,3 @@
+487 = "Nokor Sri Thommareach"
+503 = "Koreach"
+2097 = "Sri Nakorn Lamduan"

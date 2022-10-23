@@ -1,0 +1,292 @@
+558 = Seongdo
+575 = Seoan
+579 = "Yeongwon"
+601 = "Simyang"
+605 = "Gillim"
+606 = "Samseong"
+607 = Hamheung
+608 = Hwangju
+609 = Wonju
+610 = Hanseong
+611 = Sangju
+612 = Jeonju
+859 = Gyeongdo
+1618 = Bukgyeong
+1632 = Daehwa
+1633 = "Gil'an"
+1635 = Nakyang
+1643 = Pyeongyang
+1648 = "Anju"
+1855 = "Yeongan"
+1856 = "Yongwon"
+1857 = "Baekdonap"
+1859 = "Jolbon"
+1860 = Bakjak
+1861 = Geonan
+1924 = "Hoeryeong"
+2363 = Gangneung
+2408 = Jeju
+2409 = Yukjin
+2410 = Gyeongseong
+2411 = Yeongbyeon
+2412 = Gyeongju
+2800 = Bijeon
+2807 = Sangmo
+2817 = "Geonju"
+2832 = "Anwon"
+2842 = Jinju
+2843 = Naju
+2844 = Chungju
+2845 = Suwon
+2846 = Ganggye
+
+
+#Manchu/Mongol
+597 = "Cheollimok" #Jirem
+598 = "Seoklimgwak" #Xilin Gol
+602 = "Hoewon" #Aigun
+603 = "Goju" #Tuwan
+604 = "Yeongju" #Bohori
+884 = "Haeranpo" #Hailanboo
+888 = "Heungan" #Hinggan
+1648 = { "Jeongri" "Jeongju" } #Yaran
+1854 = "Baekryeok" #Kuru
+1856 = { "Yongwon" "Mokju" } #Huncun
+1858 = { "Jangryeong" "Haju" }#Yehe
+1859 = "Hangju" #Heta Ala
+1863 = "Bochang" #Chahar
+1921 = "Nungang" #Mergen
+1922 = "Miju" #Iman
+1923 = { "Buyeo" "Buju" } #Sartu
+2816 = { "Makhil" "Makju" } #Hulan
+2817 = { "Amnok" "Sinju" } #Jianzhou
+2818 = "Taenyeong" #Taining
+2819 = "Jeokbong" #Ju Ud
+2838 = Hatu #Hetao
+4227 = { "Hyeondeok" "Hyeonju" } #Maolian
+4228 = "Balju" #Fu'erhe
+4229 = "Shillimyeon" #Shilimian
+4230 = { "Anbyeon" "Anju" } #Wolanhe
+4234 = "Cheolli" #Tunhe
+4235 = { "Yongcheon" "Hoju" } #Edala
+4237 = { "Dongpyeong" "Taju" } #Hurha
+4246 = "Joyang" #Josutu
+4249 = "Tongryo" #Bayisingtu
+4252 = Hwarim #Qaraqorum
+
+
+
+#Japan
+868 = Garyangbuji #Sakhalin, Karafuto
+867 = "Cheondo Yeoldo" #The Kurils
+4226 = { "Daema" "Daema" } #Tsushima
+854 = { "Yugu" "Suri" } #Okinawa
+1650 = { "Donghai" "Sipseung" } #Tokachi
+866 = { "Jeunguya" "Sangcheon" } #Kamikawa
+1645 = { "Seohai" "Huji" } #Shiribeshi
+2810 = { "Songjeon" "Seungsan" } #Oshima
+2753 = { "Yugo" "Samhojeong" } #Mutsu
+2809 = { "Uhu" "Chujeon" } #Ugo
+863 = { "Ujeon" "Sanhyeong" } #Uzen
+864 = { "Yukjeon" "Hoejin" } #Rikuzen
+2808 = { "Haya" "Udogung" } #Shimotsuke
+1641 = { "Sangya" "Jeongyo" } #Kozuke
+2806 = { "Sinnong" "Jang'ya" } #Shinano
+865 = { "Gapbi" "Gapbu" } #Kai
+1638 = { "Junha" "Junbu" } #Suruga
+2969 = { "Samha" "Gang'gi" } #Mikawa
+1634 = { "Minong" "Doyeopsan" } #Mino
+2805 = { "Gii" "Hwagasan" } #Kii
+862 = { "Wolhu" "Jikgangjin" } #Echigo
+1636 = { "Woljung" "Geumtaek" } #Etchu
+861 = { "Woljeon" "Musaeng" } #Echizen
+2803 = { "Danhu" "Gungjin" } #Tango
+1630 = { "Danma" "Jochwi" } #Tajima
+857 = { "Unju" "Songgang" } #Izumo
+2801 = { "Seokgyeon" "Byeongjeon" } #Iwami
+858 = { "Pama" "Huiro" } #Harima
+2802 = { "Biju" "Gangsan" } #Bizen
+1625 = { "Anun" "Byeongpo" } #Aki
+856 = { "Jubang" "Sangu" } #Suo
+1622 = { "Aju" "Deokdo" }#Awa
+2804 = { "Iyeo" "Songsan" } #Iyo (Yuzuki seems to be the name of the castle in Iyo that the Kono clan ruled from, while Matsuyama covers the broader capital region in their realm. Songsan sounds better than Tangchuk, so I went with the former.)
+1621 = { "Tojwa" "Jungchon" } #Tosa
+852 = { "Salma" "Nok'ado" } #Satsuma
+2798 = { "Ilhyang" "Eobi" } #Hyuga
+2799 = { "Bihu" "Ungbon" } #Higo
+853 = { "Punghu" "Bunae" } #Bungo
+1620 = { "Chukjeon" "Bakda" } #Chikuzen
+2800 = { "Bijeon" "Janggi" } #Hizen
+859 = { "Gyeongdo" "Gyeongdo" } #Kyoto
+1632 = { "Daehwa" "Naeryang" } #Yamato
+2807 = { "Sangmo" "Gyeomchang" } #Sagami
+
+#North China
+578 = Yeolha #Chengde, Rehe
+2811 = Yeongpyeong #Yongping
+1884 = Seonhwa #Xuanhua
+
+571 = Bojeong #Baoding
+2812 = Jeongjeong #Zhending
+
+572 = Daedong #Datong
+1913 = Yeongmu #Ningwu
+569 = Taewon #Taiyuan
+570 = Aneup #Pingyang
+
+1915 = Yeonan #Yan'an
+2814 = Bongsang #Fengxiang
+565 = Hanjung #Hanzhong
+
+573 = Yeongha #Ningxia
+1917 = Pyeongryang #Pingliang
+574 = Nanju #Lanzhou
+1916 = Cheonsu #Tianshui
+1919 = Minju #Taozhou
+
+1918 = Seoryang #Liangzhou
+1920 = Seoryeong #Xining
+583 = Jangaek #Zhangye
+582 = Okmun #Yumen
+
+568 = Hoegyeong #Huaiqing
+
+567 = Jenam #Jinan
+1886 = Yeonju #Yanzhou
+566 = Ikdo #Qingzhou
+1885 = Naeju #Laizhou
+
+564 = Namyang #Nanyang
+
+1637 = Hapbi #Hefei
+
+#Xinan
+1909 = Songban #Songqu
+1908 = Nangjung #Langzhong
+2827 = Dalju #Dazhou
+
+2828 = Gaju #Jiazhou
+559 = Junggyeong #Chongqing
+
+2829 = Noju #Luzhou
+1907 = Paju #Bozhou
+554 = Omong #Umung
+2415 = Geonchang #Jianchang
+
+1906 = Yeogang #Lijiang
+543 = Daeri #Dali
+1905 = Deokgoeng #Dehong
+1904 = Boi #Pu'er
+
+2815 = Dongin #Tongren
+552 = Jinwon #Zhenyuan
+553 = Gwiyang #Guiyang
+544 = Unnam #Yunnan
+545 = Gwangnam #Guangnan
+
+#South China
+1887 = Yeongguk #Ningguo
+1888 = Hwiju #Huizhou
+
+2813 = Hwanggang #Huangzhou
+561 = Muchang #Wuchang
+1910 = Yangyang #Xiangyang
+
+551 = Mureung #Wuling
+550 = Jangsa #Changsha
+1911 = Wonreung #Yuanling
+1912 = Hyeongyang #Hengyang
+
+562 = Namchang #Nanchang
+1892 = Payang #Poyang
+549 = Gamju #Ganzhou
+
+563 = Hangju #Hangzhou
+1889 = Soheung #Shaoxin
+1890 = Yeongpa #Ningbo
+1891 = Geumhwa #Jinhua
+1624 = Onju #Wenzhou
+
+1893 = Geonnyeong #Jianning
+548 = Bokju #Fuzhou
+1629 = Cheonju #Quanzhou
+1894 = Jeongju #Tingzhou
+
+1897 = Joju #Chaochow
+1898 = Hyeju #Waichow
+1899 = Sogwan #Shiukwan
+
+1639 = Gyerim #Guilin
+1901 = Oju #Ngchow
+1902 = Yuju #Liuzhou
+546 = Neungun #Lingyun
+1903 = Namnyeong #Namning
+
+547 = Jogyeong #Shiuhing
+1900 = Aeju #Ngaichow
+
+1895 = Daebuk #Kelang, Taipei
+1896 = Daejung #Middag, Taichung
+613 = Daenam #Sakam, Tainan
+
+#More China
+542 = "Gyeonghong" #Sibsongbanna
+576 = "I'geuk" #Ordos
+577 = "Gwihwa" #Hohhot
+584 = "Anapseon" #Alxa
+1100 = "Hatu" #Hetao
+1862 = "Iryeon" #Ereen
+1927 = "Aekjenap" #Ejin
+1914 = "No'an" #Lu'an
+4245 = "Museong"
+4250 = "Padan Gillim" #Badain Jaran
+
+#Tibet
+555 = "Ilgaekcheuk" #Shigatse
+556 = { "Seonggwan" "Napsal" }#Lhasa
+557 = "Tajeonro" #Tachienlu
+580 = "Gyeonggo" #Gyegu
+581 = "Sidalmok" #Tsaidam
+1876 = "Ari" #Ngari
+1878 = "Imji" #Nyingchi
+1879 = "Changdo" #Qamdo
+1880 = "Mang'gang" #Markam
+1881 = "Gaeng'gyeong" #Dege
+1882 = "Taekgo" #Rebgong
+1883 = "Gangjeong" #Garze
+2820 = "Anjeong" #Anding
+2821 = "Nagok" #Nagchu
+4100 = "Salga" #Sakya
+4101 = "Gillyung" #Gyirong
+4102 = "Boran" #Purang
+4103 = "Naedong" #Nedong
+4104 = "Choposa" #Tsurphu
+4105 = "Dang'ung" #Damxung
+4106 = "Ilto" #Rutog
+
+#Vietnam
+498 = "Pyeongjeong" #Qui Nhon
+501 = "Cheonghwa" #Thanh Hoa
+506 = "Gopyeong" #Cao Bang
+855 = "Hajeong" #Ha Tinh
+860 = "Tanang" #Da Nang
+1642 = "Jinyeong" #Xiangkhouang
+2089 = "Sanra" #Song La
+2091 = "Sunhwa" #Hue
+2092 = "Ajang" #Kauthara
+496 = "Seowon" #Tay Nguyen
+2090 = "Gwangnyeong" #Quang Ninh
+4408 = "Heunghwa" #Hung Hoa
+4409 = "Ye'an" #Nghe An
+4410 = Gwangye #Amaravati, Quang Nga
+
+
+#New World
+733 = Naseong #Chumash, Los Angeles
+
+#Others
+589 = "Hwabong" #Hoboksar
+614 = "Gaeksip" #Kashgar
+1000 = "Huimangbong" #Cape
+1872 = "Sacha" #Yarkand
+4212 = "Sanghang" #San Fransisco/Ohlone
