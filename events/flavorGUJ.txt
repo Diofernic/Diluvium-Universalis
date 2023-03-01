@@ -99,7 +99,9 @@ country_event = {
 		name = flavor_guj.2.b #We will not fund more vanity projects
 		trigger = { NOT = { has_dlc = "Dharma" } }
 		ai_chance = { factor = 10 }
+		
 	}
+	
 }
 
 
@@ -161,6 +163,7 @@ country_event = {
 		months = 24
 	}
 	
+	
 	option = { 
 		name = flavor_guj.4.a #All is lost.
 		add_prestige = -15
@@ -184,6 +187,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 33
 	}
+	
 	
 	option = {
 		name = flavor_guj.5.a #What a clear sighted man!
@@ -373,6 +377,7 @@ country_event = {
 		months = 48
 	}
 	
+	
 	option = { 
 		name = flavor_guj.11.a
 		add_piety = -0.15
@@ -384,6 +389,7 @@ country_event = {
 		name = flavor_guj.11.b
 		add_piety = -0.10
 	}
+	
 }
 
 # Qissa-i Sanjan
@@ -432,6 +438,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 180
 	}
+	
 	
 	option = { 
 		name = flavor_guj.13.a

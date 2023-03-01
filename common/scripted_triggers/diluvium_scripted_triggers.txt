@@ -1,0 +1,251 @@
+can_have_center_of_reformation_trigger = { #Province Scope
+	#$RELIGION$ needs to match the religion of the center that is being spawned.
+	continent = europe
+	OR = {
+		religion = protestant
+		religion = catholic
+		religion = reformed
+	}
+	NOT = { province_id = 72 }
+	is_in_capital_area = yes
+	is_reformation_center = no
+	is_island = no
+	expelling_minorities = no
+	development = 10
+	NOT = {
+		any_neighbor_province = {
+			is_reformation_center = yes
+		}
+	}
+	NOT = {
+		any_province = {
+			area = PREV
+			is_reformation_center = yes
+			religion = $RELIGION$
+		}
+	}
+	NOT = { has_climate = arctic }
+	NOT = { has_climate = arid }
+	NOT = { has_terrain = coastline }
+	NOT = { has_terrain = coastal_desert }
+	NOT = { has_terrain = steppe }
+	NOT = { has_terrain = desert }
+	NOT = { has_terrain = glacier }
+	NOT = { has_climate = tropical }
+}
+
+#Province scope
+is_trade_node_province = {
+	custom_trigger_tooltip = {
+		tooltip = is_trade_node_province_tt
+		OR = {
+			province_id = 29	#Dresden
+			province_id = 61	#Milan
+			province_id = 70	#Florence
+			province_id = 87	#Vienna
+			province_id = 106	#Pest
+			province_id = 135	#Reims
+			province_id = 206	#Krakow
+			province_id = 224	#Kiev
+			province_id = 235	#Moscow
+			province_id = 281	#Marrakech
+			province_id = 295	#Cairo
+			province_id = 307	#Aleppo
+			province_id = 351	#Teheran
+			province_id = 376	#Samarkand
+			province_id = 416	#Lahore
+			province_id = 432	#Central Doab
+			province_id = 479	#Ava
+			province_id = 556	#Lhasa
+			province_id = 558	#Chengdu
+			province_id = 575	#Xi'an
+			province_id = 582	#Yumen
+			province_id = 605	#Jilin
+			province_id = 670	#Chiquitos
+			province_id = 679	#Lima
+			province_id = 704	#Panama
+			province_id = 899	#Tomsk
+			province_id = 913	#Kazan
+			province_id = 956	#Timbuktu
+			province_id = 972	#Katsina
+			province_id = 1014	#Tete
+			province_id = 1084	#Straits of Dover
+			province_id = 1089	#Cote d'Argent
+			province_id = 1106	#Straits of Gibraltar
+			province_id = 1109	#Gulf of Lion
+			province_id = 1133	#Sea of Marmara
+			province_id = 1136	#Sea of Asov
+			province_id = 1139	#Caspian Sea
+			province_id = 1144	#Gulf of Aden
+			province_id = 1147	#Strait of Hormuz
+			province_id = 1150	#Gulf of Gujarat
+			province_id = 1153	#Comorin Cape
+			province_id = 1156	#Ganges Sea
+			province_id = 1170	#Flores Sea
+			province_id = 1174	#Lingga Sea
+			province_id = 1184	#Guangzhou Bay
+			province_id = 1186	#Southern Yellow Sea
+			province_id = 1189	#South Korean Sea
+			province_id = 1224	#Great Barrier Reef
+			province_id = 1261	#Zanzibar Strait
+			province_id = 1273	#Cape of Good Hope
+			province_id = 1279	#Ivory Coast
+			province_id = 1299	#James Bay
+			province_id = 1303	#Gulf of St. Lawrence
+			province_id = 1314	#Cape Hatteras
+			province_id = 1328	#Jamaica Channel
+			province_id = 1343	#Coast of Pernambuco
+			province_id = 1348	#La Plata Bay
+			province_id = 1363	#Manzanillo Bay
+			province_id = 1464	#White Sea
+			province_id = 1502	#Midway Island
+			province_id = 1669	#Aachen
+			province_id = 1714	#Eastern Baltic
+			province_id = 1731	#Bidar
+			province_id = 1754	#North Sea
+			province_id = 1784	#Miwok
+			province_id = 2199	#Coahuilteco
+			province_id = 2225	#Shatteras
+			province_id = 2439	#Dembiya
+			province_id = 2523	#San Antonio
+			province_id = 2688	#Buganda
+			province_id = 2721	#Luba
+			province_id = 2847	#Bohai Sea
+			province_id = 2852	#Belgrade
+			province_id = 2967	#Philippine Trench
+			province_id = 4148	#Zaghwan
+			province_id = 4270	#Basra Gulf
+			province_id = 4298	#Chao Phraya Bay
+			province_id = 4313	#Mississippi Gulf
+			province_id = 4334	#Southern Amazonas Sea
+		}
+	}
+}
+
+is_inland_trade_node_province = {
+	custom_trigger_tooltip = {
+		tooltip = is_inland_trade_node_province_tt
+		OR = {
+			province_id = 87	#Vienna
+			province_id = 106	#Pest
+			province_id = 135	#Reims
+			province_id = 224	#Kiev
+			province_id = 351	#Teheran
+			province_id = 416	#Lahore
+			province_id = 556	#Lhasa
+			province_id = 558	#Chengdu
+			province_id = 575	#Xi'an
+			province_id = 582	#Yumen
+			province_id = 956	#Timbuktu
+			province_id = 972	#Katsina
+			province_id = 1014	#Tete
+			province_id = 1731	#Bidar
+			province_id = 2439	#Dembiya
+			province_id = 2688	#Buganda
+			province_id = 2721	#Luba
+		}
+	}
+}
+
+is_not_inland_trade_node_province = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_inland_trade_node_province_tt
+		NOT = { province_id = 87 }		#Vienna
+		NOT = { province_id = 106 }		#Pest
+		NOT = { province_id = 135 }		#Reims
+		NOT = { province_id = 224 }		#Kiev
+		NOT = { province_id = 351 }		#Teheran
+		NOT = { province_id = 416 }		#Lahore
+		NOT = { province_id = 556 }		#Lhasa
+		NOT = { province_id = 558 }		#Chengdu
+		NOT = { province_id = 575 }		#Xi'an
+		NOT = { province_id = 582 }		#Yumen
+		NOT = { province_id = 956 }		#Timbuktu
+		NOT = { province_id = 972 }		#Katsina
+		NOT = { province_id = 1014 }	#Tete
+		NOT = { province_id = 1731 }	#Bidar
+		NOT = { province_id = 2439 }	#Dembiya
+		NOT = { province_id = 2688 }	#Buganda
+		NOT = { province_id = 2721 }	#Luba
+	}
+}
+
+#Province scope
+is_european_trade_node_province = {
+	OR = {
+		province_id = 29	#Dresden
+		province_id = 61	#Milan
+		province_id = 70	#Florence
+		province_id = 87	#Vienna
+		province_id = 2852	#Belgrade
+		province_id = 106	#Pest
+		province_id = 135	#Reims
+		province_id = 206	#Krakow
+		province_id = 224	#Kiev
+		province_id = 235	#Moscow
+		province_id = 913	#Kazan
+		province_id = 1084	#Straits of Dover
+		province_id = 1089	#Cote d'Argent
+		province_id = 1106	#Straits of Gibraltar
+		province_id = 1109	#Gulf of Lion
+		province_id = 1133	#Sea of Marmara
+		province_id = 1136	#Sea of Asov
+		province_id = 1464	#White Sea
+		province_id = 1669	#Aachen
+		province_id = 1714	#Eastern Baltic
+		province_id = 1754	#North Sea
+	}
+}
+
+#Province scope
+is_indian_trade_node_province = {
+	OR = {
+		province_id = 416	#Lahore
+		province_id = 432	#Central Doab
+		province_id = 1150	#Gulf of Gujarat
+		province_id = 1153	#Comorin Cape
+		province_id = 1156	#Ganges Sea
+		province_id = 1731	#Bidar
+	}
+}
+
+#Province scope
+is_african_trade_node_province = {
+	OR = {
+		province_id = 281	#Marrakech
+		province_id = 295	#Cairo
+		province_id = 956	#Timbuktu
+		province_id = 972	#Katsina
+		province_id = 1014	#Tete
+		province_id = 1144	#Gulf of Aden
+		province_id = 1261	#Zanzibar Strait
+		province_id = 1273	#Cape of Good Hope
+		province_id = 1279	#Ivory Coast
+		province_id = 2439	#Dembiya
+		province_id = 2688	#Buganda
+		province_id = 2721	#Luba
+		province_id = 4148	#Zaghwan
+	}
+}
+
+#Province scope
+is_american_trade_node_province = {
+	OR = {
+		province_id = 670	#Chiquitos
+		province_id = 679	#Lima
+		province_id = 704	#Panama
+		province_id = 1299	#James Bay
+		province_id = 1303	#Gulf of St. Lawrence
+		province_id = 1314	#Cape Hatteras
+		province_id = 1328	#Jamaica Channel
+		province_id = 1343	#Coast of Pernambuco
+		province_id = 1348	#La Plata Bay
+		province_id = 1363	#Manzanillo Bay
+		province_id = 1784	#Miwok
+		province_id = 2199	#Coahuilteco
+		province_id = 2225	#Shatteras
+		province_id = 2523	#San Antonio
+		province_id = 4313	#Mississippi Gulf
+		province_id = 4334	#Southern Amazonas Sea
+	}
+}

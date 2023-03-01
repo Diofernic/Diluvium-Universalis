@@ -48,12 +48,16 @@ country_decisions = {
 			owns_core_province = 190	#Yorkshire
 			owns_core_province = 2978	#Coventry
 			owns_core_province = 2979	#Devon
+			2978 = { 					#Coventry
+				is_state = yes
+			}
 		}
 		effect = {
 			2978 = { #Coventry
 				move_capital_effect = yes
 			}
 			change_tag = ENG
+			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {

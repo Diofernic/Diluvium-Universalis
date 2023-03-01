@@ -163,7 +163,7 @@ incident_king_in_prussia = {
 				is_subject = yes
 			}
 			PRU = {
-				government_rank = 2
+				NOT = { government = monarchy }
 			}
 		}
 	}

@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BYZ }
 			NOT = { exists = GRE }
 			NOT = { tag = HLR }
@@ -60,6 +64,9 @@ country_decisions = {
 			owns = 1577	#Achea
 			owns = 1651	#Kastoria
 			owns = 2024	#Balikesir
+			104 = {		#Constantinople
+				is_state = yes
+			}
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -69,6 +76,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = BYZ
+			restore_country_name = yes
 			if = {
 				limit = {
 					NOT = { culture_group = byzantine }
@@ -146,7 +154,7 @@ country_decisions = {
 			set_country_flag = formed_byzantium_flag
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }

@@ -6,51 +6,88 @@ country_decisions = {
 				has_country_modifier = thalassocracy
 			}
 			OR = {
-				70 = { #Florence
+				#Northern Europe
+				29 = {		#Saxony
 					is_strongest_trade_power = ROOT
 				}
-				61 = { #Milan
+				1714 = {	#Baltic Sea
 					is_strongest_trade_power = ROOT
 				}
-				278 = { #Tunis
+				1084 = {	#English Channel
 					is_strongest_trade_power = ROOT
 				}
-				90 = { #Ragusa
+				1754 = {	#North Sea
 					is_strongest_trade_power = ROOT
 				}
-				295 = { #Alexandria
-					is_strongest_trade_power = ROOT
-				}
-				
-				29 = {	#Saxony
-					is_strongest_trade_power = ROOT
-				}
-				1714 = { #Baltic Sea
-					is_strongest_trade_power = ROOT
-				}
-				1084 = { #English Channel
-					is_strongest_trade_power = ROOT
-				}
-				1754 = { #North Sea
-					is_strongest_trade_power = ROOT
-				}
-				1667 = { #Rheinland
+				1667 = {	#Rheinland
 					is_strongest_trade_power = ROOT
 				}
 				
-				1144 = { #Gulf of Aden
+				#Western Mediterranean
+				1106 = {	#Cordoba
 					is_strongest_trade_power = ROOT
 				}
-				1150 = { #Indus
+				1109 = {	#Gulf of Lion
 					is_strongest_trade_power = ROOT
 				}
-				1153 = { #Ceylon
+				70 = {		#Florence
 					is_strongest_trade_power = ROOT
 				}
-				1156 = { #Bengal
+				4148 = {	#Tunisia
 					is_strongest_trade_power = ROOT
 				}
-				1174 = { #Malacca
+				281 = {		#Marrakech
+					is_strongest_trade_power = ROOT
+				}
+				
+				#Eastern Mediterranean
+				61 = {		#Milan
+					is_strongest_trade_power = ROOT
+				}
+				2852 = {	#Belgrade
+					is_strongest_trade_power = ROOT
+				}
+				295 = {		#Suez
+					is_strongest_trade_power = ROOT
+				}
+				1133 = {	#Bosporus
+					is_strongest_trade_power = ROOT
+				}
+				307 = {		#Aleppo
+					is_strongest_trade_power = ROOT
+				}
+				
+				#Western Indian Ocean
+				1261 = {	#Swahili Coast
+					is_strongest_trade_power = ROOT
+				}
+				1144 = {	#Gulf of Aden
+					is_strongest_trade_power = ROOT
+				}
+				1147 = {	#Hormuz Strait
+					is_strongest_trade_power = ROOT
+				}
+				1150 = {	#Gujarat
+					is_strongest_trade_power = ROOT
+				}
+				1153 = {	#Coromandel
+					is_strongest_trade_power = ROOT
+				}
+				
+				#Eastern Indian Ocean
+				1156 = {	#Bengal
+					is_strongest_trade_power = ROOT
+				}
+				4298 = {	#Siam
+					is_strongest_trade_power = ROOT
+				}
+				1174 = {	#Malacca
+					is_strongest_trade_power = ROOT
+				}
+				1170 = {	#Moluccas
+					is_strongest_trade_power = ROOT
+				}
+				2967 = {	#Philippines
 					is_strongest_trade_power = ROOT
 				}
 			}
@@ -59,41 +96,41 @@ country_decisions = {
 			full_idea_group = maritime_ideas
 			OR = {
 				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_a_tt
+					tooltip = confirm_thalassocracy_b_tt
 					AND = {
-						70 = { #Florence
+						29 = {		#Saxony
 							is_strongest_trade_power = ROOT
 						}
-						61 = { #Milan
+						1714 = {	#Baltic Sea
 							is_strongest_trade_power = ROOT
 						}
-						278 = { #Tunis
+						1084 = {	#English Channel
 							is_strongest_trade_power = ROOT
 						}
-						90 = { #Ragusa
+						1754 = {	#North Sea
 							is_strongest_trade_power = ROOT
 						}
-						295 = { #Alexandria
+						1667 = {	#Rheinland
 							is_strongest_trade_power = ROOT
 						}
 					}
 				}
 				custom_trigger_tooltip = {
-					tooltip = confirm_thalassocracy_b_tt
+					tooltip = confirm_thalassocracy_a_tt
 					AND = {
-						29 = {	#Saxony
+						1106 = {	#Cordoba
 							is_strongest_trade_power = ROOT
 						}
-						1714 = { #Baltic Sea
+						1109 = {	#Gulf of Lion
 							is_strongest_trade_power = ROOT
 						}
-						1084 = { #English Channel
+						70 = {		#Florence
 							is_strongest_trade_power = ROOT
 						}
-						1754 = { #North Sea
+						4148 = {	#Tunisia
 							is_strongest_trade_power = ROOT
 						}
-						1667 = { #Rheinland
+						281 = {		#Marrakech
 							is_strongest_trade_power = ROOT
 						}
 					}
@@ -101,19 +138,59 @@ country_decisions = {
 				custom_trigger_tooltip = {
 					tooltip = confirm_thalassocracy_c_tt
 					AND = {
-						1144 = { #Gulf of Aden
-						is_strongest_trade_power = ROOT
-						}
-						1150 = { #Indus
+						61 = {		#Milan
 							is_strongest_trade_power = ROOT
 						}
-						1153 = { #Ceylon
+						2852 = {	#Belgrade
 							is_strongest_trade_power = ROOT
 						}
-						1156 = { #Bengal
+						295 = {		#Suez
 							is_strongest_trade_power = ROOT
 						}
-						1174 = { #Malacca
+						1133 = {	#Bosporus
+							is_strongest_trade_power = ROOT
+						}
+						307 = {		#Aleppo
+							is_strongest_trade_power = ROOT
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = confirm_thalassocracy_d_tt
+					AND = {
+						1261 = {	#Swahili Coast
+							is_strongest_trade_power = ROOT
+						}
+						1144 = {	#Gulf of Aden
+							is_strongest_trade_power = ROOT
+						}
+						1147 = {	#Hormuz Strait
+							is_strongest_trade_power = ROOT
+						}
+						1150 = {	#Gujarat
+							is_strongest_trade_power = ROOT
+						}
+						1153 = {	#Coromandel
+							is_strongest_trade_power = ROOT
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = confirm_thalassocracy_e_tt
+					AND = {
+						1156 = {	#Bengal
+							is_strongest_trade_power = ROOT
+						}
+						4298 = {	#Siam
+							is_strongest_trade_power = ROOT
+						}
+						1174 = {	#Malacca
+							is_strongest_trade_power = ROOT
+						}
+						1170 = {	#Moluccas
+							is_strongest_trade_power = ROOT
+						}
+						2967 = {	#Philippines
 							is_strongest_trade_power = ROOT
 						}
 					}

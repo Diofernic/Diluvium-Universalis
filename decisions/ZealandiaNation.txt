@@ -62,11 +62,9 @@ country_decisions = {
 					}
 				}
 			}
-			NOT = {
-				AND = {
-					owned_by = ROOT
-					is_city = yes
-				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
 			}
 		}
 		allow = {
@@ -199,11 +197,9 @@ country_decisions = {
 					}
 				}
 			}
-			NOT = {
-				AND = {
-					owned_by = ROOT
-					is_city = yes
-				}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
 			}
 		}
 		allow = {

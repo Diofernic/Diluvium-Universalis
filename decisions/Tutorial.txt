@@ -4,7 +4,7 @@ country_decisions = {
 		potential = {
 			is_tutorial_active = yes
 			tag = CAS
-			owns = 168
+			owns = 168		#Madrid
 			OR = {
 				ai = no
 				AND = {
@@ -48,7 +48,7 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					owns = 166	# Madrid
+					owns = 166				#Madrid
 					NOT = { capital = 166 }
 				}
 				set_capital = 166

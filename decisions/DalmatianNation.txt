@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = HLR }
 			NOT = { tag = DAL }
 			NOT = { tag = CRO }
@@ -36,13 +40,15 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 83			#Istria
-				province_id = 89			#Dalmatia
-			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+			AND = {
+				OR = {
+					province_id = 83			#Istria
+					province_id = 89			#Dalmatia
+				}
+				ROOT = {
+					NOT = { owns_core_province = 83 }
+					NOT = { owns_core_province = 89 }
+				}
 			}
 		}
 		allow = {
@@ -104,4 +110,5 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
 }

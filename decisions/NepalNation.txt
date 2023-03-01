@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				primary_culture = nepali
 				primary_culture = pahari
 			}
@@ -57,6 +61,9 @@ country_decisions = {
 			owns_core_province = 4077	#Morang
 			owns_core_province = 4078	#Makwanpur
 			owns_core_province = 4079	#Palpa
+			457 = {						#Kathmandu
+				is_state = yes
+			}
 		}
 		effect = {
 			if = {
@@ -74,6 +81,7 @@ country_decisions = {
 				}
 			}
 			change_tag = NPL
+			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -116,7 +124,20 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 457	#Kathmandu
+						owns_core_province = 1821	#Ghurka
+						owns_core_province = 4077	#Morang
+						owns_core_province = 4078	#Makwanpur
+						owns_core_province = 4079	#Palpa
+						amount = 2
+					}
+				}
+			}
 		}
 		ai_importance = 400
 	}

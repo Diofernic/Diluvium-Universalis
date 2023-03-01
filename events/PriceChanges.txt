@@ -1132,6 +1132,9 @@ country_event = {
 		months = 60
 	}
 	
+	immediate = { 
+		hidden_effect = { set_global_flag = decline_of_spices_happened }
+	}
 	
 	option = {
 		name = prices.22.a
@@ -1312,14 +1315,6 @@ country_event = {
 			}
 			change_trade_goods = dyes
 		}
-#		random_owned_province = {
-#			limit = {
-#				area = bihar_area
-#				NOT = { trade_goods = silk }
-#				NOT = { trade_goods = dyes }
-#			}
-#			change_trade_goods = dyes
-#		}
 		every_owned_province = {
 			limit = { trade_goods = dyes }
 			add_unrest = 5

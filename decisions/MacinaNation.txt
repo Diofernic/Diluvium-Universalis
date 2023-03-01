@@ -9,6 +9,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = ZAF }
 			OR = {
 				ai = no
@@ -39,10 +43,9 @@ country_decisions = {
 				#province_id = 941	#Futa Jallon
 				province_id = 944	#Bambuk
 			}
-			AND = {
+			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
-				is_city = yes
 			}
 		}
 		allow = {

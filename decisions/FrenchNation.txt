@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = HLR }
 			NOT = { tag = FRA }
 			NOT = { tag = PAP }
@@ -21,6 +25,7 @@ country_decisions = {
 			OR = {
 				culture_group = french
 				primary_culture = basque
+				primary_culture = breton
 			}
 			is_colonial_nation = no
 			OR = {
@@ -33,17 +38,14 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 132	#Île-de-France
-				province_id = 133	#Orléannais
-				province_id = 135	#Champagne
 				AND = {
 					region = france_region
-					ROOT = {
+					root = {
 						NOT = {
 							num_of_owned_provinces_with = {
 								value = 15
 								region = france_region
-								is_core = ROOT
+								is_core = root
 							}
 						}
 						owns_core_province = 132
@@ -51,6 +53,9 @@ country_decisions = {
 						owns_core_province = 135
 					}
 				}
+				province_id = 132	#Paris
+				province_id = 133	#Orleans
+				province_id = 135	#Reims
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -62,13 +67,16 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
 			NOT = { exists = FRA }
-			owns_core_province = 132	# Île-de-France
-			owns_core_province = 133	# Orléannais
-			owns_core_province = 135	# Champagne
+			owns_core_province = 132	#Paris
+			owns_core_province = 133	#Orleans
+			owns_core_province = 135	#Reims
+			132 = { 					#Paris
+				is_state = yes
+			}
 			num_of_owned_provinces_with = {
 				value = 15
 				region = france_region
-				is_core = ROOT
+				is_core = root
 			}
 		}
 		effect = {
@@ -76,6 +84,7 @@ country_decisions = {
 				move_capital_effect = yes
 			}
 			change_tag = FRA
+			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {

@@ -466,11 +466,7 @@ province_event = {
 		}
 		set_province_flag = renewed_promise
 		hidden_effect = {
-			40 = {
-				province_event = {
-					id = trade_company_events.9 days = 365
-				}
-			}
+			40 = { province_event = { id = trade_company_events.9 days = 365 } }
 		}
 	}
 	option = {	# Support them in other ways

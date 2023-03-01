@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				AND = {
 					tag = BUR
 					NOT = { has_dlc = "Emperor" }
@@ -31,7 +35,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			province_id = 1669
+			province_id = 1669		#Aachen
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -44,6 +48,9 @@ country_decisions = {
 			NOT = { exists = LOT }
 			num_of_cities = 30
 			owns_core_province = 1669
+			1669 = {		#Aachen
+				is_state = yes
+			}
 			OR = {
 				NOT = {
 					hre_size = 1
@@ -52,7 +59,7 @@ country_decisions = {
 			}
 		}
 		effect = {
-			1669 = {
+			1669 = {		#Aachen
 				move_capital_effect = yes
 			}
 			change_tag = LOT

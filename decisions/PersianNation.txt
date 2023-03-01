@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				ai = no
 				NOT = { exists = PER }
 			}
@@ -136,7 +140,29 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 337		#Hamadan
+						owns_core_province = 352		#Isfahan
+						owns_core_province = 356		#Yazd
+						owns_core_province = 1947		#Qom
+						owns_core_province = 1949		#Qazvin
+						OR = {
+							owns_core_province = 349	#Amol
+							owns_core_province = 1952	#Shiraz
+						}
+						OR = {
+							owns_core_province = 339	#Tabriz
+							owns_core_province = 355	#Kerman
+							owns_core_province = 1955	#Mashhad
+						}
+						amount = 5
+					}
+				}
+			}
 		}
 		ai_importance = 400
 	}

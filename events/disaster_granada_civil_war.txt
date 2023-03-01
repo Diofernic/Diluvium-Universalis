@@ -111,7 +111,7 @@ country_event = {
 			limit = {
 				has_heir = yes
 			}
-			remove_heir = yes
+			remove_heir = {}
 		}
 		define_heir = {
 			dynasty = ROOT
@@ -120,8 +120,8 @@ country_event = {
 			age = 45
 			male = yes
 			adm = 2
+			dip = 1
 			mil = 4
-			fixed = yes
 			culture = ROOT
 			religion = ROOT
 			block_disinherit = yes

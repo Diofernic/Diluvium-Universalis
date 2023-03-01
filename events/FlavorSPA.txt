@@ -1657,13 +1657,16 @@ country_event = {
 			name = "valladolid_sepulveda_motherland"
 			duration = 3650
 		}
-		every_subject_country = {
-			limit = {
-				is_colonial_nation_of = ROOT
-			}
-			add_country_modifier = {
-				name = "valladolid_sepulveda"
-				duration = 3650
+		custom_tooltip = flavor_spa.2.a.tt
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					is_colonial_nation_of = ROOT
+				}
+				add_country_modifier = {
+					name = "valladolid_sepulveda"
+					duration = 3650
+				}
 			}
 		}
 	}

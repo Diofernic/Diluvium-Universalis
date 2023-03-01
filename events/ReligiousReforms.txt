@@ -92,6 +92,7 @@ country_event = {
 				}
 				set_province_flag = civil_war_prov_2
 			}
+			
 			random_owned_province = {
 				limit = { has_province_flag = civil_war_prov_1 }
 				pretender_rebels = 4

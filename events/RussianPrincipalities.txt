@@ -128,7 +128,7 @@ country_event = {
 		}
 		define_heir = {
 			dynasty = ROOT
-			DIP = 4
+			change_dip = 4
 			claim = 50
 		}
 	}
@@ -139,7 +139,7 @@ country_event = {
 		}
 		define_ruler = {
 			dynasty = ROOT
-			DIP = 4
+			change_dip = 4
 			claim = 50
 		}
 	}
@@ -843,6 +843,9 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			capital_scope = {
+				save_event_target_as = brothers_appanage
+			}
 			random_owned_province = {
 				limit = {
 					is_capital = no
@@ -881,6 +884,7 @@ country_event = {
 	option = {
 		name = russian_principality_events.8.b #Confiscate to State
 		trigger = { num_of_cities = 2 }
+		goto = brothers_appanage
 		ai_chance = {
 			factor = 50
 		}

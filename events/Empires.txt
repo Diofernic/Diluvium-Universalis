@@ -313,6 +313,7 @@ country_event = {
 		event_target:invest_province = {
 			add_base_manpower = 1
 		}
+		
 	}
 }
 

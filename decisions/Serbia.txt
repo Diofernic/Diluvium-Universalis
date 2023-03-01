@@ -7,7 +7,10 @@ country_decisions = {
 			NOT = { has_country_flag = moved_capital_to_belgrade }
 		}
 		allow = {
-			owns_core_province = 2852
+			owns_core_province = 2852	#Belgrade
+			2852 = {
+				is_state = yes
+			}
 			stability = 1
 			adm_power = 50
 			2852 = {

@@ -36,7 +36,6 @@ country_event = {
 			72 = {
 				add_great_project_tier = {
 					type = stpeters_cathedral
-					tier = 1
 				}
 			}
 		}
@@ -342,6 +341,7 @@ country_event = {
 		custom_tooltip = can_join_council_of_trent_tt
 		PAP = {
 			add_opinion = {
+				who = ROOT
 				modifier = opinion_trent
 			}
 		}
@@ -376,6 +376,7 @@ country_event = {
 			num_of_cities = 15
 		}
 		exists = PAP
+		NOT = { has_country_flag = had_sublimis_deus_event }
 	}
 	mean_time_to_happen = {
 		months = 12
@@ -383,12 +384,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			set_country_flag = had_sublimis_deus_event
 			every_country = {
 				limit = {
 					religion = catholic
 					any_subject_country = {
 						is_colonial_nation = yes
 					}
+					NOT = { has_country_flag = had_sublimis_deus_event }
 				}
 				country_event = { id = flavor_pap.10 days = 3 }
 			}

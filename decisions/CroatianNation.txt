@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = HLR }
 			NOT = { tag = CRO }
 			NOT = { tag = PAP }
@@ -85,7 +89,12 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			OR = {
-				owns_core_province = 84		#Zagreb
+				AND = {
+					owns_core_province = 84			#Zagreb
+					84 = { 							#Zagreb
+						is_state = yes
+					}
+				}
 				owns_core_province = 89		#Dalmatia
 			}
 			num_of_owned_provinces_with = {
@@ -100,7 +109,17 @@ country_decisions = {
 		}
 		effect = {
 			add_prestige = 25
-			84 = { move_capital_effect = yes }
+			if = {
+				limit = {
+					owns_core_province = 84	#Zagreb
+					84 = {
+						is_state = yes
+					}
+				}
+				84 = {
+					move_capital_effect = yes
+				}
+			}
 			change_tag = CRO
 			swap_non_generic_missions = yes
 			if = {
@@ -164,4 +183,5 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
 }

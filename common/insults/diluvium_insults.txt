@@ -1,0 +1,22 @@
+insult_rome = {
+	trigger = {
+		capital_scope = { province_id = 72 } #Rome
+	}
+}
+
+insult_diamonds = {
+	trigger = {
+		owns = 445 #Golconda
+		FROM = { capital_scope = { continent = europe } }
+	}
+}
+
+insult_against_england = {
+	trigger = {
+		owns = 2978
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	}
+}

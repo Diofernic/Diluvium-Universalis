@@ -415,7 +415,6 @@ province_event = {
 		trigger = {
 			owner = { ruler_has_personality_ancestor = { key = scholar } }
 		}
-		required_personality = scholar_personality
 		area = {
 			add_province_modifier = {
 				name = "medical_evolution"
@@ -511,7 +510,6 @@ province_event = {
 		name = "personality_options.5073.a"
 		highlight = yes
 		trigger = { owner = { ruler_has_personality_ancestor = { key = industrious } } }
-		required_personality = industrious_personality
 		add_base_production = 1
 		add_base_tax = 1
 	}
@@ -519,7 +517,6 @@ province_event = {
 		name = "personality_options.5073.b"
 		highlight = yes
 		trigger = { owner = { ruler_has_personality_ancestor = { key = entrepreneur } } }
-		required_personality = entrepreneur_personality
 		add_base_production = 1
 		add_base_manpower = 1
 	}
@@ -527,7 +524,6 @@ province_event = {
 		name = "personality_options.5073.c"
 		highlight = yes
 		trigger = { owner = { ruler_has_personality_ancestor = { key = expansionist } } }
-		required_personality = expansionist_personality
 		add_base_manpower = 1
 		add_base_tax = 1
 	}

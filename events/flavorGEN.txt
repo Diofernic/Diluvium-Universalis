@@ -209,7 +209,7 @@ country_event = {
 		OR = {
 			NOT = {TUR = { owns = 104 } }			#Constantinople
 			war_with = TUR
-			NOT = {
+			NOT = { 
 				azov_area = { owned_by = GEN }
 				2121 = { owned_by = GEN }
 			}
@@ -219,12 +219,15 @@ country_event = {
 				who = GEN
 				name = genoese_access_to_black_sea
 			}
-		}
+		}		
+		
+		
 	}
 	
 	mean_time_to_happen = {
 		months = 1
 	}
+	
 	
 	option = {
 		name = flavor_gen.7.a
@@ -398,7 +401,6 @@ country_event = {
 			ADM = 5
 			MIL = 6
 			attach_leader = "Andrea Doria"
-			fixed = yes
 		}		
 		if = {
 			limit = {
@@ -423,6 +425,7 @@ country_event = {
 	
 	fire_only_once = yes
 	
+
 	trigger = {
 		tag = GEN
 		government = republic

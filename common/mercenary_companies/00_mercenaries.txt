@@ -6,6 +6,7 @@ merc_lombard_free_company = {
 	cavalry_cap = 4
 	sprites = { dlc056_mlo_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		custom_trigger_tooltip = {
 			tooltip = italian_wars_flag_tt
 			has_global_flag = italian_wars_global_flag
@@ -45,7 +46,8 @@ merc_tuscan_free_company = {
 	cavalry_weight = 0.2
 	cavalry_cap = 4
 	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
-   trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		custom_trigger_tooltip = {
 			tooltip = italian_wars_flag_tt
 			has_global_flag = italian_wars_global_flag
@@ -81,12 +83,14 @@ merc_tuscan_free_company = {
 # Black Army (Hungary)
 merc_black_army = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	cavalry_weight = 0.2
     artillery_weight = 0.4
 	cavalry_cap = 4
 	home_province = 106 #Pest
 	sprites = { dlc102_hun_sprite_pack easterngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			has_country_modifier = hun_black_army
 			has_reform = black_army_reform
@@ -101,12 +105,14 @@ merc_black_army = {
 # Black Army Reserves (Hungary)
 merc_black_army_2 = {
 	regiments_per_development = 0.04
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	cavalry_weight = 0.2
     artillery_weight = 0.4
 	cavalry_cap = 4
 	home_province = 106 #Pest
 	sprites = { dlc102_hun_sprite_pack easterngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_reform = black_army_reform
 	}
 	cost_modifier = 0.75
@@ -118,10 +124,12 @@ merc_black_army_2 = {
 # Knights Templar
 merc_knights_templar = {
 	regiments_per_development = 0.01
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	home_province = 309 #Jerusalem
 	cavalry_weight = 0.5
 	sprites = { dlc040_kni_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		custom_trigger_tooltip = {
 			tooltip = templars_tt
 			has_country_flag = knights_templar_flag
@@ -140,9 +148,11 @@ merc_knights_templar = {
 # Pontifical Swiss Guard
 merc_swiss_guard = {
     regiments_per_development = 0.02
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	home_province = 119 #Schwyz
 	sprites = { dlc029_pap_sprite_pack dlc040_pap_sprite_pack westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		tag = PAP
 		custom_trigger_tooltip = {
 			tooltip = swiss_guard_activated
@@ -162,6 +172,7 @@ merc_bande_nere = {
 	artillery_weight = 0.3
 	sprites = { dlc056_lan_sprite_pack sav_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -188,6 +199,7 @@ merc_schwarze_garde = {
 	artillery_weight = 0.3
 	sprites = { dlc028_ned_sprite_pack dlc042_ned_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -198,6 +210,9 @@ merc_schwarze_garde = {
 			has_country_modifier = swedish_mercenary_core
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_unlocked_merc_company = {
+				merc_company = merc_schwarze_garde
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = no_new_mercs_tt
@@ -214,6 +229,7 @@ merc_doppelsoeldner = {
     cost_modifier = 1.25
 	sprites = { dlc061_wur_sprite_pack dlc028_wur_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -222,6 +238,9 @@ merc_doppelsoeldner = {
 				}
 			}
 			has_country_modifier = swedish_mercenary_core
+			has_unlocked_merc_company = {
+				merc_company = merc_doppelsoeldner
+			}
 		}
 	}
 	modifier = {
@@ -237,6 +256,7 @@ merc_reislaufer = {
 	artillery_weight = 0.3
 	sprites = {  dlc103_swi_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -249,6 +269,9 @@ merc_reislaufer = {
 			has_country_modifier = swedish_mercenary_core
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_unlocked_merc_company = {
+				merc_company = merc_reislaufer
+			}
 		}
 	}
 	modifier = {
@@ -266,6 +289,7 @@ merc_hessian_jaegerkorps = {
     home_province = 1567 #Cassel
 	sprites = { dlc028_hes_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -276,6 +300,9 @@ merc_hessian_jaegerkorps = {
 			has_country_modifier = swedish_mercenary_core
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs
+			has_unlocked_merc_company = {
+				merc_company = merc_hessian_jaegerkorps
+			}
 		}
 		custom_trigger_tooltip = {
 			tooltip = new_mercs_tt
@@ -296,6 +323,7 @@ merc_routiers = {
     home_province = 123 #Finistére
 	sprites = { dlc001_bri_sprite_pack dlc087_bri_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = {
 			OR = {
 				region = france_region
@@ -306,12 +334,13 @@ merc_routiers = {
 	}
 }
 
-## Routiers/Bascoli ( Gascony, Renaissance?)
+# Routiers/Bascoli ( Gascony, Renaissance?)
 #merc_bascoli = {
 #    regiments_per_development = 0.03
 #    home_province = 173 #Labourd, flodded
 #	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
 #    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
 #		OR = {
 #			tag = ENG
 #			capital_scope = { 
@@ -331,9 +360,10 @@ merc_levends = {
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
 	cavalry_cap = 2
-    home_province = 4363 #Kotor
+    home_province = 4363 #Primorje
 	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			region = balkan_region
 		}
@@ -346,7 +376,8 @@ merc_stratioti = {
     regiments_per_development = 0.025
     home_province = 2793 #Lezhe
 	sprites = { easterngfx_sprite_pack }
-    trigger = {	
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes	
 		religion_group = christian
 		any_owned_province = {
 			region = balkan_region
@@ -364,6 +395,7 @@ merc_morlachs = {
     home_province = 1626 #Lika
 	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = balkan_region
@@ -384,6 +416,7 @@ merc_guardia_corsa = {
     home_province = 1066 #Corsica
 	sprites = { sav_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { region = italy_region }
 			any_owned_province = { area = corsica_sardinia_area }
@@ -402,6 +435,7 @@ merc_hadjuks = {
     cost_modifier = 0.75
 	sprites = { dlc102_wal_sprite_pack  easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		religion_group = christian
 		capital_scope = {
 			OR = {
@@ -423,6 +457,7 @@ merc_gallowglasses = {
     home_province = 2985 #Donegal
 	sprites = { dlc087_ire_sprite_pack lei_base_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { region = british_isles_region }
 			any_owned_province = {
@@ -451,7 +486,8 @@ merc_redshanks = {
     regiments_per_development = 0.03
     home_province = 2972 #Inner Hebrides
 	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack sco_base_sprite_pack westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		OR = {
 			capital_scope = { region = british_isles_region }
 			has_country_modifier = scottish_mercenaries
@@ -477,7 +513,8 @@ merc_scottish_guard = {
 	cavalry_cap = 2
     home_province = 197 #Inverness
 	sprites = { dlc087_sco_sprite_pack dlc001_sco_sprite_pack sco_base_sprite_pack westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		OR = {
 			capital_scope = { 
 				OR = {
@@ -505,7 +542,8 @@ merc_seimeni = {
     regiments_per_development = 0.03
     home_province = 110 #Bihar
 	sprites = { dlc102_wal_sprite_pack easterngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		OR = {
 			primary_culture = romanian
 			primary_culture = transylvanian
@@ -522,7 +560,8 @@ merc_armatoles = {
     regiments_per_development = 0.025
     home_province = 1651 #Kastoria
 	sprites = { dlc006_byz_sprite_pack easterngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		capital_scope = { 
 			OR = {
 				area = thrace_area
@@ -543,7 +582,8 @@ merc_white_company = {
     regiments_per_development = 0.03
     home_province = 182 #Hampshire
 	sprites = { dlc049_ENG_sprite_pack dlc042_eng_sprite_pack dlc028_eng_sprite_pack eng_base_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		OR = {
 			capital_scope = { region = british_isles_region }
 			any_owned_province = { region = british_isles_region }
@@ -563,6 +603,7 @@ merc_white_company = {
 #    home_province = 90 #Flanders, flodded
 #	sprites = { dlc042_ned_sprite_pack dlc028_ned_sprite_pack westerngfx_sprite_pack }
 #    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
 #		OR = {
 #			capital_scope = { 
 #				OR = {
@@ -578,6 +619,9 @@ merc_white_company = {
 #			}
 #			has_country_modifier = mercenaries_to_the_standard
 #			has_country_modifier = glut_of_mercs
+#			has_unlocked_merc_company = {
+#				merc_company = merc_flemish_company
+#			}
 #		}
 #	}
 #	modifier = {
@@ -590,7 +634,8 @@ merc_forlorn_hope = {
     home_province = 184 # Oxfordshire
 	cost_modifier = 1.2
 	sprites = { dlc049_ENG_sprite_pack dlc042_eng_sprite_pack dlc028_eng_sprite_pack eng_base_sprite_pack }
-    trigger = {	
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes	
 		capital_scope = { region = british_isles_region }
 	}
 	modifier = {
@@ -603,10 +648,11 @@ merc_forlorn_hope = {
 
 merc_buccaneer_battalion = {
     regiments_per_development = 0.05
-    home_province = 401 # Tortuga
+    home_province = 401 #Tortuga
     cost_modifier = 0.67
 	sprites = { dlc098_nss_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			custom_trigger_tooltip = {
@@ -627,10 +673,11 @@ merc_buccaneer_battalion = {
 
 merc_bandeirantes = {
     regiments_per_development = 0.05
-    home_province = 639 # Sao Vicente
+    home_province = 639 #Sao Vicente
     cost_modifier = 0.8
 	sprites = { dlc011_por_sprite_pack dlc042_por_sprite_pack westerngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		639 = {
 			is_city = yes
@@ -664,6 +711,7 @@ merc_huai_army = {
     home_province = 1635 #Luoyang
 	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -690,6 +738,7 @@ merc_xiang_army = {
     home_province = 1912 #Hengyang
 	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -717,6 +766,7 @@ merc_wolf_troops = {
     home_province = 1903 #Namning
 	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				superregion = china_superregion
@@ -739,7 +789,8 @@ merc_shanxi_guard = {
 	cavalry_cap = 2
     home_province = 1913 #Ningwu
 	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		capital_scope = {
 			OR = {
 				superregion = china_superregion 
@@ -759,7 +810,8 @@ merc_yongning_warriors = {
 	cavalry_cap = 2
     home_province = 2829 #Luzhou
 	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		capital_scope = {
 			OR = {
 				superregion = china_superregion 
@@ -776,6 +828,7 @@ merc_kanto_ronin = {
     home_province = 2808 #Shimotsuke
 	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { region = japan_region }
 	}
 	modifier = { }
@@ -787,6 +840,7 @@ merc_kyushu_wokou = {
     home_province = 1620 #Chikuzen
 	sprites = { dlc067_smz_sprite_pack jap_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = japan_region
@@ -803,7 +857,8 @@ merc_shikoku_yojimbo = {
     regiments_per_development = 0.025
     home_province = 1621 #Tosa
 	sprites = { dlc067_hsk_sprite_pack jap_base_sprite_pack }
-    trigger = {	
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes	
 		capital_scope = { region = japan_region }
 	}
 	modifier = { }
@@ -815,6 +870,7 @@ merc_purbiyas = {
     home_province = 456 #Allahabad
 	sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = india_superregion }
 	}
 	modifier = { }
@@ -828,6 +884,7 @@ merc_gorkhalis = {
     cost_modifier = 1.5
 	sprites = { dlc091_npl_sprite_pack indiangfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				superregion = india_superregion
@@ -852,6 +909,7 @@ merc_gosains = {
     home_province = 431 #Lucknow
 	sprites = { dlc092_jnp_sprite_pack indiangfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		religion = hinduism
 		any_owned_province = {
 			superregion = india_superregion
@@ -868,9 +926,10 @@ merc_tamil_company = {
 	cavalry_weight = 0.1
 	artillery_weight = 0.3
 	cavalry_cap = 2
-    home_province = 1835 # Tiruchirappalli
+    home_province = 1835 #Tiruchirappalli
 	sprites = { dlc024_vij_sprite_pack vij_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = deccan_region
@@ -883,9 +942,10 @@ merc_tamil_company = {
 
 merc_company_of_the_ganges = {
     regiments_per_development = 0.03
-    home_province = 4088 # Kannauj
+    home_province = 4088 #Kannauj
 	sprites = { dlc092_jnp_sprite_pack dlh_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = bengal_region
@@ -906,6 +966,7 @@ merc_banjara_company = {
 	home_province = 423 #Marwar
 	sprites = { dlc091_mer_sprite_pack indiangfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = india_superregion }
 	}
 	modifier = { }
@@ -920,6 +981,7 @@ merc_bukhara_band = {
 	home_province = 364 #Bukhara
 	sprites = { dlc048_tim_sprite_pack muslimgfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = persia_region
@@ -941,7 +1003,8 @@ merc_mesopotamian_mamluks = {
 	home_province = 2038 #Tikrit
 	cost_modifier = 1.1
 	sprites = { dlc080_alh_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				region = mashriq_region
@@ -969,7 +1032,8 @@ merc_nile_mamluks = {
     home_province = 295 #Cairo
 	cost_modifier = 1.5
 	sprites = { dlc002_mam_sprite_pack dlc058_mam_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		NOT = { tag = MAM }
 		NOT = { was_tag = MAM }
 		capital_scope = {
@@ -994,7 +1058,8 @@ merc_delhi_mamluks = {
 	cavalry_cap = 6
     home_province = 430 #Dehli
 	sprites = { dlh_base_sprite_pack }
-	trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		religion_group = muslim
 		capital_scope = {
 			superregion = india_superregion
@@ -1007,7 +1072,8 @@ merc_zeybeks = {
     regiments_per_development = 0.03
     home_province = 255 #Sugla
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		religion_group = muslim
 		any_owned_province = {
 			OR = {
@@ -1024,7 +1090,8 @@ merc_sekban = {
     regiments_per_development = 0.03
     home_province = 261 #Karaman
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			tag = TUR
 			capital_scope = { region = anatolia_region }
@@ -1038,7 +1105,8 @@ merc_zanj_company = {
     artillery_weight = 0.2
     home_province = 1022 #Bagamoyo
 	sprites = { dlc057_zan_sprite_pack africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				OR = {
@@ -1059,9 +1127,10 @@ merc_zanj_company = {
 merc_madagascar_company = {
     regiments_per_development = 0.05
     artillery_weight = 0.2
-    home_province = 1595 #Merina 
+    home_province = 1595 #Merina
 	sprites = { africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -1088,7 +1157,8 @@ merc_sahel_company = {
     home_province = 956 #Timbuktu
 	cost_modifier = 1.1
 	sprites = { dlc062_tmb_sprite_pack africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = sahel_region
@@ -1111,7 +1181,8 @@ merc_asafo_company = {
     home_province = 1986 #Gyaaman
 	cost_modifier = 1.1
 	sprites = { dlc062_msi_sprite_pack africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = niger_region
@@ -1129,7 +1200,8 @@ merc_nubian_company = {
     artillery_weight = 0.2
     home_province = 2460 #Soba
 	sprites = { dlc057_nub_sprite_pack africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -1156,7 +1228,8 @@ merc_tonkinese_army = {
     home_province = 2090 #Tonkin
 	sprites = { dlc041_dai_sprite_pack dlc090_south_east_asian_elephant_sprite_pack asiangfx_sprite_pack }
 	cost_modifier = 1.1
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -1185,7 +1258,8 @@ merc_mongol_mercenaries = {
 	home_province = 1926 #Qaraqorum
 	cost_modifier = 1.5
 	sprites = { dlc069_kha_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_neighbor_country = {
 				OR = {
@@ -1215,9 +1289,10 @@ merc_mongol_mercenaries = {
 merc_royal_circassian_guards = {
     regiments_per_development = 0.025
 	cost_modifier = 1.1
-    home_province = 385 # Circassia proper
+    home_province = 385 #Circassia proper
 	sprites = { dlc047_cir_sprite_pack easterngfx_sprite_pack }
-	trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		capital_scope = { 
 			OR = {
 				superregion = near_east_superregion 
@@ -1242,9 +1317,10 @@ merc_bedouin_auxiliaries = {
     cavalry_weight = 0.4
     artillery_weight = 0.1
 	cavalry_cap = 6
-    home_province = 313 # Tabuk
+    home_province = 313 #Tabuk
 	sprites = { dlc080_shm_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -1270,9 +1346,10 @@ merc_bedouin_auxiliaries = {
 
 merc_kurdish_company = {
     regiments_per_development = 0.02
-    home_province = 2903 # Arbil
+    home_province = 2903 #Arbil
 	sprites = { dlc079_hsn_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				OR = {
@@ -1294,9 +1371,10 @@ merc_kurdish_company = {
 
 merc_laz_auxiliaries = {
     regiments_per_development = 0.03
-    home_province = 1932 # Guria
+    home_province = 1932 #Guria
 	sprites = { easterngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { region = caucasia_region }
 			tag = BYZ
@@ -1307,9 +1385,10 @@ merc_laz_auxiliaries = {
 
 merc_tabarestan_company = {
     regiments_per_development = 0.03
-    home_province = 340 # Lahijan
+    home_province = 340 #Lahijan
 	sprites = { dlc079_tab_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = persia_superregion }
 	}
     modifier = { }
@@ -1319,7 +1398,8 @@ merc_novgorod_company = {
     regiments_per_development = 0.02
     home_province = 249 #Svir
 	sprites = { dlc020_nov_sprite_pack rus_base_sprite_pack easterngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = eastern_europe_superregion }
 	}
     modifier = { }
@@ -1329,7 +1409,8 @@ merc_crimean_company = {
     regiments_per_development = 0.03
     home_province = 2123 #Kyzyl-Yar
 	sprites = { dlc047_cri_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			religion_group = muslim
 			religion = tengri_pagan_reformed
@@ -1342,9 +1423,10 @@ merc_buryat_band = {
     regiments_per_development = 0.02
     artillery_weight = 0 # No artillery
 	cost_modifier = 1.1
-    home_province = 893 # Onan Gol
+    home_province = 893 #Onan Gol
 	sprites = { asiangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = east_siberia_region
@@ -1362,9 +1444,10 @@ merc_buryat_band = {
 
 merc_lithuanian_company = {
     regiments_per_development = 0.03
-    home_province = 216 # Vilnius
+    home_province = 216 #Vilnius
 	sprites = { dlc003_lit_sprite_pack dlc074_lit_sprite_pack easterngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = poland_region
@@ -1381,7 +1464,8 @@ merc_lithuanian_company = {
 #    home_province = 4382 #Groningen, flodded
 #    cost_modifier = 1.2
 #	sprites = { dlc028_ned_sprite_pack dlc042_ned_sprite_pack westerngfx_sprite_pack }
-#	trigger = {
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
 #		OR = {
 #			capital_scope = { 
 #				OR = {
@@ -1398,6 +1482,9 @@ merc_lithuanian_company = {
 #			has_country_modifier = swedish_mercenary_core
 #			has_country_modifier = mercenaries_to_the_standard
 #			has_country_modifier = glut_of_mercs
+#			has_unlocked_merc_company = {
+#				merc_company = merc_frisian_free_company
+#			}
 #		}
 #	}
 #    modifier = {
@@ -1410,8 +1497,9 @@ merc_finnish_company = {
     regiments_per_development = 0.04
     artillery_weight = 0.1
     home_province = 19 #Tavastland
-	sprites = { swe_base_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+	sprites = { dlc116_FIN_sprite_pack dlc054_swe_sprite_pack dlc028_swe_sprite_pack swe_base_sprite_pack westerngfx_sprite_pack }
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { region = scandinavia_region }
 			any_owned_province = { area = finland_area }
@@ -1428,7 +1516,8 @@ merc_almogavars = {
     home_province = 1557 #Pedreguer
     cost_modifier = 1.1
 	sprites = { dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		culture_group = iberian
 		current_age = age_of_discovery
 	}
@@ -1439,9 +1528,10 @@ merc_almogavars = {
 
 merc_moorish_battalion = {
     regiments_per_development = 0.03
-    home_province = 280 # Fez
+    home_province = 280 #Fez
 	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
-	trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		OR = {
 			capital_scope = { region = maghreb_region }
 			has_country_modifier = mercenaries_to_the_standard
@@ -1453,9 +1543,10 @@ merc_moorish_battalion = {
 
 merc_kutai_company = {
     regiments_per_development = 0.03
-	home_province = 552 # Kutai
+	home_province = 552 #Kutai
 	sprites = { asiangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = {
 				superregion = east_indies_superregion
@@ -1472,10 +1563,11 @@ merc_kutai_company = {
 
 merc_miquelet_company = {
     regiments_per_development = 0.02
-    home_province = 2632 # Urgell
+    home_province = 2632 #Urgell
 	cost_modifier = 1.1
 	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { 
 			OR = {
 				region = iberia_region
@@ -1491,9 +1583,10 @@ merc_miquelet_company = {
 
 merc_free_company_of_volunteers = {
     regiments_per_development = 0.03
-    home_province = 4161 # Sayula
+    home_province = 4161 #Sayula
 	sprites = { dlc011_spa_sprite_pack westerngfx_sprite_pack }
-	trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		is_random_new_world = no
 		4161 = {
 			is_city = yes
@@ -1517,12 +1610,13 @@ merc_free_company_of_volunteers = {
 
 merc_crabats = {
     regiments_per_development = 0.025
-    home_province = 84 # Zagreb
+    home_province = 84 #Zagreb
     cavalry_weight = 0.4
     artillery_weight = 0.1
 	cavalry_cap = 6
 	sprites = { easterngfx_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		religion_group = christian
 		OR = {
 			capital_scope = { 
@@ -1542,10 +1636,11 @@ merc_crabats = {
 
 merc_free_swiss_guard = {
     regiments_per_development = 0.025
-    home_province = 118 # Bern
+    home_province = 118 #Bern
 	cost_modifier = 1.5
 	sprites = {  dlc103_swi_sprite_pack westerngfx_sprite_pack }
-    trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		OR = {
 			capital_scope = { superregion = europe_superregion }
 			any_owned_province = {
@@ -1566,11 +1661,12 @@ merc_free_swiss_guard = {
 
 merc_colonial_rangers = {
     regiments_per_development = 0.025
-    home_province = 2254 # Eskikewakik, eventually Halifax, Nova Scotia
+    home_province = 2254 #Eskikewakik, eventually Halifax, Nova Scotia
     cost_modifier = 1.25
 	artillery_weight = 0.1
 	sprites = { dlc016_eng_sprite_pack westerngfx_sprite_pack }
-	trigger = { 
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes 
 		is_random_new_world = no
 		2254 = {
 			is_city = yes
@@ -1597,12 +1693,13 @@ merc_colonial_rangers = {
 
 merc_independent_cossack_host = {
     regiments_per_development = 0.05
-    home_province = 227 # Zaporozhia
+    home_province = 227 #Zaporozhia
 	cavalry_weight = 0.4 # lots of cavalry relative to other units
 	artillery_weight = 0 # no artillery
 	cavalry_cap = 6
 	sprites = { dlc047_zaz_sprite_pack easterngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			has_estate = estate_cossacks
 			has_reform = cossacks_reform
@@ -1621,11 +1718,12 @@ merc_independent_cossack_host = {
 
 merc_kazakh_company = {
     regiments_per_development = 0.05
-    home_province = 394 # Argyn
+    home_province = 394 #Argyn
 	cavalry_weight = 0.4
 	cavalry_cap = 6
 	sprites = { dlc048_shy_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			capital_scope = { region = central_asia_region }
 			has_estate = estate_nomadic_tribes
@@ -1643,7 +1741,8 @@ merc_yaka_free_warriors = {
     regiments_per_development = 0.03
     home_province = 2709 #Yaka
 	sprites = { africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			OR = {
 				region = central_africa_region
@@ -1658,7 +1757,8 @@ merc_great_lakes_free_warriors = {
     regiments_per_development = 0.03
     home_province = 2688 #Buganda
 	sprites = { africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			any_owned_province = {
 				region = central_africa_region
@@ -1672,9 +1772,10 @@ merc_great_lakes_free_warriors = {
 
 merc_thai_company = {
     regiments_per_development = 0.03
-    home_province = 492
+    home_province = 492 #Sukthothai
 	sprites = { ayu_base_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		any_owned_province = {
 			region = indo_china_region
 		}
@@ -1686,7 +1787,8 @@ merc_yucatan_company = {
     regiments_per_development = 0.04
     home_province = 710 #Peten
 	sprites = { dlc035_may_sprite_pack southamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		central_america_superregion = {
 			country_or_non_sovereign_subject_holds = root
@@ -1699,7 +1801,8 @@ merc_yucatan_company = {
 #    regiments_per_development = 0.03
 #    home_province = 838 #Misquito, flodded
 #	sprites = { dlc034_tpa_sprite_pack southamericagfx_sprite_pack }
-#	trigger = {
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
 #		is_random_new_world = no
 #		central_america_superregion = {
 #			country_or_non_sovereign_subject_holds = root
@@ -1710,9 +1813,10 @@ merc_yucatan_company = {
 
 merc_navajo_raiders = {
     regiments_per_development = 0.04
-    home_province = 742 # Navajo
+    home_province = 742 #Navajo
 	sprites = { dlc015_nah_sprite_pack northamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			california_region = {
@@ -1733,7 +1837,8 @@ merc_chonnonton_warriors = {
     regiments_per_development = 0.025
     home_province = 2270 #Tionontate
 	sprites = { dlc012_hur_sprite_pack northamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			northeast_america_region = {
@@ -1758,7 +1863,8 @@ merc_inuit_warriors = {
     home_province = 818 #Kwakiutl
 	cost_modifier = 1.1
 	sprites = { inuitgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			cascadia_region = {
@@ -1780,7 +1886,8 @@ merc_free_mohawks = {
     home_province = 809 #Mowhawk
 	cost_modifier = 1.1
 	sprites = { dlc012_iro_sprite_pack northamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			northeast_america_region = {
@@ -1800,7 +1907,8 @@ merc_muscogee_mercenaries = {
     regiments_per_development = 0.04
     home_province = 782 #Tuskegee
 	sprites = { dlc012_cre_sprite_pack northamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			southeast_america_region = {
@@ -1821,7 +1929,8 @@ merc_quito_company = {
     regiments_per_development = 0.04
     home_province = 690 #Quito
 	sprites = { dlc034_inc_sprite_pack southamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			peru_region = {
@@ -1837,9 +1946,10 @@ merc_quito_company = {
 
 merc_silver_company = {
     regiments_per_development = 0.04
-    home_province = 795
+    home_province = 665 #Potosi
 	sprites = { dlc034_inc_sprite_pack southamericagfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		is_random_new_world = no
 		OR = {
 			upper_peru_region = {
@@ -1863,7 +1973,8 @@ merc_dahomey_amazons = {
 	cavalry_cap = 2
     home_province = 964 #Abomey
 	sprites = { dlc062_ben_sprite_pack africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			guinea_region = {
 				country_or_non_sovereign_subject_holds = root
@@ -1893,6 +2004,7 @@ merc_gascon_musket_company = {
     cost_modifier = 1.2
 	sprites = { dlc001_amg_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
     trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		capital_scope = { superregion = europe_superregion }
 		NOT = { current_age = age_of_discovery }
 	}
@@ -1906,20 +2018,30 @@ merc_tyrolean_guard = {
     home_province = 4369 #Etschtal
 	sprites = { dlc053_hab_sprite_pack dlc029_hab_sprite_pack hab_base_sprite_pack }
     trigger = {
-		capital_scope = { region = south_german_region }
-		NOT = { current_age = age_of_discovery }
+		is_allowed_to_recruit_mercenaries = yes
+		OR = {
+			AND = {
+				capital_scope = { region = south_german_region }
+				NOT = { current_age = age_of_discovery }
+			}
+			has_unlocked_merc_company = {
+				merc_company = merc_tyrolean_guard
+			}
+		}
 	}
 	modifier = { }
 }
 
 merc_mongol_banner = {
     regiments_per_development = 0.05
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	cavalry_weight = 0.4
     artillery_weight = 0.2
 	cavalry_cap = 6
 	home_province = 593 #Govi Altay
 	sprites = { dlc069_kha_sprite_pack muslimgfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			tag = MJZ
 			tag = MHX
@@ -1938,9 +2060,11 @@ merc_mongol_banner = {
 
 merc_swiss_canton_mercenaries = {
     regiments_per_development = 0.05
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 	home_province = 118 #Bern
 	sprites = {  dlc103_swi_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		tag = SWI
 		mission_completed = emp_swi_mercenaries
 	}
@@ -1952,12 +2076,14 @@ merc_swiss_canton_mercenaries = {
 
 #merc_japanese_volunteers = {
 #    regiments_per_development = 0.02
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
 #	cavalry_weight = 0.1
 #	artillery_weight = 0.3
 #	cavalry_cap = 2
-#    home_province = 600	#Bangkok, flooded
+#    home_province = 600 #Bangkok, flooded
 #	sprites = { dlc068_jap_sprite_pack jap_base_sprite_pack }
 #    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
 #		mission_completed = mnd_siam_japan
 #	}
 #	modifier = {
@@ -1968,13 +2094,15 @@ merc_swiss_canton_mercenaries = {
 
 merc_militant_order_of_saint_joan = {
     regiments_per_development = 0.025
+	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
     cavalry_weight = 0.1
     artillery_weight = 0.2
 	cavalry_cap = 2
     home_province = 133	#Orléans
 	cost_modifier = 0.5
 	sprites = { dlc001_orl_sprite_pack dlc049_FRA_sprite_pack dlc028_fra_sprite_pack dlc054_fra_sprite_pack fra_base_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = militant_order_of_saint_joan
 	}
     modifier = {
@@ -1987,10 +2115,11 @@ merc_militant_order_of_saint_joan = {
 
 merc_eth_janissaries_company = {
     regiments_per_development = 0.03
-    home_province = 1032	#Harer
+    home_province = 1032 #Harer
 	cost_modifier = 0.25
 	sprites = { dlc002_tur_sprite_pack dlc042_tur_sprite_pack tur_base_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			AND = {
 				tag = ADA
@@ -2019,10 +2148,11 @@ merc_eth_janissaries_company = {
 
 merc_eth_musketeers_company = {
     regiments_per_development = 0.02
-    home_province = 1045	#Gonder
+    home_province = 1045 #Gonder
 	cost_modifier = 0.25
 	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		tag = ETH
 		exists = POR
 		has_global_flag = eth_portugese_company_available
@@ -2035,10 +2165,11 @@ merc_eth_musketeers_company = {
 
 merc_zim_butua_warriors = {
 	regiments_per_development = 0.03
-    home_province = 1008	#Uteve
+    home_province = 1008 #Uteve
 	cost_modifier = 0.75
 	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			is_or_was_tag = {
 				tag = RZW
@@ -2057,7 +2188,8 @@ merc_aju_mamluk_soldiers = {
 	cost_modifier = 0.75
 	cavalry_weight = 0.25
 	sprites = { dlc098_nav_sprite_pack dlc020_ara_sprite_pack dlc029_spa_sprite_pack dlc049_SPA_sprite_pack dlc053_spa_sprite_pack westerngfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		OR = {
 			AND = {
 				is_or_was_tag = {
@@ -2084,17 +2216,127 @@ merc_oyo_cavalry = {
 	cavalry_weight = 1
 	home_province = 968	#Oyo
 	sprites = { dlc062_ben_sprite_pack africangfx_sprite_pack }
-	trigger = {
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
 		has_unlocked_merc_company = {
 			merc_company = merc_oyo_cavalry
 		}
 	}
     modifier = {
 		cavalry_flanking = 0.5
-		cav_to_inf_ratio = 0.5
+		cav_to_inf_ratio = 1
 		cavalry_power = 0.2
 	}
 }
+
+#merc_hakkapeliita_cavalry = {
+#    regiments_per_development = 0.02
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+#	cost_modifier = 0.25
+#	cavalry_weight = 1
+#    home_province = 28 #Nyland, flooded
+#	sprites = { dlc116_FIN_sprite_pack dlc054_swe_sprite_pack dlc028_swe_sprite_pack swe_base_sprite_pack westerngfx_sprite_pack }
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
+#		has_unlocked_merc_company = {
+#			merc_company = merc_hakkapeliita_cavalry
+#		}
+#	}
+#    modifier = {
+#		cavalry_shock = 1 
+#		cav_to_inf_ratio = 1 
+#		movement_speed = 0.25
+#	}
+#}
+
+#merc_large_hakkapeliita_cavalry = {
+#    regiments_per_development = 0.05
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+#	cost_modifier = 0.25
+#	cavalry_weight = 1
+#    home_province = 28 #Nyland, flooded
+#	sprites = { dlc116_FIN_sprite_pack dlc054_swe_sprite_pack dlc028_swe_sprite_pack swe_base_sprite_pack westerngfx_sprite_pack }
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
+#		has_unlocked_merc_company = {
+#			merc_company = merc_large_hakkapeliita_cavalry
+#		}
+#	}
+#    modifier = {
+#		cav_to_inf_ratio = 1
+#		cavalry_shock = 1 
+#		movement_speed = 0.25
+#	}
+#}
+
+#merc_guerilla_hakkapeliita_cavalry = {
+#    regiments_per_development = 0.02
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+#	cost_modifier = 0.25
+#	cavalry_weight = 1
+#    home_province = 28 #Nyland, flooded
+#	sprites = { dlc116_FIN_sprite_pack dlc054_swe_sprite_pack dlc028_swe_sprite_pack swe_base_sprite_pack westerngfx_sprite_pack }
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
+#		has_unlocked_merc_company = {
+#			merc_company = merc_guerilla_hakkapeliita_cavalry
+#		}
+#	}
+#    modifier = {
+#		cav_to_inf_ratio = 1
+#		cavalry_shock = 1 
+#		movement_speed = 0.33
+#	}
+#}
+
+#merc_elite_hakkapeliita_cavalry = {
+#    regiments_per_development = 0.005
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+#	cost_modifier = 0.25
+#	cavalry_weight = 1
+#    home_province = 28 #Nyland, flooded
+#	sprites = { swe_base_sprite_pack westerngfx_sprite_pack }
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
+#		has_unlocked_merc_company = {
+#			merc_company = merc_elite_hakkapeliita_cavalry
+#		}
+#	}
+#    modifier = {
+#		cav_to_inf_ratio = 1
+#		cavalry_shock = 1 
+#		cavalry_fire = 1
+#		movement_speed = 0.25
+#	}
+#}
+
+#merc_prussian_volunteer_army = {
+#    regiments_per_development = 0.01
+#	mercenary_desc_key = FREE_OF_ARMY_PROFESSIONALISM_COST
+#	cost_modifier = 2
+#	cavalry_weight = 0
+#    home_province = 41 #Königsberg, flooded
+#	sprites = { dlc054_pru_sprite_pack dlc028_bra_sprite_pack pru_base_sprite_pack }
+#    trigger = {
+#		is_allowed_to_recruit_mercenaries = yes
+#		OR = {
+#			has_unlocked_merc_company = {
+#				merc_company = merc_prussian_volunteer_army
+#			}
+#			AND = {
+#				OR = {
+#					alliance_with = PRU
+#					tag = PRU
+#				}
+#				is_year = 1700
+#			}
+#		}
+#	}
+#    modifier = {
+#		infantry_power = 0.2
+#		discipline = 0.05
+#	}
+#}
 
 rnw_modifier_weights = {
 	shock_damage = {

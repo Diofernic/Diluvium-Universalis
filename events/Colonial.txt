@@ -1190,6 +1190,7 @@ province_event = {
 	
 	option = {
 		name = "colonial.19.a"
+
 		if = {
 			limit = {
 				NOT = { province_has_center_of_trade_of_level = 2 }

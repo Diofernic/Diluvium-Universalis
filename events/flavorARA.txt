@@ -370,12 +370,21 @@ country_event = {
 			mil = 4
 			adm = 2
 			claim = 50
-			fixed = yes
 		}
 		PAP = {
 			country_event = { id = flavor_ara.9 days = 1 }
 		}
 		break_union = ARA
+		hidden_effect = {
+			if = { 
+				limit = { 
+					ARA = { has_heir = yes } 
+				}
+				NAP = { 
+					remove_heir = { } 
+				} 
+			}
+		}
 	}
 	
 	option = {
@@ -387,9 +396,18 @@ country_event = {
 			mil = 4
 			adm = 2
 			claim = 50
-			fixed = yes
 		}
 		break_union = ARA
+		hidden_effect = {
+			if = { 
+				limit = { 
+					ARA = { has_heir = yes } 
+				}
+				NAP = { 
+					remove_heir = { } 
+				} 
+			}
+		}
 		add_legitimacy = -20
 		add_treasury = -100
 		PAP = {

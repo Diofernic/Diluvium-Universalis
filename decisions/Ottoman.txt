@@ -6,7 +6,7 @@ country_decisions = {
 				tag = TUR
 				tag = RUM
 			}
-			owns = 104
+			owns = 104		#Constantinople
 			NOT = { capital = 104 }
 			NOT = { has_country_flag = relocated_capital_constantinople }
 			normal_or_historical_nations = yes
@@ -19,11 +19,14 @@ country_decisions = {
 			is_at_war = no
 			primary_culture = turkish
 			religion_group = muslim
-			controls = 104
-			owns = 102		# Edirne
-			owns = 253		# Bithnyia
-			owns = 254		# Bursa
-			owns = 1568		# Burgas			
+			controls = 104	#Constantinople
+			owns = 102		#Edirne
+			owns = 253		#Bithnyia
+			owns = 254		#Bursa
+			owns = 1568		#Burgas
+			104 = {			#Constantinople
+				is_state = yes
+			}
 		}
 		effect = {
 			set_country_flag = relocated_capital_constantinople
@@ -52,7 +55,7 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		do_not_core = 104 # Constantinople
+		do_not_core = 104	#Constantinople
 	}
 
 	provincial_system = {

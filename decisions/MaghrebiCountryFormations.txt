@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
 			NOT = { tag = PAP }
@@ -61,6 +65,9 @@ country_decisions = {
 			is_nomad = no
 			owns_core_province = 280	#Fez
 			owns_core_province = 281	#Marrekech
+			281 = {						#Marrekech
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 283	#Sus
 				owns_core_province = 285	#Tafilalt
@@ -124,7 +131,10 @@ country_decisions = {
 			change_primary_culture = moroccan
 			set_country_flag = formed_morocco_flag
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = { 
+					has_custom_ideas = no
+					NOT = { has_idea_group = MOR_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
@@ -143,6 +153,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
@@ -207,6 +221,9 @@ country_decisions = {
 			is_nomad = no
 			owns_core_province = 275	#Algiers
 			owns_core_province = 2163	#Dahra
+			275 = {						#Algiers
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 273	#Tlemcen
 				owns_core_province = 276	#Kabylia
@@ -265,7 +282,10 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_algiers_flag
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = berber_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
@@ -284,6 +304,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { tag = MOR }
 			NOT = { tag = TUN }
@@ -342,6 +366,9 @@ country_decisions = {
 			is_nomad = no
 			owns_core_province = 278	#Beja
 			owns_core_province = 4148	#Zaghwan
+			278 = {						#Beja
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 2156	#Kef
 				tripolitania_area = {
@@ -380,7 +407,10 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_tunisia_flag
 			if = {
-				limit = { has_custom_ideas = no }
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = TUN_ideas }
+				}
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}

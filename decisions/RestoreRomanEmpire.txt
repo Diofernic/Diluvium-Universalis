@@ -5,10 +5,14 @@ country_decisions = {
 		potential = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = restored_rome_flag }
-			owns = 72
+			owns = 72		#Rome
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = ROM }
@@ -28,10 +32,10 @@ country_decisions = {
 				region = anatolia_region
 				region = mashriq_region
 				province_id = 87	#Vienna
-				province_id = 278	#Beja
+				province_id = 278	#Beja (Vaga/Vacca)
 				province_id = 280	#Fez
-				province_id = 294	#Qena
-				province_id = 2978	#Coventry
+				province_id = 294	#Qena (Caene)
+				province_id = 185	#Cirencester (Corinium)
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -64,7 +68,7 @@ country_decisions = {
 			owns = 278	#Beja
 			owns = 280	#Fez
 			owns = 294	#Qena
-			owns = 2978	#Coventry
+			owns = 185	#Cirencester
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -73,11 +77,11 @@ country_decisions = {
 			}
 		}
 		effect = {
-			118 = {
+			72 = {	#Rome
 				move_capital_effect = yes
 			}
-			change_tag = ROM
 			restore_country_name_effect = yes
+			change_tag = ROM
 			custom_tooltip = roman_culture_provinces_tooltip
 			hidden_effect = {
 				every_owned_province = {
@@ -110,7 +114,7 @@ country_decisions = {
 			set_country_flag = restored_rome_flag
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0
 		}
 	}
 }

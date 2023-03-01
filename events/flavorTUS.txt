@@ -387,13 +387,13 @@ country_event = {
 	id = flavor_tus.9
 	title = flavor_tus.9.t
 	desc = flavor_tus.9.d
-	picture = {
+	picture = {	
 		trigger = {
 			has_dlc = "Emperor"
 		}
 		picture = BONFIRE_OF_THE_VANITIES_eventPicture
 	}
-	picture = {
+	picture = {	
 		trigger = {
 			NOT = { has_dlc = "Emperor" }
 		}
@@ -436,7 +436,7 @@ country_event = {
 					exile_heir_as = flo_exiled_heir
 					set_country_flag = flo_exiled_heir_flag
 				}
-				exile_ruler_as = flo_exiled_ruler
+				exile_ruler_as = { name = flo_exiled_ruler }
 			}
 			define_ruler = {
 				name = "Girolamo"
@@ -446,7 +446,6 @@ country_event = {
 				DIP = 5
 				MIL = 3
 				claim = 50
-				fixed = yes
 			}
 			hidden_effect = {
 				add_ruler_personality = infertile_personality
@@ -454,14 +453,13 @@ country_event = {
 			}
 		}
 		else = {
-			exile_ruler_as = flo_exiled_ruler
+			exile_ruler_as = { name = flo_exiled_ruler }
 			define_ruler = {
 				name = "Girolamo Savonarola"
 				age = 40
 				ADM = 5
 				DIP = 5
 				MIL = 3
-				fixed = yes
 			}
 			hidden_effect = {
 				add_ruler_personality_ancestor = { key = zealot }
@@ -823,13 +821,13 @@ country_event = {
 	id = flavor_tus.16
 	title = flavor_tus.16.t
 	desc = flavor_tus.16.d
-	picture = {
+	picture = {	
 		trigger = {
 			has_dlc = "Emperor"
 		}
 		picture = BONFIRE_OF_THE_VANITIES_eventPicture
 	}
-	picture = {
+	picture = {	
 		trigger = {
 			NOT = { has_dlc = "Emperor" }
 		}
@@ -857,7 +855,7 @@ country_event = {
 			government = republic
 		}
 		set_ruler = flo_exiled_ruler
-		add_government_reform = millenarian_theocracy_reform
+		remove_government_reform = millenarian_theocracy_reform
 	}
 
 	option = {
@@ -873,7 +871,7 @@ country_event = {
 			}
 			set_heir = flo_exiled_heir
 		}
-		add_government_reform = millenarian_theocracy_reform
+		remove_government_reform = millenarian_theocracy_reform
 	}
 }
 

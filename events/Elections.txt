@@ -28,7 +28,7 @@ country_event = {
 	trigger = {
 		NOT = { has_states_general_mechanic = yes }
 		NOT = { has_government_attribute = lottery_election }
-		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_reform = military_dictatorship_reform }
 		NOT = { has_reform = admiralty_reform }
 		NOT = { has_reform = prussian_republic_reform }
@@ -81,6 +81,7 @@ country_event = {
 				NOT = { republican_tradition = 20 }				
 				NOT = { is_revolutionary_republic_trigger = yes }
 				has_dlc = "Res Publica"
+				NOT = { has_government_attribute = cannot_become_dictatorship }
 			}
 			add_government_reform = presidential_despot_reform	
 		}
@@ -99,6 +100,7 @@ country_event = {
 				government = republic
 				NOT = { republican_tradition = 20 }
 				NOT = { has_dlc = "Res Publica" }
+				NOT = { has_government_attribute = cannot_become_dictatorship }
 			}
 			change_government_to_monarchy = yes
 			#set_legacy_government = despotic_monarchy
@@ -111,7 +113,16 @@ country_event = {
 			clr_country_flag = strengthened_signoria_flag
 		}
 		else = {
-			add_scaled_republican_tradition = -10
+			if = {
+				limit = {
+					has_country_flag = increased_election_cost
+				}
+				add_scaled_republican_tradition = -15
+				clr_country_flag = increased_election_cost
+			}
+			else = {
+				add_scaled_republican_tradition = -10
+			}
 		}
 		random_list = {
 			10 = {
@@ -122,6 +133,51 @@ country_event = {
 			}
 			10 = {
 				add_mil_power = 50
+			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = reelection_depowers_estates
+			}
+			add_estate_influence_modifier = {
+				estate = all
+				influence = -10
+				duration = 1460
+				desc = REELCTION_DEPOWER_ESTATES
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 5
+			}
+		}
+		if = {
+			limit = { has_government_attribute = reelection_increases_absolutism }
+			tooltip = {
+				add_absolutism = 10
+			}
+			custom_tooltip = ADD_ABSOLUTISM_BASED_ON_ELECTION_TERM
+			hidden_effect = {
+				for_variable_amount = {
+					variable = election_term
+					effect = "
+						add_absolutism = 10
+					"
+				}
+			}
+			hidden_effect = {
+				change_variable = {
+					which = election_term
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_random_faction = {
+				influence = 20
 			}
 		}
 		add_karma = -5
@@ -135,7 +191,6 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -143,20 +198,22 @@ country_event = {
 			define_ruler = {
 				mil = 1
 				adm = 4
-				dip = 1					
-				fixed = yes
+				dip = 1
 			}
 		}
 		if = {
-			limit = { 
-				has_faction = mr_guilds 
-			}
-			add_faction_influence = {
-				faction = mr_guilds
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_adm_faction = {
 				influence = 20
-			}				
+			}
 		}
 		add_karma = 10
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_adm = {
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTC700"	# A diplomat
@@ -167,7 +224,6 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -176,19 +232,21 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 			}
 		}
 		if = {
-			limit = { 
-				has_faction = mr_traders 
-			}
-			add_faction_influence = {
-				faction = mr_traders
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_dip_faction = {
 				influence = 20
-			}				
+			}
 		}
-		add_karma = 10		
+		add_karma = 10
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_dip = {
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = "EVTOPTD700"	# A military man
@@ -199,7 +257,6 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -208,19 +265,21 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
-			limit = { 
-				has_faction = mr_aristocrats 
-			}
-			add_faction_influence = {
-				faction = mr_aristocrats
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_mil_faction = {
 				influence = 20
-			}				
+			}
 		}
 		add_karma = 10
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_mil = {
+				loyalty = 10
+			}
+		}
 	}
 
 	option = { # Nepotism choice, re-electing within dynasty
@@ -245,9 +304,9 @@ country_event = {
 				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -276,9 +335,9 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -292,6 +351,13 @@ country_event = {
 				faction = mr_aristocrats
 				influence = 10
 			}				
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 10
+			}
 		}
 	}
 }
@@ -308,7 +374,7 @@ country_event = {
 	trigger = {
 		NOT = { has_states_general_mechanic = yes }
 		NOT = { has_government_attribute = lottery_election }
-		NOT = { has_reform = pirate_republic_reform }
+		NOT = { has_government_attribute = is_pirate_republic_reform }
 		NOT = { has_reform = military_dictatorship_reform }
 		NOT = { has_reform = admiralty_reform }
 		NOT = { has_reform = prussian_republic_reform }
@@ -332,7 +398,6 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -341,17 +406,19 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
-			limit = { 
-				has_faction = mr_guilds 
-			}
-			add_faction_influence = {
-				faction = mr_guilds
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_adm_faction = {
 				influence = 20
-			}				
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_adm = {
+				loyalty = 10
+			}
 		}
 	}
 	option = {
@@ -363,7 +430,6 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -372,18 +438,20 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1					
-				fixed = yes
 			}
 		}
 		if = {
-			limit = { 
-				has_faction = mr_traders 
-			}
-			add_faction_influence = {
-				faction = mr_traders
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_dip_faction = {
 				influence = 20
-			}				
-		}			
+			}
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_dip = {
+				loyalty = 10
+			}
+		}		
 	}
 	option = {
 		name = "EVTOPTD700"	# A military man
@@ -394,7 +462,6 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -403,18 +470,20 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1					
-				fixed = yes
 			}
 		}
 		if = {
-			limit = { 
-				has_faction = mr_aristocrats 
-			}
-			add_faction_influence = {
-				faction = mr_aristocrats
+			limit = { has_government_attribute = elections_increase_factions_influence }
+			add_influence_to_mil_faction = {
 				influence = 20
-			}				
-		}		
+			}
+		}	
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_mil = {
+				loyalty = 10
+			}
+		}
 	}
 	option = { # Nepotism choice, re-electing within dynasty
 		name = "EVTOPTE700"
@@ -438,9 +507,9 @@ country_event = {
 				NOT = { has_reform = signoria_reform }
 			}
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -472,9 +541,9 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				mil = -2
-				adm = -2
-				dip = -2
+				change_mil = -2
+				change_adm = -2
+				change_dip = -2
 				min_age = 30
 				max_age = 50
 				name = "lastname"
@@ -488,6 +557,13 @@ country_event = {
 				faction = mr_aristocrats
 				influence = 10
 			}				
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 10
+			}
 		}
 	}
 }
@@ -513,7 +589,6 @@ country_event = {
 				adm = 4
 				mil = 2
 				dip = 2
-				fixed = yes
 			}
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -526,7 +601,6 @@ country_event = {
 				adm = 2
 				dip = 4
 				mil = 2
-				fixed = yes
 			}
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -539,7 +613,6 @@ country_event = {
 				adm = 2
 				dip = 2
 				mil = 4
-				fixed = yes
 			}	
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -893,9 +966,9 @@ country_event = {
 					random_gender = yes
 					min_age = 50
 					max_age = 75
-					adm = 2
-					dip = -1
-					mil = -1
+					change_adm = 2
+					change_dip = -1
+					change_mil = -1
 					option = 0
 				}
 			}
@@ -909,9 +982,9 @@ country_event = {
 					random_gender = yes
 					min_age = 50
 					max_age = 75
-					adm = 3
-					dip = -1
-					mil = -1
+					change_adm = 3
+					change_dip = -1
+					change_mil = -1
 					option = 0
 				}
 			}
@@ -924,9 +997,9 @@ country_event = {
 					exiled_as = lottery_candidate_a_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = 3
-					dip = -1
-					mil = -1
+					change_adm = 3
+					change_dip = -1
+					change_mil = -1
 					option = 0
 				}
 			}
@@ -935,9 +1008,9 @@ country_event = {
 					exiled_as = lottery_candidate_a_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = 2
-					dip = -1
-					mil = -1
+					change_adm = 2
+					change_dip = -1
+					change_mil = -1
 					option = 0
 				}
 			}
@@ -951,9 +1024,9 @@ country_event = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = 2
-					mil = -1
+					change_adm = -1
+					change_dip = 2
+					change_mil = -1
 					random_gender = yes
 					option = 1
 				}
@@ -968,9 +1041,9 @@ country_event = {
 					random_gender = yes
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = 3
-					mil = -1
+					change_adm = -1
+					change_dip = 3
+					change_mil = -1
 					option = 0
 				}
 			}
@@ -983,9 +1056,9 @@ country_event = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = 3
-					mil = -1
+					change_adm = -1
+					change_dip = 3
+					change_mil = -1
 					option = 0
 				}
 			}
@@ -994,9 +1067,9 @@ country_event = {
 					exiled_as = lottery_candidate_b_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = 2
-					mil = -1
+					change_adm = -1
+					change_dip = 2
+					change_mil = -1
 					option = 1
 				}
 			}
@@ -1010,9 +1083,9 @@ country_event = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = -1
-					mil = 2
+					change_adm = -1
+					change_dip = -1
+					change_mil = 2
 					random_gender = yes
 					option = 2
 				}
@@ -1027,9 +1100,9 @@ country_event = {
 					random_gender = yes
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = -1
-					mil = 3
+					change_adm = -1
+					change_dip = -1
+					change_mil = 3
 					option = 0
 				}
 			}
@@ -1042,9 +1115,9 @@ country_event = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = -1
-					mil = 3
+					change_adm = -1
+					change_dip = -1
+					change_mil = 3
 					option = 0
 				}
 			}
@@ -1053,9 +1126,9 @@ country_event = {
 					exiled_as = lottery_candidate_c_@ROOT
 					min_age = 50
 					max_age = 75
-					adm = -1
-					dip = -1
-					mil = 2
+					change_adm = -1
+					change_dip = -1
+					change_mil = 2
 					option = 2
 				}
 			}
@@ -1066,6 +1139,14 @@ country_event = {
 		clear_exiled_ruler = lottery_candidate_a_@ROOT
 		clear_exiled_ruler = lottery_candidate_b_@ROOT
 		clear_exiled_ruler = lottery_candidate_c_@ROOT
+		if = {
+			limit = {
+				has_government_attribute = bonus_stats_for_elected_ruler
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
 	}
 	
 	option = {
@@ -1085,6 +1166,18 @@ country_event = {
 			}				
 		}
 		custom_tooltip = lottery_candidate_bonus_one
+		if = {
+			limit = {
+				has_government_attribute = bonus_stats_for_elected_ruler
+			}
+			custom_tooltip = bonus_stats_for_elected_ruler_tt
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_adm = {
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = elections.800.b
@@ -1103,6 +1196,18 @@ country_event = {
 			}				
 		}
 		custom_tooltip = lottery_candidate_bonus_one
+		if = {
+			limit = {
+				has_government_attribute = bonus_stats_for_elected_ruler
+			}
+			custom_tooltip = bonus_stats_for_elected_ruler_tt
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_dip = {
+				loyalty = 10
+			}
+		}
 	}
 	option = {
 		name = elections.800.c
@@ -1121,6 +1226,18 @@ country_event = {
 			}				
 		}
 		custom_tooltip = lottery_candidate_bonus_one
+		if = {
+			limit = {
+				has_government_attribute = bonus_stats_for_elected_ruler
+			}
+			custom_tooltip = bonus_stats_for_elected_ruler_tt
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty_by_class_mil = {
+				loyalty = 10
+			}
+		}
 	}
 	option = { # lottery
 		name = elections.800.da
@@ -1148,6 +1265,12 @@ country_event = {
 						influence = 20
 					}				
 				}
+				if = {
+					limit = { has_government_attribute = elections_influence_estates }
+					add_estate_loyalty_by_class_adm = {
+						loyalty = 10
+					}
+				}
 			}
 			33 = { 
 				set_ruler = lottery_candidate_b_@ROOT 
@@ -1168,6 +1291,12 @@ country_event = {
 						faction = rr_royalists
 						influence = 20
 					}				
+				}
+				if = {
+					limit = { has_government_attribute = elections_influence_estates }
+					add_estate_loyalty_by_class_dip = {
+						loyalty = 10
+					}
 				}
 			}
 			33 = { 
@@ -1190,9 +1319,21 @@ country_event = {
 						influence = 20
 					}				
 				}
+				if = {
+					limit = { has_government_attribute = elections_influence_estates }
+					add_estate_loyalty_by_class_mil = {
+						loyalty = 10
+					}
+				}
 			}
 		}
 		custom_tooltip = lottery_candidate_bonus_plural
+		if = {
+			limit = {
+				has_government_attribute = bonus_stats_for_elected_ruler
+			}
+			custom_tooltip = bonus_stats_for_elected_ruler_tt
+		}
 	}
 	option = { # nepotism
 		name = elections.800.e
@@ -1218,9 +1359,9 @@ country_event = {
 			define_ruler = {
 				min_age = 30
 				max_age = 50
-				mil = -1
-				adm = -1
-				dip = -1
+				change_mil = -1
+				change_adm = -1
+				change_dip = -1
 				name = "lastname"
 				random_gender = yes # Allows random gender for republics
 			}
@@ -1252,9 +1393,9 @@ country_event = {
 			define_ruler = {
 				min_age = 30
 				max_age = 50
-				mil = -1
-				adm = -1
-				dip = -1
+				change_mil = -1
+				change_adm = -1
+				change_dip = -1
 				name = "lastname"
 			}
 		}
@@ -1266,6 +1407,19 @@ country_event = {
 				faction = mr_aristocrats
 				influence = 10
 			}				
+		}
+		if = {
+			limit = { has_government_attribute = elections_influence_estates }
+			add_estate_loyalty = {
+				estate = all
+				loyalty = 10
+			}
+		}
+		if = {
+			limit = {
+				has_government_attribute = bonus_stats_for_elected_ruler
+			}
+			custom_tooltip = bonus_stats_for_elected_ruler_tt
 		}
 	}
 }

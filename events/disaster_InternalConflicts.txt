@@ -109,6 +109,7 @@ country_event = {
 		days = 1
 	}
 	
+	
 	option = {
 		name = "EVTOPTA3003"			# The war is our main concern
 		every_owned_province = {
@@ -149,6 +150,8 @@ country_event = {
 		days = 1
 	}
 	
+	
+	
 	option = {
 		name = "EVTOPTA3004"			# Restrict serfdom
 		random_owned_province = { noble_rebels = 1 }
@@ -186,16 +189,19 @@ country_event = {
 	desc = "EVTDESC3005"
 	picture = BATTLE_eventPicture
 	
+	
 	trigger = {
 		NOT = {	has_country_modifier = 	decreased_morale }
 		war_exhaustion = 5
 	}
+	
 
 	is_triggered_only = yes
 	
 	mean_time_to_happen = {
 		days = 1
 	}
+	
 	
 	option = {
 		name = "EVTOPTA3005"			# There is no immediate solution at hand
@@ -249,6 +255,7 @@ country_event = {
 			limit= {
 				development = 8
 			}
+			pretender_rebels = 3 
 			pretender_rebels = 3 
 		}
 		if = {
@@ -347,6 +354,8 @@ country_event = {
 	}
 	major = yes
 	
+	
+
 	option = {
 		name = "EVTOPTA3008"			# Restore order
 		add_stability_or_adm_power = yes

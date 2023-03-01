@@ -147,7 +147,7 @@ colonial_canada = {
 				alliance_with = SCO
 			}
 		}
-		name = "COLONIAL_CANADA_Nouvelle_Écosse"
+		name = "COLONIAL_CANADA_Nouvelle_ï¿½cosse"
 	}
 	names = {
 		trigger = {
@@ -1090,7 +1090,7 @@ colonial_la_plata = {
 		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Paraguay"
 	}
 	names = {
-		trigger = { #Amélioration la Pléiade
+		trigger = { #Amï¿½lioration la Plï¿½iade
 			any_owned_province = {
 				OR = {
 					area = southern_chile_area
@@ -1366,5 +1366,4 @@ colonial_placeholder_20 = {
 
 colonial_placeholder_21 = {
 	color = { 140 130 70 }
-}
 }

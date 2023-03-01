@@ -8,13 +8,16 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			owns = 249
+			owns = 249				#Svir, might change later
 			NOT = { capital = 249 }
 			NOT = { has_country_flag = relocated_capital_st_petersburg }
 		}
 		allow = {
-			is_core = 249
+			is_core = 249			#Svir, might change later
 			is_at_war = no
+			249 = {
+				is_state = yes
+			}
 		}
 		effect = {
 			249 = {
@@ -22,7 +25,7 @@ country_decisions = {
 				rename_capital = "St. Petersburg"
 				add_base_tax = 6 
 				add_base_manpower = 3
-				change_culture = capital
+				change_culture = ROOT
 			}
 			set_country_flag = relocated_capital_st_petersburg
 			add_years_of_income = -1
@@ -66,7 +69,7 @@ country_decisions = {
 		}
 		allow = {
 			is_at_war = no
-			NOT = { 151 = { owned_by = BYZ } }
+			NOT = { 104 = { owned_by = BYZ } }
 			prestige = 2
 			NOT = { innovativeness_ideas = 3 }
 		}

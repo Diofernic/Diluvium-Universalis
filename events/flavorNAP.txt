@@ -33,6 +33,7 @@ country_event = {
 			has_regency = no
 			is_lesser_in_union = no
 		}
+		religion_group = christian
 	}
 	
 	mean_time_to_happen = {
@@ -607,6 +608,7 @@ country_event = {
 						type = nap_republican_rebels
 						size = 2
 						leader = nap_foreign_republican
+						friend = ROOT
 					}
 					set_province_flag = nap_foreigner_arrives_here
 				}
@@ -617,6 +619,7 @@ country_event = {
 						type = nap_republican_rebels
 						size = 2
 						leader = nap_foreign_republican
+						friend = ROOT
 					}
 					set_province_flag = nap_foreigner_arrives_here
 				}

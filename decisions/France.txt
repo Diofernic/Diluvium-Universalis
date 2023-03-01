@@ -3,7 +3,12 @@ country_decisions = {
 	move_the_court_to_versailles = {
 	
 		potential = {
-			NOT = { has_dlc = "Emperor" }
+			NOT = { 
+				OR = {
+					has_dlc = "Emperor"
+					has_dlc = "Leviathan"
+				}
+			}
 			tag = FRA
 			normal_or_historical_nations = yes
 			OR = {
@@ -11,7 +16,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { has_country_flag = versailles_court }
-			capital = 132
+			capital = 132	#Paris
 			government = monarchy
 		}
 		allow = {
@@ -21,7 +26,7 @@ country_decisions = {
 		effect = {
 			set_country_flag = versailles_court
 			add_prestige = 33
-			132 = { add_base_tax = 2 }
+			132 = { add_base_tax = 2 }	#Paris
 		}
 		ai_will_do = {
 			factor = 1
@@ -119,7 +124,7 @@ country_decisions = {
 					NOT = { num_of_religion = { religion = protestant value = 1 } }
 					NOT = { num_of_religion = { religion = reformed value = 1 } }
 				}
-				132 = { controlled_by = REB }
+				132 = { controlled_by = REB }	#Paris
 			}	
 		}
 		effect = {
@@ -132,4 +137,42 @@ country_decisions = {
 		}
 	}
 	
+	# Retrial of Joan of Arc
+	retrial_of_joan_of_arc = {
+		potential = {
+			NOT = { has_global_flag = retrial_of_joan_of_arc }
+			culture_group = french
+			religion = catholic
+			owns_or_non_sovereign_subject_of = 133 #Orleans
+			current_age = age_of_discovery
+		}
+		allow = {
+			owns_or_non_sovereign_subject_of = 132 #Paris
+			owns_or_non_sovereign_subject_of = 120 #Caux
+			owns_or_non_sovereign_subject_of = 136 #Barrois
+			france_region = {
+				type = all
+				NOT = { owned_by = ENG }
+				NOT = { owned_by = GBR }
+			}
+			OR = {
+				PAP = {
+					has_opinion = { 
+						who = root
+						value = 100
+					}
+				}
+				is_papal_controller = yes
+			}
+		}
+		effect = {
+			country_event = {
+				id = flavor_orl.4
+			}
+			set_global_flag = retrial_of_joan_of_arc
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
 }

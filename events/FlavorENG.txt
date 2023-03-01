@@ -838,7 +838,7 @@ country_event = {
 			}
 			tag = GBR
 		}
-		NOT = { advisor_exists = 236 }
+		NOT = { advisor_exists = 2977 }
 		owns = 2977		#Sussex
 	}
 
@@ -2463,7 +2463,7 @@ country_event = {
 			adm = 3
 			dip = 4
 			mil = 2
-			fixed = yes
+			age = 24
 		}
 	}
 }

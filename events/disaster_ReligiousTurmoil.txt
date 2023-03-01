@@ -238,3 +238,5 @@ country_event = {
 		add_mil_power = -25
 	}
 }
+
+

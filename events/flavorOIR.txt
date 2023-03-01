@@ -99,14 +99,13 @@ country_event = {
 				exile_heir_as = mng_exiled_heir
 				set_country_flag = mng_exiled_heir_flag
 			}
-			exile_ruler_as = mng_exiled_ruler
+			exile_ruler_as = { name = mng_exiled_ruler }
 		}
 		define_ruler = {
 			regency = yes
 			ADM = 2
 			DIP = 2
 			MIL = 2
-			fixed = yes
 		}
 	}
 }

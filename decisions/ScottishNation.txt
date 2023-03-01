@@ -9,6 +9,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = {
 				tag = SCO
 			}
@@ -49,6 +53,9 @@ country_decisions = {
 			owns_core_province = 194	#Ayrshire
 			owns_core_province = 196	#Aberdeen
 			owns_core_province = 197	#Inverness
+			193 = { 					#Edinburgh
+				is_state = yes
+			}
 		}
 		effect = {
 			193 = {	#Edinburgh

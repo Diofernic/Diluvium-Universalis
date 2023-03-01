@@ -47,6 +47,9 @@ country_decisions = {
 			is_tribal = no
 			NOT = { exists = DLH }
 			owns_core_province = 430 #Delhi
+			430 = {						#Delhi
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 419 #Sirhind
 				owns_core_province = 432 #Agra
@@ -136,6 +139,28 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				exists = DLH
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 430 	#Delhi
+						OR = {
+							owns_core_province = 419 #Sirhind
+							owns_core_province = 432 #Agra
+						}
+						OR = {
+							owns_core_province = 416 #Lahore
+							owns_core_province = 456 #Allahabad
+						}
+						amount = 2
+					}
+				}
+			}
 		}
+		ai_importance = 200
 	}
 }

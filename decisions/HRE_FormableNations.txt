@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BAV }
 			primary_culture = bavarian
 		}
@@ -64,7 +68,6 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-
 			if = {
 				limit = { NOT = { tag = UBV } }
 				OR = {
@@ -95,6 +98,7 @@ country_decisions = {
 					}
 				}
 			}
+
 			owns_or_non_sovereign_subject_of = 33			#Munich
 			owns_or_non_sovereign_subject_of = 32			#Landshut
 			owns_or_non_sovereign_subject_of = 2606			#Ingolstadt
@@ -169,7 +173,7 @@ country_decisions = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		ai_importance = 400
 	}
@@ -184,6 +188,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { exists = FKN }
 			is_colonial_nation = no
@@ -329,6 +337,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = SWA }
 			is_colonial_nation = no
 			OR = {
@@ -425,12 +437,14 @@ country_decisions = {
 					add_permanent_claim = root
 				}
 			}
+
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
 			set_country_flag = formed_swabia_flag
+
 			if = {
 				limit = {
 					OR = {
@@ -440,7 +454,9 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
+
 			swap_non_generic_missions = yes
+
 			if = {
 				limit = {
 					is_playing_custom_nation = no
@@ -464,6 +480,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			OR = {
 				ai = no
@@ -591,6 +611,10 @@ country_decisions = {
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = HAN }

@@ -77,7 +77,6 @@ country_event = {
 				adm = 4
 				dip = 4
 				mil = 5
-				fixed = yes
 			}
 		}
 	}
@@ -153,7 +152,6 @@ country_event = {
 			define_ruler = {
 				name = "Soun"
 				dynasty = "Hojo"
-				fixed = yes
 				adm = 5
 				dip = 4
 				mil = 5
@@ -241,7 +239,6 @@ country_event = {
 				adm = 5
 				dip = 6
 				mil = 4
-				fixed = yes
 			}
 		}
 	}
@@ -318,6 +315,7 @@ country_event = {
 				limit = { can_spawn_rebels = nationalist_rebels }
 				spawn_rebels = {
 					type = nationalist_rebels
+					size = 1
 					separatists_target = ASA
 					#this is needed because the only ASA province is also the capital of Shiba
 					should_take_capital = yes
@@ -384,7 +382,7 @@ country_event = {
 	}
 	option = {
 		name = flavor_daimyo.5.b #Support Mochitomi's claim.
-		remove_heir = yes
+		remove_heir = {}
 		define_heir = {
 			name = "Mochitomi"
 			dynasty = ROOT
@@ -582,9 +580,9 @@ country_event = {
 		define_ruler = {
 			name = "Nagayoshi"
 			dynasty = "Miyoshi"
-			adm = 3
-			dip = 3
-			mil = 3
+			change_adm = 3
+			change_dip = 3
+			change_mil = 3
 		}
 	}
 }
@@ -646,7 +644,7 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 24
-	}
+	}	
 	
 	option = {	
 		name = flavor_daimyo.9.a #The Akamatsu have redeemed themselves.
@@ -1133,7 +1131,6 @@ country_event = {
 		define_ruler = {
 			name = "Shingen"
 			dynasty = "Takeda"
-			fixed = yes
 			adm = 5
 			dip = 5
 			mil = 5
@@ -1187,6 +1184,7 @@ country_event = {
 			}
 		}
 	}
+	
 	
 	option = {	
 		name = flavor_daimyo.21.a #The days of the Kubo are numbered!
@@ -1291,7 +1289,6 @@ country_event = {
 		define_ruler = {
 			name = "Nobunaga"
 			dynasty = "Oda"
-			fixed = yes
 			adm = 5
 			dip = 5
 			mil = 6
@@ -1307,7 +1304,9 @@ country_event = {
 				leader_dynasty = "Oda"
 			}
 		}
+		
 	}
+	
 }
 
 #Hideyoshi
@@ -1350,7 +1349,7 @@ country_event = {
 			claim = 75
 			adm = 5
 			dip = 6
-			fixed = yes
+			mil = 5
 		}
 	}
 }
@@ -1405,6 +1404,7 @@ country_event = {
 		months = 150
 	}
 
+	
 	option = {	
 		name = flavor_daimyo.26.a #This is truly a golden era for our kingdom.
 		add_prestige = 10

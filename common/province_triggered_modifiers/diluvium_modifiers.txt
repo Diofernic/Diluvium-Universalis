@@ -64,6 +64,18 @@ religious_center = {
 			}
 			religion = hussite
 		}
+		else_if = {
+			limit = {
+				province_id = 1886 #Yanzhou
+			}
+			religion = confucianism
+		}
+		else_if = {
+			limit = {
+				province_id = 1 #Ostergotland for now
+			}
+			religion = norse_pagan_reformed
+		}
 	}
 
 	local_missionary_strength = -0.05

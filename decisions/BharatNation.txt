@@ -10,7 +10,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BHA }
+			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = dravidian
 			OR = {
@@ -128,6 +133,30 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 415	#Multan
+						owns_core_province = 425	#Baroda, temp Replacement for Surat
+						owns_core_province = 426	#Chittor
+						owns_core_province = 432	#Mathura
+						owns_core_province = 441	#Madurai
+						owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+						owns_core_province = 447	#Daulatabad
+						owns_core_province = 452	#Mahakoshal
+						owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+						owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+						owns_core_province = 1731	#Bidar
+						owns_core_province = 424	#Girnar, temp Replacement for Halar
+						owns_core_province = 1848	#Kandy
+						owns_core_province = 4020	#Kumari
+						owns_core_province = 4062	#Ujjain
+						#owns_core_province = 4503	#Mansura
+						amount = 8
+					}
+				}
+			}
 		}
 		ai_importance = 50
 	}
@@ -142,7 +171,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BHA }
+			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = western_aryan
 			OR = {
@@ -260,6 +294,30 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 415	#Multan
+						owns_core_province = 425	#Baroda, temp Replacement for Surat
+						owns_core_province = 426	#Chittor
+						owns_core_province = 432	#Mathura
+						owns_core_province = 441	#Madurai
+						owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+						owns_core_province = 447	#Daulatabad
+						owns_core_province = 452	#Mahakoshal
+						owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+						owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+						owns_core_province = 1731	#Bidar
+						owns_core_province = 424	#Girnar, temp Replacement for Halar
+						owns_core_province = 1848	#Kandy
+						owns_core_province = 4020	#Kumari
+						owns_core_province = 4062	#Ujjain
+						#owns_core_province = 4503	#Mansura
+						amount = 8
+					}
+				}
+			}
 		}
 		ai_importance = 50
 	}
@@ -274,6 +332,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			#NOT = { exists = HIN }
 			NOT = { exists = BHA }
 			NOT = { tag = MUG }
 			culture_group = hindusthani
@@ -392,6 +455,30 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 415	#Multan
+						owns_core_province = 425	#Baroda, temp Replacement for Surat
+						owns_core_province = 426	#Chittor
+						owns_core_province = 432	#Mathura
+						owns_core_province = 441	#Madurai
+						owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+						owns_core_province = 447	#Daulatabad
+						owns_core_province = 452	#Mahakoshal
+						owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+						owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+						owns_core_province = 1731	#Bidar
+						owns_core_province = 424	#Girnar, temp Replacement for Halar
+						owns_core_province = 1848	#Kandy
+						owns_core_province = 4020	#Kumari
+						owns_core_province = 4062	#Ujjain
+						#owns_core_province = 4503	#Mansura
+						amount = 8
+					}
+				}
+			}
 		}
 		ai_importance = 50
 	}
@@ -406,7 +493,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BHA }
+			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = eastern_aryan
 			OR = {
@@ -524,6 +616,30 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 415	#Multan
+						owns_core_province = 425	#Baroda, temp Replacement for Surat
+						owns_core_province = 426	#Chittor
+						owns_core_province = 432	#Mathura
+						owns_core_province = 441	#Madurai
+						owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+						owns_core_province = 447	#Daulatabad
+						owns_core_province = 452	#Mahakoshal
+						owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+						owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+						owns_core_province = 1731	#Bidar
+						owns_core_province = 424	#Girnar, temp Replacement for Halar
+						owns_core_province = 1848	#Kandy
+						owns_core_province = 4020	#Kumari
+						owns_core_province = 4062	#Ujjain
+						#owns_core_province = 4503	#Mansura
+						amount = 8
+					}
+				}
+			}
 		}
 		ai_importance = 50
 	}
@@ -538,7 +654,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = BHA }
+			#NOT = { exists = HIN }
 			NOT = { tag = MUG }
 			culture_group = central_indic
 			OR = {
@@ -656,6 +777,30 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 415	#Multan
+						owns_core_province = 425	#Baroda, temp Replacement for Surat
+						owns_core_province = 426	#Chittor
+						owns_core_province = 432	#Mathura
+						owns_core_province = 441	#Madurai
+						owns_core_province = 4030	#Kondavidu, temp Replacement for Tondainadu
+						owns_core_province = 447	#Daulatabad
+						owns_core_province = 452	#Mahakoshal
+						owns_core_province = 4045	#Ganjam, temp Replacement for Cuttack
+						owns_core_province = 1844	#Varanasi, temp Replacement for Pataliputra
+						owns_core_province = 1731	#Bidar
+						owns_core_province = 424	#Girnar, temp Replacement for Halar
+						owns_core_province = 1848	#Kandy
+						owns_core_province = 4020	#Kumari
+						owns_core_province = 4062	#Ujjain
+						#owns_core_province = 4503	#Mansura
+						amount = 8
+					}
+				}
+			}
 		}
 		ai_importance = 50
 	}

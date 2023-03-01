@@ -529,8 +529,9 @@ province_event = {
 		name = exploration_events.14.a
 		FROM = {
 			create_explorer = {
-				tradition = -5
+				tradition = 10
 				culture = root
+				female = yes
 			}
 		}
 	}
@@ -570,14 +571,11 @@ province_event = {
 		days = 1
 	}
 	
-	immediate = {
+	option = {
+		name = exploration_events.15.a
 		kill_leader = {
 			type = explorer
 		}
-	}	
-	
-	option = {
-		name = exploration_events.15.a
 	}
 }
 

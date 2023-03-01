@@ -719,7 +719,7 @@ novgorod_area = { #3
 	1742 2416 2871
 }
 
-pskov_area = { #3
+estonia_ingria_area = { #3
 	22 218 1640
 }
 
@@ -3417,7 +3417,7 @@ pomor_area = { }
 
 curonia_area = { }
 
-estonia_ingria_area = { }
+pskov_area = { }
 
 samara_area = { }
 

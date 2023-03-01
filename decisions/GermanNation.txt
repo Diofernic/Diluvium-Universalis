@@ -10,6 +10,10 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
 			NOT = { exists = GER }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -22,13 +26,6 @@ country_decisions = {
 					adm_tech = 20
 				}
 			}
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					NOT = { government = theocracy }
-				}
-			}
 			culture_group = germanic
 			NOT = { primary_culture = dutch }
 			is_colonial_nation = no
@@ -39,12 +36,44 @@ country_decisions = {
 					ai = no
 				}
 			}
+			OR = {
+				has_country_flag = teu_can_form_germany
+				NOT = { has_mission = teu_pru_an_empire_of_blood_and_iron }	#Mission already makes you to Germany
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
+				AND = {
+					OR = {
+						region = north_german_region
+						region = south_german_region
+					}
+					root = {
+						NOT = {
+							num_of_owned_provinces_with = {
+								is_core = ROOT
+								OR = {
+									region = north_german_region
+									region = south_german_region
+								}
+								value = 30
+							}
+						}
+					}
+				}
 				province_id = 26	#Hildesheim
 				province_id = 33	#München
-				province_id = 1565	#Koblenz
+				province_id = 1669	#Aachen
+				AND = {
+					ROOT = {
+						NOT = { owns_core_province = 23 }
+						NOT = { owns_core_province = 43 }
+					}
+					OR = {
+						province_id = 23	#Allenstein
+						province_id = 43	#Straßburg
+					}
+				}
 				AND = {
 					ROOT = {
 						NOT = { owns_core_province = 1660 }
@@ -77,21 +106,11 @@ country_decisions = {
 				}
 				AND = {
 					ROOT = {
-						NOT = { owns_core_province = 23 }
-						NOT = { owns_core_province = 43 }
-					}
-					OR = {
-						province_id = 23	#Allenstein
-						province_id = 43	#Straßburg
-					}
-				}
-				AND = {
-					ROOT = {
 						NOT = { owns_core_province = 1669 }
 						NOT = { owns_core_province = 52 }
 					}
 					OR = {
-						province_id = 1669	#Aachen
+						province_id = 1565	#Koblenz
 						province_id = 52	#Dortmund
 					}
 				}
@@ -105,51 +124,6 @@ country_decisions = {
 						province_id = 31	#Erfurt
 					}
 				}
-				AND = {
-					OR = {
-						region = north_german_region
-						region = south_german_region
-					}
-					ROOT = {
-						NOT = {
-							num_of_owned_provinces_with = {
-								is_core = ROOT
-								OR = {
-									region = north_german_region
-									region = south_german_region
-								}
-								value = 30
-							}
-						}
-						owns_core_province = 1565
-						owns_core_province = 26
-						owns_core_province = 33
-						OR = {
-							owns_core_province = 1660
-							owns_core_province = 38
-						}
-						OR = {
-							owns_core_province = 35
-							owns_core_province = 1667
-						}
-						OR = {
-							owns_core_province = 1567
-							owns_core_province = 2640
-						}
-						OR = {
-							owns_core_province = 23
-							owns_core_province = 43
-						}
-						OR = {
-							owns_core_province = 1669
-							owns_core_province = 52
-						}
-						OR = {
-							owns_core_province = 29
-							owns_core_province = 31
-						}
-					}
-				}
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -161,9 +135,8 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			is_emperor = no
-			owns_core_province = 1565	#Koblenz
-			owns_core_province = 26		#Hildesheim
+			owns_core_province = 1669	#Aachen
+			owns_core_province = 1667	#Frankfurt
 			owns_core_province = 33		#München
 			OR = {
 				owns_core_province = 1660	#Augsburg
@@ -171,10 +144,10 @@ country_decisions = {
 			}
 			OR = {
 				owns_core_province = 35		#Nürnberg
-				owns_core_province = 1667	#Frankfurt
+				owns_core_province = 1567	#Niederhessen
 			}
 			OR = {
-				owns_core_province = 1567	#Niederhessen
+				owns_core_province = 26		#Hildesheim
 				owns_core_province = 2640	#Tuchel
 			}
 			OR = {
@@ -182,7 +155,7 @@ country_decisions = {
 				owns_core_province = 43		#Strassburg
 			}
 			OR = {
-				owns_core_province = 1669	#Aachen
+				owns_core_province = 1565	#Koblenz
 				owns_core_province = 52		#Dortmund
 			}
 			OR = {
@@ -195,23 +168,31 @@ country_decisions = {
 					region = north_german_region
 					region = south_german_region
 				}
-				value = 50
+				value = 30
 			}
 		}
 		effect = {
 			change_tag = GER
 			restore_country_name_effect = yes
-			emperor = {
-				add_opinion = {
-					who = root
-					modifier = opinion_left_empire
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				dismantle_hre = yes
+			}
+			else = {
+				emperor = {
+					add_opinion = {
+						who = root
+						modifier = opinion_left_empire
+					}
+				}
+				set_in_empire = no
+				emperor = {
+					country_event = { id = hre_event.5 }
 				}
 			}
-			set_in_empire = no
-			emperor = {
-				country_event = { id = hre_event.5 }
-			}
-			set_government_rank = 3
+			GER = { set_government_rank = 3 }
 			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -239,10 +220,14 @@ country_decisions = {
 			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 100
 			modifier = {
 				factor = 0
-				tag = HAB
+				NOT = { adm_tech = 18 }
+			}
+			modifier = {
+				factor = 0
+				NOT = { num_of_owned_provinces_with = { OR = { region = north_german_region region = south_german_region } value = 15 } }
 			}
 		}
 	}

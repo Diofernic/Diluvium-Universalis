@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				NOT = { exists = DEC }
 				ai = no
 			}
@@ -37,18 +41,18 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 1731 #Bidar
-				province_id = 445 #Hyderabad
-				province_id = 464 #Bijapur
-				province_id = 446 #Ahmednagar
-				province_id = 450 #Ilichpur
-				province_id = 444 #Vijayanagar
-				province_id = 1838 #Chaul
-				province_id = 1834 #Konaseema, temp Replacement for Velanadu
-				province_id = 1789 #Arcot
-				province_id = 4026 #Seringapatam
-				province_id = 1792 #Goa, temp Replacement for Bhatkal
-				province_id = 4030 #Kondavidu, temp Replacement for Madras
+				province_id = 1731	#Bidar
+				province_id = 445	#Hyderabad
+				province_id = 464	#Bijapur
+				province_id = 446	#Ahmednagar
+				province_id = 450	#Ilichpur
+				province_id = 444	#Vijayanagar
+				province_id = 1838	#Chaul
+				province_id = 1834	#Konaseema, temp Replacement for Velanadu
+				province_id = 1789	#Arcot
+				province_id = 4026	#Seringapatam
+				province_id = 1792	#Goa, temp Replacement for Bhatkal
+				province_id = 4030	#Kondavidu, temp Replacement for Madras
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -60,18 +64,18 @@ country_decisions = {
 			is_at_war = no
 			adm_tech = 20
 			is_free_or_tributary_trigger = yes
-			owns_core_province = 1731 #Bidar
-			owns_core_province = 445 #Hyderabad
-			owns_core_province = 464 #Bijapur
-			owns_core_province = 446 #Ahmednagar
-			owns_core_province = 450 #Ilichpur
-			owns_core_province = 444 #Vijayanagar
-			owns_core_province = 1838 #Chaul
-			owns_core_province = 1834 #Konaseema, temp Replacement for Velanadu
-			owns_core_province = 1789 #Arcot
-			owns_core_province = 4026 #Seringapatam
-			owns_core_province = 1792 #Goa, temp Replacement for Bhatkal
-			owns_core_province = 4030 #Kondavidu, temp Replacement for Madras
+			owns_core_province = 1731	#Bidar
+			owns_core_province = 445	#Hyderabad
+			owns_core_province = 464	#Bijapur
+			owns_core_province = 446	#Ahmednagar
+			owns_core_province = 450	#Ilichpur
+			owns_core_province = 444	#Vijayanagar
+			owns_core_province = 1838	#Chaul
+			owns_core_province = 1834	#Konaseema, temp Replacement for Velanadu
+			owns_core_province = 1789	#Arcot
+			owns_core_province = 4026	#Seringapatam
+			owns_core_province = 1792	#Goa, temp Replacement for Bhatkal
+			owns_core_province = 4030	#Kondavidu, temp Replacement for Madras
 		}
 		effect = {
 			change_tag = DEC
@@ -99,6 +103,30 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { adm_tech = 18 }
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 1731	#Bidar
+						owns_core_province = 445	#Hyderabad
+						owns_core_province = 464	#Bijapur
+						owns_core_province = 446	#Ahmednagar
+						owns_core_province = 450	#Ilichpur
+						owns_core_province = 444	#Vijayanagar
+						owns_core_province = 1838	#Chaul
+						owns_core_province = 1834	#Konaseema, temp Replacement for Velanadu
+						owns_core_province = 1789	#Arcot
+						owns_core_province = 4026	#Seringapatam
+						owns_core_province = 1792	#Goa, temp Replacement for Bhatkal
+						owns_core_province = 4030	#Kondavidu, temp Replacement for Madras
+						amount = 6
+					}
+				}
+			}
 		}
 		ai_importance = 400
 	}

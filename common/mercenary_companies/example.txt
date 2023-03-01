@@ -90,10 +90,10 @@ twenty_good_men = {
 	artillery_weight = 0.1
     cavalry_cap = 4
 	cost_modifier = 1.5
-    home_province = 4365
+    home_province = 2973
 	trigger = {
 		capital_scope = {
-			province_id = 4365
+			province_id = 2973
 		}
 	}
 	modifier = {

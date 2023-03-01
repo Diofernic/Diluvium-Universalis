@@ -11,6 +11,10 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			OR = {
 				NOT = { exists = NAG }
 				ai = no
 			}
@@ -66,17 +70,20 @@ country_decisions = {
 			owns_core_province = 459	#Jharkhand
 			owns_core_province = 1805	#Chanda
 			owns_core_province = 1832	#Raipur
+			448 = {						#Nagpur
+				is_state = yes
+			}
 			OR = {
 				owns_core_province = 450	#Illichpur
 				owns_core_province = 4045	#Ganjam, temp Replacment for Cuttack
 			}
 		}
 		effect = {
-			448 = {
+			448 = {		#Nagpur
 				move_capital_effect = yes
 			}
 			change_tag = NAG
-			448 = {
+			448 = {		#Nagpur
 				change_province_name = "Nagpur"
 				rename_capital = "Nagpur"
 			 	add_base_tax = 1
@@ -110,7 +117,22 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					calc_true_if = {
+						owns_core_province = 448	#Nagpur
+						owns_core_province = 449	#Bastar
+						owns_core_province = 453	#Mandla
+						owns_core_province = 459	#Jharkhand
+						owns_core_province = 1805	#Chanda
+						owns_core_province = 1832	#Raipur
+						amount = 3
+					}
+				}
+			}
 		}
 		ai_importance = 400
 	}
+
 }

@@ -2009,7 +2009,7 @@ country_event = {
 	
 	option = {
 		name = "flavor_jap.EVTOPTA28" # Follow the noble's advice
-		kill_heir = yes
+		kill_heir = {}
 		add_legitimacy = 20
 	}
 	option = {
@@ -2979,7 +2979,6 @@ country_event = {
 			age = 15
 			dip = 4
 			dynasty = ROOT
-			fixed = yes
 		}
 	}
 	
@@ -2993,7 +2992,6 @@ country_event = {
 			age = 15
 			adm = 4
 			dynasty = ROOT
-			fixed = yes
 		}
 	}
 	option = {
@@ -3007,7 +3005,6 @@ country_event = {
 			age = 15
 			mil = 4
 			dynasty = ROOT
-			fixed = yes
 		}
 	}
 }
@@ -3348,7 +3345,7 @@ country_event = {
 	title = flavor_jap.58.t
 	desc = flavor_jap.58.d
 	picture = BATTLE_eventPicture
-	
+
 	trigger = {
 		is_subject_of_type = daimyo_vassal
 		NOT = { has_reform = daimyo }
@@ -3357,12 +3354,7 @@ country_event = {
 			OR = {				
 				AND = {
 					tag = SOO
-					OR = {
-						has_reform = pirate_republic_reform
-						has_reform = pirate_king_reform
-						has_reform = war_against_the_world_doctrine_reform
-						has_reform = black_market_consortium_reform
-					}
+					has_government_attribute = is_pirate_republic_reform
 				}
 				AND = {
 					has_country_flag = ikko_ikki_peasants_flag

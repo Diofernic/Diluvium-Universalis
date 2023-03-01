@@ -178,7 +178,7 @@ baltic_region = {
 		west_prussia_area
 		east_prussia_area
 		samogitia_area
-		pskov_area
+		estonia_ingria_area
 	}
 }
 

@@ -90,10 +90,8 @@ country_event = {
 
 country_event = {
 	id = purple_phoenix.4
-	
 	title = "purple_phoenix.4.t"
 	desc = "purple_phoenix.4.d"
-	
 	picture = SIEGE_eventPicture
 	
 	fire_only_once = yes
@@ -119,10 +117,8 @@ country_event = {
 
 country_event = {
 	id = purple_phoenix.5
-	
 	title = "purple_phoenix.5.t"
 	desc = "purple_phoenix.5.d"
-	
 	picture = JERUSALEM_eventPicture
 	
 	fire_only_once = yes
@@ -147,10 +143,8 @@ country_event = {
 
 country_event = {
 	id = purple_phoenix.6
-	
 	title = "purple_phoenix.6.t"
 	desc = "purple_phoenix.6.d"
-	
 	picture = ST_PETERS_CHURCH_eventPicture
 	
 	fire_only_once = yes
@@ -175,10 +169,8 @@ country_event = {
 
 country_event = {
 	id = purple_phoenix.7
-	
 	title = "purple_phoenix.7.t"
 	desc = "purple_phoenix.7.d"
-	
 	picture = ORTHODOX_eventPicture
 	
 	is_triggered_only = yes
@@ -200,10 +192,8 @@ country_event = {
 
 country_event = {
 	id = purple_phoenix.8
-	
 	title = "purple_phoenix.8.t"
 	desc = "purple_phoenix.8.d"
-	
 	picture = BATTLE_eventPicture
 	
 	fire_only_once = yes
@@ -247,13 +237,14 @@ country_event = {
 		tag = BYZ
 		has_dlc = "Purple Phoenix"
 		OR = {
-			owns = 149
-			owns = 150
-			owns = 1764
+			owns = 102
+			owns = 103
+			owns = 1568
 		}
 		bulgaria_area = { type = all NOT = { owned_by = TUR }}
 		wallachia_area = { type = all NOT = { owned_by = TUR }}
 		macedonia_area = { type = all NOT = { owned_by = TUR }}
+		albania_area = { type = all NOT = { owned_by = TUR }}
 	}
 	
 	mean_time_to_happen = {
