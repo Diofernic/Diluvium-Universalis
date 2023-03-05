@@ -1,8 +1,8 @@
 #2932 - Farafreh
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = EGM
+controller = EGM
+add_core = EGM
 culture = al_misr_arabic
 religion = sunni
 capital = "Farafreh"
@@ -13,7 +13,6 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 
-discovered_by = MAM
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
@@ -25,5 +24,5 @@ discovered_by = east_african
 	owner = TUR
 	controller = TUR
 	add_core = TUR
-	remove_core = MAM
+	remove_core = EGM
 } # Invaded by the Ottomans

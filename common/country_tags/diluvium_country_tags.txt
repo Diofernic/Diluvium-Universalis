@@ -1,7 +1,4 @@
 RML	= "countries/Rumelia.txt"
 CYR	= "countries/Cyrenaica.txt"
 SYM	= "countries/Syrian Mamluks.txt"
-YKU	= "countries/Yakuts.txt"
-OST	= "countries/Ostyaks.txt"
-SMY	= "countries/Samoyeds.txt"
-TUG	= "countries/Tungusia.txt"
+EGM	= "countries/Egyptian Mamluks.txt"

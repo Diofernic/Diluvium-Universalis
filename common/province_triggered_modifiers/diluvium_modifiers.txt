@@ -92,24 +92,24 @@ religious_center = {
 
 empty_siberian_province = {
 	potential = {
-		#always = yes
 		is_city = no
 	}
 
 	trigger = {
 		OR = {
-			NOT = { is_in_capital_area = yes }
+			is_in_capital_area = no
 			owner = {
 				is_tribal = yes
 			}
 		}
 		is_city = no
 	}
-
+	
 	local_colonial_growth = -1000
 	
 	#Province scope
 	on_activation = {
+		decolonize = THIS
 	}
 	
 	on_deactivation = {

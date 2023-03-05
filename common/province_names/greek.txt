@@ -16,7 +16,7 @@
 2051 = "Petra Megale"
 2071 = "Chios"
 2926 = "Arsinoe"
-4302 = "KallÃ­polis"
+4302 = "Kallípolis"
 2066 = "Adrramyta"
 253 = { "Optimatoi" "Nikomedeia" }
 254 = { "Opsikion" "Prussa" }
@@ -58,7 +58,7 @@
 1569 = { "Sardike" "Sardike" }
 4347 = { "Pautalia" "Pautalia" }
 2643 = { "Skoupoi" "Skoupoi" }
-96 = { "AulÃ³nas" "AulÃ³nas" }
+96 = { "Aulónas" "Aulónas" }
 4362 = { "Lychnidos" "Lychnidos" }
 4355 = "Kroai"
 2793 = "Lissos"

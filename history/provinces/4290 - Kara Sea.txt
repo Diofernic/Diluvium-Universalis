@@ -1,3 +1,1 @@
-discovered_by = OST
-discovered_by = SMY
-discovered_by = TUG
+1582.10.23 = { discovered_by = RUS }

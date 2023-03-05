@@ -1,10 +1,15 @@
-discovered_by = BRT
-discovered_by = YKU
+discovered_by = ANU
 discovered_by = HOD
+discovered_by = CHU
 discovered_by = CHV
 discovered_by = KMC
-discovered_by = CHU
-discovered_by = ANU
 discovered_by = MYR
+discovered_by = SOL
 discovered_by = NVK
-discovered_by = EJZ
+discovered_by = NHX
+
+
+
+
+1643.1.1 = { discovered_by = RUS }
+

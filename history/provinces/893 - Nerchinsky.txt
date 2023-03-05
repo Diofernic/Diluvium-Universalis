@@ -16,12 +16,7 @@ is_city = yes
 
 
 discovered_by = nomad_group
-discovered_by = TUG
 discovered_by = BRT
-discovered_by = YKU
-discovered_by = HOD
-discovered_by = CHV
-discovered_by = YKU
 
 
 1653.1.1 = {

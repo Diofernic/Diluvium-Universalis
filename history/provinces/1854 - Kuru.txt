@@ -1,8 +1,8 @@
 # 2105 - Kuru
 
-owner = MYR
-controller = MYR
-add_core = MYR
+owner = EJZ
+controller = EJZ
+add_core = EJZ
 culture = manchu
 religion = tengri_pagan_reformed
 capital = "Kuru"
@@ -17,13 +17,6 @@ is_city = yes
 
 discovered_by = chinese
 discovered_by = nomad_group
-discovered_by = BRT
-discovered_by = YKU
-discovered_by = SOL
-discovered_by = HOD
-discovered_by = CHV
-discovered_by = KMC
-discovered_by = CHU
 
 1643.1.1 = { discovered_by = RUS }
 

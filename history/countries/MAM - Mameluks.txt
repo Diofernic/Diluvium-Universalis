@@ -4,7 +4,7 @@ primary_culture = al_misr_arabic
 religion = sunni
 technology_group = muslim
 historical_rival = TIM
-capital = 295 # Cairo
+capital = 294 #Qena
 add_army_professionalism = 0.1
 religious_school = shafii_school
 

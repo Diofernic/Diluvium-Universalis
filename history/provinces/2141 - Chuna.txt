@@ -1,19 +1,24 @@
-#2141 - Chunskaya
+#2436 - Chunskaya
 
-owner = TUG
-controller = TUG
-add_core = TUG
 culture = tungus
 religion = tengri_pagan_reformed
 capital = "Chunskaya"
-trade_goods = fish
+trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-is_city = yes
+native_size = 4
+native_ferocity = 1
+native_hostileness = 3
 
-discovered_by = OST
-discovered_by = SMY
-discovered_by = TUG
-discovered_by = BRT
+1627.1.1 = {
+	discovered_by = RUS
+	owner = RUS
+	controller = RUS
+	religion = orthodox
+	culture = russian
+	is_city = yes
+	trade_goods = fish
+}
+1628.1.1 = { add_core = RUS }

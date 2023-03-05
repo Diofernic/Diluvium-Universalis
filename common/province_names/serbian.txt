@@ -1,5 +1,4 @@
 89 = "Dalmacija"
-93 = "Bosna"
 95 = "Krf"
 96 = "Goritsa"
 97 = "Epir"

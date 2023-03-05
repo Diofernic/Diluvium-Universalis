@@ -89,6 +89,7 @@ MAM_ideas = {
 	trigger = {
 		OR = {
 			tag = MAM
+			tag = EGM
 			tag = SYM
 		}
 	}

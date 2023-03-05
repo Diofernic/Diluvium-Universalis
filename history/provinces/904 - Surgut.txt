@@ -1,4 +1,4 @@
-#904 - Surgut
+#1069 - Surgut
 
 culture = samoyed
 religion = tengri_pagan_reformed #Sami Shamanism
@@ -12,11 +12,9 @@ native_hostileness = 2
 native_size = 4
 native_ferocity = 3
 
+
+
 discovered_by = nomad_group
-discovered_by = OST
-discovered_by = SMY
-discovered_by = TUG
-discovered_by = BRT
 
 
 1468.1.1 = {

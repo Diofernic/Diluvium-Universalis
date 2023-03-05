@@ -3,8 +3,8 @@
 owner = NVK
 controller = NVK
 add_core = NVK
-culture = evenk
-religion = animism
+culture = nivkh
+religion = tengri_pagan_reformed
 capital = "Nangha'er"
 trade_goods = fish
 hre = no
@@ -15,6 +15,8 @@ is_city = yes
 native_size = 5
 native_ferocity = 1
 native_hostileness = 1
+
+
 
 discovered_by = JAP
 discovered_by = AMA
@@ -57,7 +59,9 @@ discovered_by = TKI
 discovered_by = UTN
 discovered_by = TTI
 discovered_by = ASK
-discovered_by = YKU
+discovered_by = NVK
+discovered_by = SOL
+discovered_by = NHX
 
 1542.1.1 = { discovered_by = POR }
 

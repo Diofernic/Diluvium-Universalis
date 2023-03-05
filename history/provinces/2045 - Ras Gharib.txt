@@ -1,8 +1,8 @@
 #2045 - Ras Gharib
 
-owner = MAM
-controller = MAM
-add_core = MAM
+owner = EGM
+controller = EGM
+add_core = EGM
 culture = al_misr_arabic
 religion = sunni
 capital = "Ras Gharib"

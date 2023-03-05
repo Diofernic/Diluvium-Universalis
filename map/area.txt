@@ -937,12 +937,12 @@ slovakia_area = { #5
 	107 115 1131 1576 2849
 }
 
-serbia_area = { #4
-	94 2852 4360 4514 4515
+serbia_area = { #5
+	94 2794 4360 4514 4515
 }
 
-pomoravlje_area = {	#4
-	2642 2794 4516 4517
+pomoravlje_area = {	#3
+	2642 4516 4517
 }
 
 rascia_area = { #3
@@ -953,26 +953,33 @@ albania_area = { #3
 	96 2793 4355
 }
 
-bosnia_area = { #5
-	93 1628 2644 4358 4511
+bosnia_area = { #4
+	92 93 1628 2644
 }
 
-hercegovina_area = { #3
-	92 1631 4512
+hercegovina_area = { #5
+	90 1631 4363 4512 4513
 }
 
-croatia_area = { #3
+croatia_area = { #4
 	color = { 18 126 16 }
-	84 1626 4357
+	84 89 1626 4357
 }
 
-slavonia_area = { #4
-	105 1571 2792 4359
+slavonia_area = { #3
+	105 1571 4359
 }
 
-east_adriatic_coast_area = { #4
-	89 90 4363 4513
+podrinje_area = { #2
+	4358 4511
 }
+
+belgrade_area = { #2
+	2792 2852
+}
+
+#east_adriatic_coast_area = {
+#}
 
 alfold_area = { #4
 	108 1736 1737 2747

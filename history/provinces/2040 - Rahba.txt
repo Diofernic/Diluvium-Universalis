@@ -1,7 +1,7 @@
 #2314 - Rahba
 
-owner = MAM
-controller = MAM
+owner = SYM
+controller = SYM
 culture = al_iraqiya_arabic
 religion = sunni
 capital = "Deir ez-Zor"

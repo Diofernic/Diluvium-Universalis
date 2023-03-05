@@ -1,20 +1,18 @@
 #2144 - Zasjiversk
 
-owner = HOD
-controller = HOD
-add_core = HOD
 culture = yukagyr
 religion = tengri_pagan_reformed
 capital = "Zasjiversk"
-trade_goods = gold
+trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-is_city = yes
+native_size = 1
+native_ferocity = 1
+native_hostileness = 3
 
-discovered_by = KMC
-discovered_by = CHU
-discovered_by = YKU
 discovered_by = HOD
+discovered_by = CHU
 discovered_by = CHV
+discovered_by = KMC

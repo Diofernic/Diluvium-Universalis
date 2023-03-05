@@ -1,8 +1,8 @@
-#2145 - Kagyrgyn
+#2440 - Kagyrgyn
 
-owner = CHU
-controller = CHU
-add_core = CHU
+owner = CHV
+controller = CHV
+add_core = CHV
 culture = kamchatkan
 religion = tengri_pagan_reformed
 capital = "Kagyrgyn"
@@ -11,11 +11,25 @@ hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
+native_size = 5
+native_ferocity = 1
+native_hostileness = 2
 is_city = yes
 
-discovered_by = KMC
-discovered_by = CHU
-discovered_by = YKU
-discovered_by = HOD
-discovered_by = CHV
+
+
 discovered_by = ANU
+discovered_by = HOD
+discovered_by = CHU
+discovered_by = CHV
+discovered_by = KMC
+
+
+1778.1.1 = {
+	discovered_by = RUS
+	owner = RUS
+	controller = RUS
+	religion = orthodox
+	culture = russian
+}
+1788.1.1 = { add_core = RUS }

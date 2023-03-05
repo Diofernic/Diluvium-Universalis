@@ -237,6 +237,8 @@ balkan_region = {
 		albania_area
 		hercegovina_area
 		pomoravlje_area
+		podrinje_area
+		belgrade_area
 	}
 }
 

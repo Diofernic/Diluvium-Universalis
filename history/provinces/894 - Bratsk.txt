@@ -1,20 +1,28 @@
-#894 - East Tunguska
+#1059 - East Tunguska
 
-owner = TUG
-controller = TUG
-add_core = TUG
 culture = tungus
 religion = tengri_pagan_reformed
 capital = "Kezemskoe"
-trade_goods = fur
+trade_goods = unknown
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
+native_size = 10
+native_ferocity = 1
+native_hostileness = 3
 
-is_city = yes
 
-discovered_by = OST
-discovered_by = SMY
-discovered_by = TUG
-discovered_by = BRT
+
+
+1631.1.1 = { discovered_by = RUS }
+
+1632.1.1 = {
+	owner = RUS
+	controller = RUS
+	religion = orthodox
+	culture = russian
+	is_city = yes
+	trade_goods = fur
+}
+1657.1.1 = { add_core = RUS }
