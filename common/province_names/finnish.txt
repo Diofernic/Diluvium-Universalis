@@ -1,4 +1,7 @@
 21 = "Suojärvi"
-22 = "Inkereenjoki"
-218 = { "Laukaa" "Laukaajoki" }
+22 = "Inkere"
+218 = "Laukaa"
 249 = "Syväri"
+1640 = "Virumaa"
+4534 = "Ugandi"
+4533 = "Kuurinmaa"

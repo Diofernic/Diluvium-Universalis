@@ -90,3 +90,4 @@
 2149 = "Zlatoust"
 2150 = "Chita"
 4261 = "Koryakovsky"
+4533 = "Kurlandia"

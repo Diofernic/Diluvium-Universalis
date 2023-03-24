@@ -1,0 +1,23 @@
+#4534 - Ugaunien
+
+owner = LIV
+controller = LIV
+add_core = LIV
+add_core = EST
+capital = "Odenpäh"
+culture = estonian
+religion = catholic
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = naval_supplies
+is_city = yes
+hre = no
+
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern

@@ -45,3 +45,6 @@
 2768 = "Jótland" #Jutland
 2770 = "Unifier" #Enare
 2852 = "Belgrad" #Belgrade
+
+1640 = "Virland"
+4533 = "Kúrland"

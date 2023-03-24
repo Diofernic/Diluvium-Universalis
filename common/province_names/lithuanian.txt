@@ -44,3 +44,7 @@
 4126 = "Rylskas"
 4125 = "Lubnai"
 4123 = "Vinica"
+
+4532 = "Notanga"
+4533 = "Kursas"
+4534 = "Ugaunija"

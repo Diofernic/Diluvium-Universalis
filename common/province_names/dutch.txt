@@ -30,6 +30,7 @@
 4384 = "Mulhuizen"
 4393 = "Tweebruggen"
 4394 = "Gulik"
+4533 = "Koerland"
 
 61 = "Milaan"
 70 = "Florentië"

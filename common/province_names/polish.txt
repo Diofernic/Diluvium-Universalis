@@ -139,3 +139,6 @@
 4384 = "Miluza"
 4395 = "Getynga"
 4374 = "Zgorzelice"
+
+4532 = "Natangia"
+4533 = "Kurlandia"

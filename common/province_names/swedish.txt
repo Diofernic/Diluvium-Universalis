@@ -4,6 +4,8 @@
 
 2745 = "Birkaland"
 2771 = "Kajanaland"
+1640 = "Virland"
+4533 = "Kurland"
 
 1119 = "Sankt Tomas"
 1760 = "Nya Kaledonien"

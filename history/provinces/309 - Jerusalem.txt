@@ -22,4 +22,5 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
-add_province_triggered_modifier = jerusalem_held^
+add_province_triggered_modifier = jerusalem_held
+add_province_triggered_modifier = promised_land_modifier

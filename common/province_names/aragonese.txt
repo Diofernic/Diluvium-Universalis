@@ -10,9 +10,7 @@
 270 = "Balears"
 299 = "Azores"
 1556 = "Jaén"
-1557 = "Alicante"
 1649 = "Coímbra"
-4133 = "Castellón"
 4132 = "Játiva"
 
 59 = "Niza"
@@ -22,12 +20,10 @@
 70 = "Florencia"
 74 = "Abruzos"
 75 = "Julíanos"
-78 = "Mesina"
 80 = "Sasser"
 89 = "Dalmacia"
 1066 = "Córcega"
 1666 = "Cúneo"
-2631 = "Cáller"
 68 = "Bolonia"
 4353 = "Bérgamo"
 

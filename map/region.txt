@@ -190,6 +190,7 @@ poland_region = {
 		silesia_area
 		central_poland_area
 		sandomierz_area
+		north_mazovia_area
 	}
 }
 
@@ -222,7 +223,6 @@ crimea_region = {
 balkan_region = {
 	areas = {
 		croatia_area
-		east_adriatic_coast_area
 		bosnia_area
 		serbia_area
 		rascia_area
@@ -1012,6 +1012,7 @@ indonesia_region = { #Eastern Indonesian/Malayan Islands.
 		central_java_area
 		west_java_area
 		lesser_sunda_islands_area
+		sabah_area
 	}
 	monsoon = {
 		00.11.01
@@ -1054,6 +1055,7 @@ indo_china_region = {
 		red_river_delta_area
 		champasak_area
 		sukhothai_area
+		cardamom_area
 	}
 	monsoon = {
 		00.05.01
@@ -1263,6 +1265,7 @@ carribeans_region = {
 baltic_sea_region = {
 	areas = {
 		baltic_area
+		gulf_of_finland_area
 	}
 }
 
@@ -1275,13 +1278,15 @@ north_atlantic_region = {
 		bay_of_biscay_area
 		north_atlantic_area
 		denmark_strait_area
+		sargasso_sea_area
 	}
 }
 
 arctic_ocean_region = {
 	areas = {
 		white_sea_area
-		west_siberian_sea_area
+		kara_sea_area
+		siberian_sea_area
 	}
 }
 
@@ -1291,13 +1296,29 @@ american_east_coast_region = {
 		hudson_bay_sea_area
 		gulf_of_st_lawrence_area
 		gulf_stream_area
+		champlain_sea_area
 	}
 }
 
-mediterrenean_region = {
+western_mediterranean_region = {
 	areas = {
-		eastern_mediterrenean_area
 		western_mediterrenean_area
+		tyrrenean_sea_area
+	}
+}
+
+eastern_mediterranean_region = {
+	areas = {
+		adriatic_sea_area
+		ionian_sea_area
+		lybian_sea_area
+		levantine_sea_area
+		aegean_sea_area
+	}
+}
+
+black_sea_region = {
+	areas = {
 		black_sea_area
 	}
 }
@@ -1315,7 +1336,7 @@ caribbean_sea_region = {
 		coast_of_guyana_area
 		caribbean_sea_area
 		gulf_of_mexico_area
-		sargasso_sea_area
+		amazonian_sea_area
 	}
 }
 
@@ -1367,6 +1388,8 @@ south_china_sea_region = {
 
 east_china_sea_region = {
 	areas = {
+		yellow_sea_area
+		zhonghai_seas_area
 		east_china_sea_area
 		philipine_sea_area
 		sea_of_japan_area
@@ -1416,6 +1439,7 @@ atlantic_south_america_region = {
 	areas = {
 		coast_of_brazil_sea_area
 		argentine_sea_area
+		silver_sea_area
 	}
 }
 

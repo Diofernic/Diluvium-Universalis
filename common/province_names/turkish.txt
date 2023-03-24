@@ -27,7 +27,6 @@
 226 = "Hocabey"
 253 = "Kocaeli"
 254 = "Hüdavendigar"
-255 = "Sugla"
 256 = "Mentesha" #Modern Turkish Name: Mentese
 257 = "Rodos"
 260 = "Konya"

@@ -141,7 +141,6 @@ west_american_sea_superregion = {
 }
 
 east_american_sea_superregion = {
-	atlantic_south_america_region
 	caribbean_sea_region
 	american_east_coast_region
 }
@@ -153,13 +152,16 @@ north_european_sea_superregion = {
 }
 
 south_european_sea_superregion = {
-	mediterrenean_region
+	eastern_mediterrenean_region
+	western_mediterrenean_region
+	black_sea_region
 	turkic_seas_region
 }
 
 west_african_sea_superregion = {
 	west_african_sea_region
 	south_atlantic_region
+	atlantic_south_america_region
 }
 
 east_african_sea_superregion = {

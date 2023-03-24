@@ -1,3 +1,5 @@
 8 = "Jemtland"
+1640 = "Virland"
+4533 = "Kurland"
 1755 = "Færøyene"
 2762 = "Borgarsysla"

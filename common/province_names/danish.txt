@@ -29,6 +29,8 @@
 332 = "Palmyra"
 341 = "Diarbekr"
 469 = "Frederiksøerne"
+1640 = "Virland"
+4533 = "Kurland"
 
 963 = "Christiansborg"
 965 = "Prindsensteen"
